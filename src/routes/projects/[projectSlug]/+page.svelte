@@ -9,12 +9,12 @@
 
   onMount(() => {
     mounted = true;
-    const projectId = $page.params.projectId;
-    project = projectsData.find(p => p.id === projectId);
+    const projectSlug = $page.params.projectSlug;
+    project = projectsData.find(p => p.slug === projectSlug);
 
     if (!project) {
       // Handle project not found, e.g., redirect to 404 or projects list
-      console.error(`Project with ID ${projectId} not found.`);
+      console.error(`Project with slug ${projectSlug} not found.`);
       // You might want to implement a proper 404 page or redirect here
     }
   });
@@ -35,7 +35,7 @@
                 <polyline points="15,3 21,3 21,9"/>
                 <line x1="10" y1="14" x2="21" y2="3"/>
               </svg>
-              Live Demo
+              View Live
             </a>
           {/if}
           <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" class="project-link code">
@@ -71,7 +71,7 @@
           <p class="long-description">
             <!-- This is where you would add a more detailed, unique, and keyword-rich description for the project.
                  Consider expanding on the project's features, challenges, and solutions. -->
-            {project.description} Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            {project.description} 
           </p>
           <!-- Add more sections here as needed, e.g., "Features", "Challenges", "Learnings" -->
         </div>
