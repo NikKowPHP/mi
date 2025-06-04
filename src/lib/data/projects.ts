@@ -48,65 +48,22 @@ export const projectsData = [
     liveUrl: "https://ziro.fit",
     repoUrl: null,
   },
-
-  // {
-  //   id: "proj2",
-  //   title: "EcoTracker Mobile App",
-  //   slug: slugify("EcoTracker Mobile App"),
-  //   // TODO: Expand description for better SEO. Include keywords related to mobile PWA, carbon footprint, gamification.
-  //   description:
-  //     "Mobile-first progressive web application to track and reduce personal carbon footprint with gamification elements.",
-  //   thumbnailUrl: "https://picsum.photos/seed/ecotracker/400/300",
-  //   technologies: ["Vue.js", "Firebase", "PWA", "Chart.js"],
-  //   liveUrl: "https://ecotracker-app.com",
-  //   repoUrl: "https://github.com/alexchen/ecotracker",
-  // },
-  // {
-  //   id: "proj3",
-  //   title: "Neural Art Generator",
-  //   slug: slugify("Neural Art Generator"),
-  //   // TODO: Expand description for better SEO. Include keywords related to AI art, machine learning, text prompts.
-  //   description:
-  //     "AI-powered art generation tool using machine learning models to create unique digital artwork from text prompts.",
-  //   thumbnailUrl: "https://picsum.photos/seed/neuralart/400/300",
-  //   technologies: ["Python", "TensorFlow", "FastAPI", "Svelte"],
-  //   liveUrl: null,
-  //   repoUrl: "https://github.com/alexchen/neural-art",
-  // },
   {
     id: "proj4",
-    title: "TaskFlow Collaboration",
-    slug: slugify("TaskFlow Collaboration"),
-    // TODO: Expand description for better SEO. Include keywords related to team productivity, real-time collaboration, task management, video conferencing.
+    title: "Personal Portfolio Website",
+    slug: slugify("Personal Portfolio Website"),
     description:
-      "Team productivity platform with real-time collaboration, task management, and integrated video conferencing.",
-    thumbnailUrl: "https://picsum.photos/seed/taskflow/400/300",
-    technologies: ["Next.js", "Socket.io", "PostgreSQL", "Redis"],
-    liveUrl: "https://taskflow-collab.com",
-    repoUrl: "https://github.com/alexchen/taskflow",
-  },
-  {
-    id: "proj5",
-    title: "Crypto Portfolio Tracker",
-    slug: slugify("Crypto Portfolio Tracker"),
-    // TODO: Expand description for better SEO. Include keywords related to crypto, portfolio tracking, analytics, trading signals.
-    description:
-      "Real-time cryptocurrency portfolio tracking with advanced analytics and automated trading signals.",
-    thumbnailUrl: "https://picsum.photos/seed/cryptoportfolio/400/300",
-    technologies: ["Svelte", "Express.js", "MongoDB", "WebSocket"],
-    liveUrl: "https://crypto-tracker-pro.com",
-    repoUrl: "https://github.com/alexchen/crypto-tracker",
-  },
-  {
-    id: "proj6",
-    title: "Smart Home Dashboard",
-    slug: slugify("Smart Home Dashboard"),
-    // TODO: Expand description for better SEO. Include keywords related to IoT, smart home, voice control, energy analytics.
-    description:
-      "IoT device management dashboard with voice control integration and energy consumption analytics.",
-    thumbnailUrl: "https://picsum.photos/seed/smarthome/400/300",
-    technologies: ["Angular", "MQTT", "InfluxDB", "Docker"],
-    liveUrl: null,
-    repoUrl: "https://github.com/alexchen/smart-home",
+      "This very website! A modern, responsive personal portfolio built to showcase my projects and skills. Features dynamic routing, dark mode toggle, and SEO optimization for project details. Designed for a seamless user experience across all devices.",
+    thumbnailUrl: "https://picsum.photos/seed/portfolio/400/300", // You can replace this with an actual screenshot later
+    technologies: [
+      "SvelteKit",
+      "Svelte",
+      "TypeScript",
+      "Tailwind CSS",
+      "HTML",
+      "CSS",
+    ],
+    liveUrl: "https://mikita-kavaliou.online",
+    repoUrl: "https://github.com/NikKowPHP/mi", // Replace with your actual GitHub repo URL
   },
 ];
