@@ -12,41 +12,67 @@ function slugify(text: string) {
 
 export const projectsData = [
   {
-    id: "proj1",
-    title: "CloudSync Dashboard",
-    slug: slugify("CloudSync Dashboard"),
-    // TODO: Expand description for better SEO. Include keywords related to cloud management, UI, real-time monitoring.
-    description:
-      "A cutting-edge platform for managing cloud resources with an intuitive UI and real-time monitoring capabilities.",
-    thumbnailUrl: "https://picsum.photos/seed/cloudsync/400/300",
-    technologies: ["React", "Node.js", "GraphQL", "AWS", "TypeScript"],
-    liveUrl: "https://cloudsync-demo.com",
-    repoUrl: "https://github.com/alexchen/cloudsync",
-  },
-  {
     id: "proj2",
-    title: "EcoTracker Mobile App",
-    slug: slugify("EcoTracker Mobile App"),
-    // TODO: Expand description for better SEO. Include keywords related to mobile PWA, carbon footprint, gamification.
+    title: "ZIRO - Digital Health Design Agency",
+    slug: "ziro-digital-health-design-agency",
     description:
-      "Mobile-first progressive web application to track and reduce personal carbon footprint with gamification elements.",
-    thumbnailUrl: "https://picsum.photos/seed/ecotracker/400/300",
-    technologies: ["Vue.js", "Firebase", "PWA", "Chart.js"],
-    liveUrl: "https://ecotracker-app.com",
-    repoUrl: "https://github.com/alexchen/ecotracker",
+      "A professional full-stack web design and development agency specializing in human-centered digital health solutions. ZIRO creates intuitive UI/UX designs, branding strategies, and digital products that patients love to use, empowering individuals and enhancing healthcare interactions through impactful technology. Features a comprehensive admin dashboard (CMS) allowing user administrators to configure and manage each section of the website dynamically.",
+    thumbnailUrl: "https://picsum.photos/seed/ziro/400/300",
+    technologies: [
+      "Prisma",
+      "Next.js",
+      "React.js",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "Supabase",
+      "Supabase Auth",
+    ],
+    liveUrl: "https://www.ziro.space/en",
+    repoUrl: null,
   },
   {
     id: "proj3",
-    title: "Neural Art Generator",
-    slug: slugify("Neural Art Generator"),
-    // TODO: Expand description for better SEO. Include keywords related to AI art, machine learning, text prompts.
+    title: "ZIRO.FIT - Fitness Trainer Platform",
+    slug: "ziro-fit-fitness-trainer-platform",
     description:
-      "AI-powered art generation tool using machine learning models to create unique digital artwork from text prompts.",
-    thumbnailUrl: "https://picsum.photos/seed/neuralart/400/300",
-    technologies: ["Python", "TensorFlow", "FastAPI", "Svelte"],
-    liveUrl: null,
-    repoUrl: "https://github.com/alexchen/neural-art",
+      "A comprehensive digital business card, portfolio, and client engagement platform designed specifically for fitness trainers. ZIRO.FIT enables trainers to build their brand, showcase results, and grow their fitness business through personalized pitch pages. Features a comprehensive CMS allowing trainers to configure all details on their personal pages, integrated contact forms, payment processing, and calendar booking system for seamless client management and trainer scheduling.",
+    thumbnailUrl: "https://picsum.photos/seed/zirofit/400/300",
+    technologies: [
+      "Laravel",
+      "Tailwind CSS",
+      "Livewire",
+      "Alpine.js",
+      "PostgreSQL",
+      "AWS",
+    ],
+    liveUrl: "https://ziro.fit",
+    repoUrl: null,
   },
+
+  // {
+  //   id: "proj2",
+  //   title: "EcoTracker Mobile App",
+  //   slug: slugify("EcoTracker Mobile App"),
+  //   // TODO: Expand description for better SEO. Include keywords related to mobile PWA, carbon footprint, gamification.
+  //   description:
+  //     "Mobile-first progressive web application to track and reduce personal carbon footprint with gamification elements.",
+  //   thumbnailUrl: "https://picsum.photos/seed/ecotracker/400/300",
+  //   technologies: ["Vue.js", "Firebase", "PWA", "Chart.js"],
+  //   liveUrl: "https://ecotracker-app.com",
+  //   repoUrl: "https://github.com/alexchen/ecotracker",
+  // },
+  // {
+  //   id: "proj3",
+  //   title: "Neural Art Generator",
+  //   slug: slugify("Neural Art Generator"),
+  //   // TODO: Expand description for better SEO. Include keywords related to AI art, machine learning, text prompts.
+  //   description:
+  //     "AI-powered art generation tool using machine learning models to create unique digital artwork from text prompts.",
+  //   thumbnailUrl: "https://picsum.photos/seed/neuralart/400/300",
+  //   technologies: ["Python", "TensorFlow", "FastAPI", "Svelte"],
+  //   liveUrl: null,
+  //   repoUrl: "https://github.com/alexchen/neural-art",
+  // },
   {
     id: "proj4",
     title: "TaskFlow Collaboration",
