@@ -54,7 +54,7 @@ export const projectsData = [
     slug: slugify("Personal Portfolio Website"),
     description:
       "This very website! A modern, responsive personal portfolio built to showcase my projects and skills. Features dynamic routing, dark mode toggle, and SEO optimization for project details. Designed for a seamless user experience across all devices.",
-    thumbnailUrl: "https://picsum.photos/seed/portfolio/400/300", // You can replace this with an actual screenshot later
+    thumbnailUrl: "https://picsum.photos/seed/portfolio/400/300",
     technologies: [
       "SvelteKit",
       "Svelte",
@@ -64,6 +64,6 @@ export const projectsData = [
       "CSS",
     ],
     liveUrl: "https://mikita-kavaliou.online",
-    repoUrl: "https://github.com/NikKowPHP/mi", // Replace with your actual GitHub repo URL
+    repoUrl: "https://github.com/NikKowPHP/mi",
   },
 ];
