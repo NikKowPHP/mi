@@ -5,7 +5,6 @@
   let darkMode = $state(false);
   
   onMount(() => {
-    // Check for saved theme preference or default to light mode
     const savedTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     darkMode = savedTheme === 'dark' || (!savedTheme && prefersDark);

@@ -11,8 +11,10 @@
 </script>
 
 <svelte:head>
-  <title>{profileData.name} - Portfolio</title>
-  <meta name="description" content={profileData.tagline} />
+  <!-- SEO: Update title with relevant keywords. Example: "John Doe - Web Developer Portfolio | SvelteKit Projects" -->
+  <title>{profileData.name} - Portfolio | Web Developer | Software Engineer</title>
+  <!-- SEO: Ensure meta description is compelling and includes primary keywords. Example: "Explore the portfolio of John Doe, a passionate Web Developer specializing in SvelteKit, JavaScript, and modern web applications. View my latest projects and skills." -->
+  <meta name="description" content="{profileData.tagline} | SvelteKit Developer | Frontend & Backend Projects" />
 </svelte:head>
 
 <main class="main-content">

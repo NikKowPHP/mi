@@ -34,7 +34,7 @@
               <polyline points="15,3 21,3 21,9"/>
               <line x1="10" y1="14" x2="21" y2="3"/>
             </svg>
-            Live Demo
+            View Live 
           </a>
         {/if}
         <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" class="project-link code">
@@ -43,6 +43,14 @@
           </svg>
           View Code
         </a>
+          <a href="/projects/{project.id}" class="project-link details">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="12" y1="16" x2="12" y2="12"/>
+              <line x1="12" y1="8" x2="12.01" y2="8"/>
+            </svg>
+            View Details
+          </a>
       </div>
     </div>
   </div>
@@ -117,6 +125,9 @@
   
   .project-links {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
   }
   
@@ -145,12 +156,22 @@
     color: white;
   }
   
-  .project-link.live:hover {
+  .project-link.live:hover
+  {
     background: var(--accent-color);
   }
+
+
+  .project-link.details {
+    background: var(--background-secondary);
+    color: var(--text-primary);
+  }
+
   
   .project-content {
     padding: 1.5rem;
+    /* flex-grow: 1; */
+    /* display:flex; */
   }
   
   .project-title {
