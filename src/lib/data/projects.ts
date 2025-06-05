@@ -88,18 +88,14 @@ export const projectsData = [
     id: "proj1",
     title: "Lessay Language Learning App",
     slug: slugify("Lessay Language Learning App"),
-    description: "Full-stack, AI-powered mobile app for language acquisition.",
+    description:
+      "Unlock your language learning potential with our cutting-edge AI-powered app! Our AI translator delivers highly accurate translations with customizable tone and formality. Seamlessly transition from translation to learning by saving your favorite phrases and effortlessly creating personalized flashcard decks.",
+    longDescription:
+      "Unlock your language learning potential with our cutting-edge AI-powered app! Whether you're a beginner or an advanced learner, our app provides the tools you need to achieve fluency. Our AI translator delivers highly accurate translations with customizable tone and formality, making it perfect for any context – from casual conversations to professional emails. Seamlessly transition from translation to learning by saving your favorite phrases and effortlessly creating personalized flashcard decks.\n\nBoost your vocabulary with our intuitive vocabulary builder tools. Utilize spaced repetition, a proven memorization technique, to optimize your study sessions and maximize retention. Track your daily and weekly progress with detailed statistics and interactive heatmaps, visualizing your language learning journey. Dive deep into individual flashcard performance to identify weak spots and refine your study strategy.\n\nOur app goes beyond basic translation. It's a comprehensive language learning platform designed to help you master any language. With features like TTS (text-to-speech) support, you can improve your pronunciation and listening comprehension. Build custom study sets, review your flashcards on the go, and achieve your language goals faster than ever before.\n\nDownload now and experience the future of language learning! Perfect for students, travelers, professionals, and anyone looking to expand their language skills.\nKey features include:\n- AI-powered translation with tone and formality control\n- Personalized flashcard decks and vocabulary lists\n- Spaced repetition for optimized memorization\n- Detailed progress tracking and performance insights\n- TTS support for pronunciation practice\n- Offline access to your flashcards\n- Support for multiple languages\n\nStart your journey towards fluency today!",
     thumbnailUrl: "https://picsum.photos/seed/lessay/400/300",
-    technologies: [
-      "React",
-      "Next.js",
-      "TypeScript",
-      "Node.js",
-      "ExpressJS",
-      "MongoDB",
-      "AI",
-    ],
-    liveUrl: "https://lessay-app.vercel.app",
+    technologies: ["Flutter", "Node.js", "ExpressJS", "MongoDB", "AI"],
+    liveUrl:
+      "https://play.google.com/store/apps/details?id=com.lessay.translate",
     repoUrl: null,
   },
 ];
