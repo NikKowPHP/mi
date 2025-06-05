@@ -2,6 +2,7 @@
   import { onMount } from "svelte";
   import { profileData } from "$lib/data/profile";
   import Timeline from "$lib/components/Timeline.svelte";
+  import TechStack from "$lib/components/TechStack.svelte";
   import { employmentData } from "$lib/data/timeline";
 
   let mounted = $state(false);
@@ -123,6 +124,15 @@
       </div>
     </div>
   </section>
+
+  <section class="tech-stack-section">
+    <div class="tech-stack-content">
+      <h2 class="section-title">My Tech Stack</h2>
+      <p class="section-subtitle">Technologies I work with</p>
+      <TechStack techStack={profileData.techStack} />
+    </div>
+  </section>
+
   <section class="timeline-section">
     <div class="timeline-content">
       <h2 class="section-title">Professional Experience</h2>
@@ -285,6 +295,20 @@
     margin: 0;
   }
 
+  .tech-stack-section {
+    padding: 4rem 2rem;
+    background: linear-gradient(
+      135deg,
+      rgba(var(--accent-rgb), 0.02) 0%,
+      rgba(var(--accent-secondary-rgb), 0.02) 100%
+    );
+  }
+
+  .tech-stack-content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
   @media (max-width: 768px) {
     .profile-section {
       grid-template-columns: 1fr;
@@ -314,7 +338,9 @@
     }
 
     .hero-section,
-    .about-section {
+    .about-section,
+    .tech-stack-section,
+    .timeline-section {
       padding: 2rem 1rem;
     }
   }

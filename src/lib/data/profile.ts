@@ -18,4 +18,33 @@ export const profileData = {
     },
     { name: "Email", url: "mailto:nik.kow@outlook.com", icon: "mail" },
   ],
+  techStack: [
+    {
+      category: "Frontend",
+      technologies: [
+        "React",
+        "TypeScript",
+        "Next.js",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Tailwind CSS",
+        "Bootstrap",
+        "Flutter",
+        "Svelte",
+      ],
+    },
+    {
+      category: "Backend",
+      technologies: ["Node.js", "PHP", "ExpressJS", "Nest.js"],
+    },
+    {
+      category: "Tools",
+      technologies: ["Git", "Docker", "AWS", "Google Cloud", "Firebase"],
+    },
+    {
+      category: "Databases",
+      technologies: ["MySQL", "PostgreSQL", "Firestore", "MongoDB"],
+    },
+  ],
 };
