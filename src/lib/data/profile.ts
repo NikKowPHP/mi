@@ -1,12 +1,21 @@
 export const profileData = {
-  name: "Alex Chen",
-  tagline: "Innovative Full-Stack Developer | Crafting Digital Experiences",
-  profilePicUrl: "https://picsum.photos/seed/alexprofile/300/300",
-  bio: "A passionate developer with expertise in creating modern, responsive web applications. I love solving complex problems and continuously learning new technologies. My focus is on writing clean, efficient code and building intuitive user interfaces that delight users. When I'm not coding, you'll find me exploring new frameworks, contributing to open source, or hiking in nature.",
+  name: "Mikita Kavaliou",
+  tagline:
+    "Web full stack Developer | PHP developer | Symfony Laravel developer | React Next.js developer",
+  profilePicUrl: "/profile-photo.webp",
+  bio: "I am a Web Developer with 1.5 year of commercial and over 2 years of non-commercial experience in building efficient, user-centric web applications. My expertise spans frontend and backend development, leveraging modern technologies to deliver tailored solutions. I also maintain a GitHub streak exceeding 2 years, reflecting my consistency and dedication to software development.",
   socialLinks: [
-    { name: "GitHub", url: "https://github.com/alexchen", icon: "github" },
-    { name: "LinkedIn", url: "https://linkedin.com/in/alexchen", icon: "linkedin" },
-    { name: "Twitter", url: "https://twitter.com/alexchen", icon: "twitter" },
-    { name: "Email", url: "mailto:alex@example.com", icon: "mail" },
+    { name: "GitHub", url: "https://github.com/NikKowPHP", icon: "github" },
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/mikita-kavaliou-390b62236",
+      icon: "linkedin",
+    },
+    {
+      name: "Personal Website",
+      url: "https://lessay-app.vercel.app",
+      icon: "link",
+    },
+    { name: "Email", url: "mailto:nik.kow@outlook.com", icon: "mail" },
   ],
-}
+};

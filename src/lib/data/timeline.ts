@@ -1,58 +1,55 @@
-
 export interface Employment {
-  id: string
-  company: string
-  position: string
-  duration: string
-  location: string
-  description: string
-  technologies: string[]
-  logo: string
+  id: string;
+  company: string;
+  position: string;
+  duration: string;
+  location: string;
+  description: string;
+  technologies: string[];
+  logo: string;
 }
 
 export const employmentData: Employment[] = [
   {
     id: "emp1",
-    company: "TechFlow Solutions",
-    position: "Senior Full-Stack Developer",
-    duration: "2022 - Present",
-    location: "San Francisco, CA",
+    company: "Basesystem",
+    position: "FullStack Web Developer",
+    duration: "Feb 2024 - Present",
+    location: "Krzeszowice",
     description:
-      "Leading development of cloud-native applications and mentoring junior developers. Built scalable microservices architecture serving 100k+ users.",
-    technologies: ["React", "Node.js", "AWS", "Docker", "TypeScript"],
-    logo: "https://picsum.photos/seed/techflow/60/60",
+      "- Developed and maintained complex e-commerce web applications and APIs, ensuring seamless functionality and an optimized user experience.\n- Designed and implemented new features to enhance performance.\n- Integrated third-party services, such as payment gateways and social media APIs.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "PHP",
+      "Node.js",
+      "MySQL",
+      "PostgreSQL",
+      "Tailwind CSS",
+    ],
+    logo: "https://picsum.photos/seed/basesystem/60/60",
   },
   {
     id: "emp2",
-    company: "InnovateLab",
-    position: "Frontend Developer",
-    duration: "2020 - 2022",
-    location: "Remote",
+    company: "Freelance Web Developer",
+    position: "Freelance Web Developer",
+    duration: "Jan 2023 - Present",
+    location: "",
     description:
-      "Developed responsive web applications and improved user experience across multiple products. Collaborated with design team to implement pixel-perfect interfaces.",
-    technologies: ["Vue.js", "SCSS", "Firebase", "Figma"],
-    logo: "https://picsum.photos/seed/innovatelab/60/60",
-  },
-  {
-    id: "emp3",
-    company: "StartupXYZ",
-    position: "Junior Developer",
-    duration: "2019 - 2020",
-    location: "Austin, TX",
-    description:
-      "Built and maintained e-commerce platform features. Gained experience in agile development and version control best practices.",
-    technologies: ["JavaScript", "PHP", "MySQL", "Bootstrap"],
-    logo: "https://picsum.photos/seed/startupxyz/60/60",
-  },
-  {
-    id: "emp4",
-    company: "FreelanceWork",
-    position: "Web Developer",
-    duration: "2018 - 2019",
-    location: "Various",
-    description:
-      "Delivered custom websites for small businesses and startups. Managed full project lifecycle from requirements gathering to deployment.",
-    technologies: ["WordPress", "HTML/CSS", "jQuery", "Photoshop"],
+      "Developed a series of fullstack web applications, focusing on both user-friendly interfaces and efficient backend solutions.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "JavaScript",
+      "PHP",
+      "Node.js",
+      "Tailwind CSS",
+      "Bootstrap",
+      "MySQL",
+      "PostgreSQL",
+    ],
     logo: "https://picsum.photos/seed/freelance/60/60",
   },
-]
+];

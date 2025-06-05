@@ -13,7 +13,7 @@ function slugify(text: string) {
 export const projectsData = [
   {
     id: "proj2",
-    title: "ZIRO - Digital Health Design Agency",
+    title: "ZIRO.SPACE - Digital Health Design Agency",
     slug: "ziro-digital-health-design-agency",
     description:
       "A professional full-stack web design and development agency specializing in human-centered digital health solutions. ZIRO creates intuitive UI/UX designs, branding strategies, and digital products that patients love to use, empowering individuals and enhancing healthcare interactions through impactful technology. Features a comprehensive admin dashboard (CMS) allowing user administrators to configure and manage each section of the website dynamically.",
@@ -65,5 +65,41 @@ export const projectsData = [
     ],
     liveUrl: "https://mikita-kavaliou.online",
     repoUrl: "https://github.com/NikKowPHP/mi",
+  },
+  {
+    id: "proj1",
+    title: "Lessay Web App",
+    slug: slugify("Lessay Language Learning App"),
+    description: "Full-stack, AI-powered mobile app for language acquisition.",
+    thumbnailUrl: "https://picsum.photos/seed/lessay/400/300",
+    technologies: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "ExpressJS",
+      "MongoDB",
+      "AI",
+    ],
+    liveUrl: "https://lessay-app.vercel.app",
+    repoUrl: null,
+  },
+  {
+    id: "proj1",
+    title: "Lessay Language Learning App",
+    slug: slugify("Lessay Language Learning App"),
+    description: "Full-stack, AI-powered mobile app for language acquisition.",
+    thumbnailUrl: "https://picsum.photos/seed/lessay/400/300",
+    technologies: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "ExpressJS",
+      "MongoDB",
+      "AI",
+    ],
+    liveUrl: "https://lessay-app.vercel.app",
+    repoUrl: null,
   },
 ];
