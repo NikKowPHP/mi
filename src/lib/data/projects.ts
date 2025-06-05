@@ -11,6 +11,7 @@ export interface ProjectType {
   technologies: string[];
   liveUrl: string | null;
   repoUrl: string | null;
+  images: string[];
 }
 function slugify(text: string) {
   return text
@@ -45,7 +46,6 @@ export const projectsData = [
       "Improved skills in designing and implementing robust CMS solutions.",
       "Learned to prioritize user experience in complex digital health platforms.",
     ],
-    thumbnailUrl: "https://picsum.photos/seed/ziro/400/300",
     technologies: [
       "Prisma",
       "Next.js",
@@ -57,6 +57,11 @@ export const projectsData = [
     ],
     liveUrl: "https://www.ziro.space/en",
     repoUrl: null,
+    images: [
+      "https://picsum.photos/seed/ziro-1/1200/800",
+      "https://picsum.photos/seed/ziro-2/1200/800",
+      "https://picsum.photos/seed/ziro-3/1200/800",
+    ],
   },
   {
     id: "proj3",
@@ -79,14 +84,17 @@ export const projectsData = [
       "Learned to design flexible database schemas for diverse user configurations.",
     ],
     thumbnailUrl: "https://picsum.photos/seed/zirofit/400/300",
-    technologies: [
-      "Laravel",
-      "Tailwind CSS",
-      "Livewire",
-      "Alpine.js",
-      "PostgreSQL",
-      "AWS",
+    technologies: ["AWS"],
+    liveUrl: "https://ziro.fit",
+    repoUrl: null,
+    images: [
+      "https://picsum.photos/seed/zirofit-1/1200/800",
+      "https://picsum.photos/seed/zirofit-2/1200/800",
+      "https://picsum.photos/seed/zirofit-3/1200/800",
     ],
+  },
+  {
+    id: "proj4",
     liveUrl: "https://ziro.fit",
     repoUrl: null,
   },
@@ -121,6 +129,12 @@ export const projectsData = [
     ],
     liveUrl: "https://mikita-kavaliou.online",
     repoUrl: "https://github.com/NikKowPHP/mi",
+
+    images: [
+      "https://picsum.photos/seed/portfolio-1/1200/800",
+      "https://picsum.photos/seed/portfolio-2/1200/800",
+      "https://picsum.photos/seed/portfolio-3/1200/800",
+    ],
   },
   {
     id: "proj1",
@@ -152,6 +166,11 @@ export const projectsData = [
     ],
     liveUrl: "https://lessay-app.vercel.app",
     repoUrl: null,
+    images: [
+      "https://picsum.photos/seed/lessay-web-1/1200/800",
+      "https://picsum.photos/seed/lessay-web-2/1200/800",
+      "https://picsum.photos/seed/lessay-web-3/1200/800",
+    ],
   },
   {
     id: "proj1",
@@ -178,5 +197,10 @@ export const projectsData = [
     liveUrl:
       "https://play.google.com/store/apps/details?id=com.lessay.translate",
     repoUrl: null,
+    images: [
+      "https://picsum.photos/seed/lessay-app-1/1200/800",
+      "https://picsum.photos/seed/lessay-app-2/1200/800",
+      "https://picsum.photos/seed/lessay-app-3/1200/800",
+    ],
   },
 ];
