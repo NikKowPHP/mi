@@ -96,9 +96,26 @@
           <p class="long-description">
             <!-- This is where you would add a more detailed, unique, and keyword-rich description for the project.
                  Consider expanding on the project's features, challenges, and solutions. -->
-            {project.description}
+            {project.longDescription}
           </p>
-          <!-- Add more sections here as needed, e.g., "Features", "Challenges", "Learnings" -->
+
+          {#if project.challenges && project.challenges.length > 0}
+            <h2 class="section-heading">Challenges</h2>
+            <ul class="project-list">
+              {#each project.challenges as challenge}
+                <li>{challenge}</li>
+              {/each}
+            </ul>
+          {/if}
+
+          {#if project.learnings && project.learnings.length > 0}
+            <h2 class="section-heading">Learnings</h2>
+            <ul class="project-list">
+              {#each project.learnings as learning}
+                <li>{learning}</li>
+              {/each}
+            </ul>
+          {/if}
         </div>
       </div>
     </section>
@@ -263,13 +280,35 @@
   }
 
   .project-technologies {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+  }
+
+  .project-list {
+    list-style: none;
+    padding-left: 0;
     margin-bottom: 2rem;
   }
 
-  .tech-tag {
+  .project-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+
+  .project-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+  }
+
+  .project-not-found {
+    text-align: center;
     background: rgba(var(--accent-rgb), 0.1);
     color: var(--accent-color);
     padding: 0.4rem 1rem;
@@ -315,6 +354,28 @@
 
   .back-link:hover {
     background: var(--accent-secondary);
+  }
+
+  .project-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 2rem;
+  }
+
+  .project-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+
+  .project-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: bold;
   }
 
   @media (min-width: 768px) {
