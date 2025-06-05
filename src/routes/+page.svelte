@@ -14,14 +14,40 @@
 </script>
 
 <svelte:head>
-  <!-- SEO: Update title with relevant keywords. Example: "John Doe - Web Developer Portfolio | SvelteKit Projects" -->
-  <title
-    >{profileData.name} - Portfolio | Web Developer | Software Engineer</title
-  >
-  <!-- SEO: Ensure meta description is compelling and includes primary keywords. Example: "Explore the portfolio of John Doe, a passionate Web Developer specializing in SvelteKit, JavaScript, and modern web applications. View my latest projects and skills." -->
+  <title>{profileData.name} - {profileData.tagline} | Portfolio</title>
   <meta
     name="description"
-    content="{profileData.tagline} | SvelteKit Developer | Frontend & Backend Projects"
+    content="{profileData.bio} Explore my projects and skills in web development."
+  />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mikita-kavaliou.online/" />
+  <meta
+    property="og:title"
+    content="{profileData.name} - {profileData.tagline} | Portfolio"
+  />
+  <meta
+    property="og:description"
+    content="{profileData.bio} Explore my projects and skills in web development."
+  />
+  <meta
+    property="og:image"
+    content="https://mikita-kavaliou.online{profileData.profilePicUrl}"
+  />
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://mikita-kavaliou.online/" />
+  <meta
+    property="twitter:title"
+    content="{profileData.name} - {profileData.tagline} | Portfolio"
+  />
+  <meta
+    property="twitter:description"
+    content="{profileData.bio} Explore my projects and skills in web development."
+  />
+  <meta
+    property="twitter:image"
+    content="https://mikita-kavaliou.online{profileData.profilePicUrl}"
   />
 </svelte:head>
 
