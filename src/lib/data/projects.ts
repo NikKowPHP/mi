@@ -47,7 +47,7 @@ export const projectsData: ProjectType[] = [
       "Improved skills in designing and implementing robust CMS solutions.",
       "Learned to prioritize user experience in complex digital health platforms.",
     ],
-    thumbnailUrl: "https://picsum.photos/seed/ziro/400/300",
+    thumbnailUrl: "/projects/ziro-space/ziro-space-thumb.webp",
     technologies: [
       "Prisma",
       "Next.js",
@@ -85,7 +85,7 @@ export const projectsData: ProjectType[] = [
       "Gained experience in implementing secure payment gateways and scheduling functionalities.",
       "Learned to design flexible database schemas for diverse user configurations.",
     ],
-    thumbnailUrl: "https://picsum.photos/seed/zirofit/400/300",
+    thumbnailUrl: "/projects/ziro-fit/zirofit-thumb.webp",
     technologies: [
       "AWS",
       "Laravel",
@@ -122,7 +122,7 @@ export const projectsData: ProjectType[] = [
       "Gained deeper insights into SEO best practices for single-page applications.",
       "Improved skills in CSS animations and transitions for a polished user interface.",
     ],
-    thumbnailUrl: "https://picsum.photos/seed/portfolio/400/300",
+    thumbnailUrl: "/projects/personal-website/personal-webpage-thumb.webp",
     technologies: [
       "SvelteKit",
       "Svelte",
@@ -157,7 +157,7 @@ export const projectsData: ProjectType[] = [
       "Improved skills in real-time data processing and responsive UI development.",
       "Learned effective strategies for managing and optimizing MongoDB databases.",
     ],
-    thumbnailUrl: "https://picsum.photos/seed/lessay/400/300",
+    thumbnailUrl: "/projects/lessay-web-app/lessay-web-app-thumb.webp",
     technologies: [
       "React",
       "Next.js",
@@ -167,7 +167,7 @@ export const projectsData: ProjectType[] = [
       "MongoDB",
       "AI",
     ],
-    liveUrl: "https://lessay-app.vercel.app",
+    liveUrl: "https://lessay-app.vercel.app/app",
     repoUrl: null,
     images: [
       "https://picsum.photos/seed/lessay-web-1/1200/800",
@@ -195,15 +195,19 @@ export const projectsData: ProjectType[] = [
       "Deepened understanding of AI integration for language processing.",
       "Improved skills in designing robust and scalable backend APIs for mobile applications.",
     ],
-    thumbnailUrl: "https://picsum.photos/seed/lessay/400/300",
+    thumbnailUrl: "/projects/lessay-app/lessay-app-thumb.webp",
     technologies: ["Flutter", "Node.js", "ExpressJS", "MongoDB", "AI"],
     liveUrl:
       "https://play.google.com/store/apps/details?id=com.lessay.translate",
     repoUrl: null,
     images: [
-      "https://picsum.photos/seed/lessay-app-1/1200/800",
-      "https://picsum.photos/seed/lessay-app-2/1200/800",
-      "https://picsum.photos/seed/lessay-app-3/1200/800",
+      "/projects/lessay-app/lessay-1.webp",
+      "/projects/lessay-app/lessay-2.webp",
+      "/projects/lessay-app/lessay-3.webp",
+      "/projects/lessay-app/lessay-4.webp",
+      "/projects/lessay-app/lessay-5.webp",
+      "/projects/lessay-app/lessay-6.webp",
+      "/projects/lessay-app/lessay-7.webp",
     ],
   },
 ];

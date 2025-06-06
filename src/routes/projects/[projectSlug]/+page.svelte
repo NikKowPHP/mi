@@ -76,6 +76,7 @@
       </div>
     </section>
 
+    <!--
     <section class="project-gallery-section">
       <div class="gallery-container">
         {#if project.images && project.images.length > 0}
@@ -93,6 +94,7 @@
       </div>
     </section>
 
+    -->
     <section class="project-detail-content">
       <div class="content-container">
         <div class="project-info">
