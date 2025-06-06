@@ -13,6 +13,7 @@ export interface ProjectType {
   repoUrl: string | null;
   images: string[];
 }
+
 function slugify(text: string) {
   return text
     .toString()
@@ -25,7 +26,7 @@ function slugify(text: string) {
     .replace(/--+/g, "-");
 }
 
-export const projectsData = [
+export const projectsData: ProjectType[] = [
   {
     id: "proj2",
     title: "ZIRO.SPACE - Digital Health Design Agency",
@@ -46,6 +47,7 @@ export const projectsData = [
       "Improved skills in designing and implementing robust CMS solutions.",
       "Learned to prioritize user experience in complex digital health platforms.",
     ],
+    thumbnailUrl: "https://picsum.photos/seed/ziro/400/300",
     technologies: [
       "Prisma",
       "Next.js",
@@ -95,13 +97,8 @@ export const projectsData = [
   },
   {
     id: "proj4",
-    liveUrl: "https://ziro.fit",
-    repoUrl: null,
-  },
-  {
-    id: "proj4",
     title: "Personal Portfolio Website",
-    slug: slugify("Personal Portfolio Website"),
+    slug: "personal-portfolio-website",
     excerpt:
       "This very website! A modern, responsive personal portfolio built to showcase my projects and skills.",
     description:
@@ -129,7 +126,6 @@ export const projectsData = [
     ],
     liveUrl: "https://mikita-kavaliou.online",
     repoUrl: "https://github.com/NikKowPHP/mi",
-
     images: [
       "https://picsum.photos/seed/portfolio-1/1200/800",
       "https://picsum.photos/seed/portfolio-2/1200/800",
@@ -139,7 +135,7 @@ export const projectsData = [
   {
     id: "proj1",
     title: "Lessay Web App",
-    slug: slugify("Lessay Language Learning App"),
+    slug: "lessay-web-app",
     excerpt: "Full-stack, AI-powered mobile app for language acquisition.",
     description: "Full-stack, AI-powered mobile app for language acquisition.",
     longDescription:
@@ -173,9 +169,9 @@ export const projectsData = [
     ],
   },
   {
-    id: "proj1",
+    id: "proj5",
     title: "Lessay Language Learning App",
-    slug: slugify("Lessay Language Learning App"),
+    slug: "lessay-language-learning-app",
     excerpt:
       "Unlock your language learning potential with our cutting-edge AI-powered app!",
     description:

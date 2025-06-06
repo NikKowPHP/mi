@@ -1,6 +1,7 @@
 <script lang="ts">
   import { page } from "$app/stores";
   import { projectsData, type ProjectType } from "$lib/data/projects";
+  import ImageGallery from "$lib/components/ImageGallery.svelte";
   import { onMount } from "svelte";
 
   let project: ProjectType | null | undefined = $state(null);
@@ -49,41 +50,51 @@
               View Live
             </a>
           {/if}
-          <a
-            href={project.repoUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project-link code"
-          >
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
+          {#if project.repoUrl}
+            <a
+              href={project.repoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link code"
             >
-              <path
-                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-              />
-            </svg>
-            View Code
-          </a>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                />
+              </svg>
+              View Code
+            </a>
+          {/if}
         </div>
+      </div>
+    </section>
+
+    <section class="project-gallery-section">
+      <div class="gallery-container">
+        {#if project.images && project.images.length > 0}
+          <ImageGallery images={project.images} title={project.title} />
+        {:else}
+          <div class="project-image-container">
+            <img
+              src={project.thumbnailUrl || "/placeholder.svg"}
+              alt={project.title}
+              class:loaded={imageLoaded}
+              onload={() => (imageLoaded = true)}
+            />
+          </div>
+        {/if}
       </div>
     </section>
 
     <section class="project-detail-content">
       <div class="content-container">
-        <div class="project-image-container">
-          <img
-            src={project.thumbnailUrl || "/placeholder.svg"}
-            alt={project.title}
-            class:loaded={imageLoaded}
-            onload={() => (imageLoaded = true)}
-          />
-        </div>
-
         <div class="project-info">
           <h2 class="section-heading">Technologies Used</h2>
           <div class="project-technologies">
@@ -94,9 +105,7 @@
 
           <h2 class="section-heading">About This Project</h2>
           <p class="long-description">
-            <!-- This is where you would add a more detailed, unique, and keyword-rich description for the project.
-                 Consider expanding on the project's features, challenges, and solutions. -->
-            {project.longDescription}
+            {project.longDescription || project.description}
           </p>
 
           {#if project.challenges && project.challenges.length > 0}
@@ -228,34 +237,34 @@
     background: var(--accent-color);
   }
 
-  .project-detail-content {
-    padding: 4rem 2rem;
+  .project-gallery-section {
+    padding: 2rem 2rem 0;
   }
 
-  .content-container {
-    max-width: 900px;
+  .gallery-container {
+    max-width: 1000px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 3rem;
+    background: var(--card-background);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    backdrop-filter: blur(10px);
   }
 
   .project-image-container {
-    background: var(--card-background);
-    border-radius: 20px;
+    width: 100%;
+    border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    border: 1px solid var(--border-color);
-    padding: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    aspect-ratio: 16 / 9;
+    background: var(--background-secondary);
   }
 
   .project-image-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     opacity: 0;
     transition: opacity 0.5s ease;
   }
@@ -264,12 +273,22 @@
     opacity: 1;
   }
 
+  .project-detail-content {
+    padding: 2rem 2rem 4rem;
+  }
+
+  .content-container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
   .project-info {
     background: var(--card-background);
     border-radius: 20px;
     padding: 2.5rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     border: 1px solid var(--border-color);
+    backdrop-filter: blur(10px);
   }
 
   .section-heading {
@@ -280,9 +299,20 @@
   }
 
   .project-technologies {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: var(--text-secondary);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .tech-tag {
+    background: rgba(var(--accent-rgb), 0.1);
+    color: var(--accent-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid rgba(var(--accent-rgb), 0.2);
   }
 
   .project-list {
@@ -307,21 +337,12 @@
     font-weight: bold;
   }
 
-  .project-not-found {
-    text-align: center;
-    background: rgba(var(--accent-rgb), 0.1);
-    color: var(--accent-color);
-    padding: 0.4rem 1rem;
-    border-radius: 16px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    border: 1px solid rgba(var(--accent-rgb), 0.2);
-  }
-
   .long-description {
     font-size: 1.1rem;
     line-height: 1.8;
     color: var(--text-secondary);
+    margin-bottom: 2rem;
+    white-space: pre-line;
   }
 
   .project-not-found {
@@ -356,34 +377,6 @@
     background: var(--accent-secondary);
   }
 
-  .project-list {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 2rem;
-  }
-
-  .project-list li {
-    position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: 0.75rem;
-    color: var(--text-secondary);
-    line-height: 1.6;
-  }
-
-  .project-list li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: var(--accent-color);
-    font-weight: bold;
-  }
-
-  @media (min-width: 768px) {
-    .content-container {
-      grid-template-columns: 2fr 3fr; /* Adjust as needed */
-    }
-  }
-
   @media (max-width: 768px) {
     .project-title {
       font-size: 2.5rem;
@@ -394,10 +387,12 @@
     }
 
     .project-detail-header,
-    .project-detail-content {
+    .project-detail-content,
+    .project-gallery-section {
       padding: 2rem 1rem;
     }
 
+    .gallery-container,
     .project-info {
       padding: 1.5rem;
     }
@@ -408,6 +403,17 @@
 
     .long-description {
       font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .project-title {
+      font-size: 2rem;
+    }
+
+    .gallery-container,
+    .project-info {
+      padding: 1rem;
     }
   }
 </style>
