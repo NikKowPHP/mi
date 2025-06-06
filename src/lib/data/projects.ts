@@ -143,20 +143,25 @@ export const projectsData: ProjectType[] = [
     id: "proj1",
     title: "Lessay Web App",
     slug: "lessay-web-app",
-    excerpt: "Full-stack, AI-powered mobile app for language acquisition.",
-    description: "Full-stack, AI-powered mobile app for language acquisition.",
+    excerpt:
+      "A full-stack web app built from my experience as a polyglot - bringing proven language learning techniques to life.",
+    description:
+      "As someone who speaks 7 languages, I've learned what actually works and what doesn't in language acquisition. This web app is my attempt to digitize the personal techniques and best practices I've developed over years of learning languages. It's constantly evolving as I refine the approach, so expect some glitches - this is very much a work in progress and a demo of what's possible.",
     longDescription:
-      "Lessay Web App is a full-stack, AI-powered mobile application designed to revolutionize language acquisition. This innovative platform leverages artificial intelligence to provide personalized learning experiences, making the journey of mastering a new language more efficient and engaging. It focuses on interactive lessons, intelligent feedback, and adaptive learning paths to cater to individual user needs, helping them achieve fluency faster.",
+      "This web app represents everything I've learned about effective language acquisition, distilled into code. Speaking 7 languages didn't happen by accident - it took years of experimenting with different methods, failing, adapting, and discovering what actually sticks.\n\nI built Lessay Web App to capture those hard-earned insights and make them accessible to other language learners. The AI integration isn't just for show - it's designed around the specific learning patterns and techniques that have worked for me across multiple languages. From spaced repetition timing to context-aware practice, every feature reflects real-world learning strategies.\n\nSince I'm constantly refining my understanding of how language acquisition works, this app is in perpetual development. You'll probably encounter some bugs and rough edges - that's the nature of turning personal learning methodologies into working software. Think of this as a live demo of my language learning philosophy in action.\n\nThe platform adapts to how people actually learn languages, not how textbooks think they should. It's messy, iterative, and very much a reflection of my own journey from monolingual to polyglot. If you're serious about language learning and want to try an approach that's been battle-tested across 7 languages, this might be worth exploring.\n\nJust remember - this is a demo app, so patience with the occasional glitch is appreciated while I continue building and improving it.",
+
     challenges: [
-      "Integrating advanced AI models for personalized language learning.",
-      "Ensuring real-time performance for interactive lessons and feedback.",
-      "Managing and scaling a NoSQL database (MongoDB) for diverse user data.",
+      "Wrestling with complex application logic and intricate statistics aggregation systems to track meaningful learning progress across multiple languages.",
+      "Managing sophisticated UI state across different learning modules while keeping the interface responsive and intuitive for users.",
+      "Implementing complex database operations and data manipulations to handle diverse user learning patterns and multilingual content efficiently.",
     ],
+
     learnings: [
-      "Gained expertise in integrating AI services into full-stack applications.",
-      "Improved skills in real-time data processing and responsive UI development.",
-      "Learned effective strategies for managing and optimizing MongoDB databases.",
+      "Developed deep expertise in handling complex state management patterns in React, learning to balance performance with maintainable code architecture.",
+      "Mastered advanced database query optimization and aggregation techniques, particularly for calculating learning statistics and progress metrics.",
+      "Gained valuable experience in breaking down complex business logic into manageable components, improving both code quality and debugging capabilities.",
     ],
+
     thumbnailUrl: "/projects/lessay-web-app/lessay-web-app-thumb.webp",
     technologies: [
       "React",
@@ -180,20 +185,23 @@ export const projectsData: ProjectType[] = [
     title: "Lessay Language Learning App",
     slug: "lessay-language-learning-app",
     excerpt:
-      "Unlock your language learning potential with our cutting-edge AI-powered app!",
+      "A language learning app that actually gets how people learn - combining smart AI translation with personalized flashcards.",
+
     description:
-      "Unlock your language learning potential with our cutting-edge AI-powered app! Our AI translator delivers highly accurate translations with customizable tone and formality. Seamlessly transition from translation to learning by saving your favorite phrases and effortlessly creating personalized flashcard decks.",
+      "I created Lessay because I was tired of language apps that felt robotic and disconnected from real learning. This AI-powered app translates with context and personality, not just word-for-word conversions. The best part? You can instantly save interesting phrases and turn them into custom flashcard decks that actually matter to you. It's like having a smart study buddy that knows exactly what you need to practice.",
     longDescription:
-      "Unlock your language learning potential with our cutting-edge AI-powered app! Whether you're a beginner or an advanced learner, our app provides the tools you need to achieve fluency. Our AI translator delivers highly accurate translations with customizable tone and formality, making it perfect for any context – from casual conversations to professional emails. Seamlessly transition from translation to learning by saving your favorite phrases and effortlessly creating personalized flashcard decks.\n\nBoost your vocabulary with our intuitive vocabulary builder tools. Utilize spaced repetition, a proven memorization technique, to optimize your study sessions and maximize retention. Track your daily and weekly progress with detailed statistics and interactive heatmaps, visualizing your language learning journey. Dive deep into individual flashcard performance to identify weak spots and refine your study strategy.\n\nOur app goes beyond basic translation. It's a comprehensive language learning platform designed to help you master any language. With features like TTS (text-to-speech) support, you can improve your pronunciation and listening comprehension. Build custom study sets, review your flashcards on the go, and achieve your language goals faster than ever before.\n\nOur app goes beyond basic translation. It's a comprehensive language learning platform designed to help you master any language. With features like TTS (text-to-speech) support, you can improve your pronunciation and listening comprehension. Build custom study sets, review your flashcards on the go, and achieve your language goals faster than ever before.\n\nDownload now and experience the future of language learning! Perfect for students, travelers, professionals, and anyone looking to expand their language skills.\nKey features include:\n- AI-powered translation with tone and formality control\n- Personalized flashcard decks and vocabulary lists\n- Spaced repetition for optimized memorization\n- Detailed progress tracking and performance insights\n- TTS support for pronunciation practice\n- Offline access to your flashcards\n- Support for multiple languages\n\nStart your journey towards fluency today!",
+      "Learning a new language can be challenging, but it doesn't have to be overwhelming. That's why I built Lessay - an AI-powered language learning app that actually makes sense.\n\nWhat started as a simple translation tool evolved into something much more comprehensive. The AI translator doesn't just convert words - it understands context, tone, and formality levels, so whether you're texting a friend or writing a business email, you'll get translations that actually sound natural.\n\nBut here's where it gets interesting: instead of just translating and forgetting, you can save phrases that catch your attention and turn them into personalized flashcard decks. No more generic vocabulary lists that don't relate to your interests.\n\nThe app uses spaced repetition - basically, it shows you cards right when you're about to forget them, which is scientifically proven to help you remember better. You can track your progress with detailed stats and heatmaps that show exactly how you're improving over time.\n\nI've also included text-to-speech support because pronunciation matters, and let's be honest - sometimes you need to hear how something actually sounds. The app works offline too, so you can study your flashcards anywhere, even without internet.\n\nWhether you're a student cramming for exams, planning a trip abroad, or just curious about learning something new, this app adapts to how you actually learn. It's not perfect, but it's designed by someone who understands the real struggles of language learning.\n\nKey features:\n- Smart AI translation with context awareness\n- Custom flashcard creation from your saved phrases\n- Spaced repetition system for better retention\n- Progress tracking and performance insights\n- Text-to-speech for pronunciation practice\n- Offline study mode\n- Support for multiple languages",
     challenges: [
-      "Optimizing the Flutter application for smooth performance across various mobile devices.",
-      "Implementing and fine-tuning the AI translation and flashcard generation features.",
-      "Ensuring seamless data synchronization between the mobile app and the backend.",
+      "Overcoming complex implementation hurdles throughout the development process, requiring creative problem-solving and iterative refinement.",
+      "Implementing sophisticated SRS (Spaced Repetition System) logic to optimize learning efficiency and user retention rates.",
+      "Ensuring seamless integration between multiple system components, including the Flutter frontend, backend services, and AI APIs working in harmony.",
+      "Navigating the complexities of AI API integration and agent creation, including handling API limitations, response formatting, and intelligent agent behavior design.",
     ],
     learnings: [
-      "Gained significant experience in mobile app development with Flutter.",
-      "Deepened understanding of AI integration for language processing.",
-      "Improved skills in designing robust and scalable backend APIs for mobile applications.",
+      "Mastered proper UI design and development patterns in Flutter, creating intuitive and responsive user interfaces for mobile applications.",
+      "Developed comprehensive fullstack development skills, including server communication, API integration, and end-to-end application architecture.",
+      "Gained hands-on experience with the complete Flutter development lifecycle, from initial setup to production deployment and maintenance.",
+      "Acquired expertise in AI integration and API implementation, including working with various AI services and creating intelligent agents for language processing tasks.",
     ],
     thumbnailUrl: "/projects/lessay-app/lessay-app-thumb.webp",
     technologies: ["Flutter", "Node.js", "ExpressJS", "MongoDB", "AI"],
