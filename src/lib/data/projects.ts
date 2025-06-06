@@ -32,21 +32,26 @@ export const projectsData: ProjectType[] = [
     title: "ZIRO.SPACE - Digital Health Design Agency",
     slug: "ziro-digital-health-design-agency",
     excerpt:
-      "A professional full-stack web design and development agency specializing in human-centered digital health solutions.",
+      "My take on building a digital health design agency website - experimenting with Next.js and modern full-stack development.",
+
     description:
-      "A professional full-stack web design and development agency specializing in human-centered digital health solutions. ZIRO creates intuitive UI/UX designs, branding strategies, and digital products that patients love to use, empowering individuals and enhancing healthcare interactions through impactful technology. Features a comprehensive admin dashboard (CMS) allowing user administrators to configure and manage each section of the website dynamically.",
+      "ZIRO.SPACE represents my exploration into building professional agency websites with modern technologies. It's a digital health design agency platform where I experimented with Next.js, Supabase, and complex Tailwind layouts. The site includes a comprehensive admin dashboard that lets administrators manage every section dynamically.",
+
     longDescription:
-      "ZIRO.SPACE is a professional full-stack web design and development agency dedicated to creating human-centered digital health solutions. We specialize in crafting intuitive UI/UX designs, comprehensive branding strategies, and innovative digital products that resonate with users. Our goal is to empower individuals and enhance healthcare interactions through impactful technology. The platform features a comprehensive admin dashboard (CMS) that allows user administrators to dynamically configure and manage every section of the website, ensuring flexibility and control over content and presentation.",
+      "ZIRO.SPACE was my playground for learning Next.js and modern full-stack development. I wanted to create something that looked professional while giving me hands-on experience with technologies I'd been curious about.\n\nThis digital health design agency website became my testing ground for Supabase SDK, complex Tailwind CSS layouts, and figuring out how server-client connections actually work in practice. The admin dashboard was particularly challenging - I wanted administrators to be able to configure and manage every section of the website dynamically, which meant diving deep into state management and database operations.\n\nBuilding this taught me that creating something that looks simple on the surface often requires solving complex problems behind the scenes. Every smooth interaction and responsive layout represents hours of wrestling with APIs, database queries, and making sure everything actually works together.\n\nIt's designed around digital health solutions because I believe technology should make healthcare more human, not less. But honestly, this project was as much about my own learning journey as it was about the final product.",
+
     challenges: [
-      "Implementing a highly flexible and dynamic CMS for all website sections.",
-      "Ensuring seamless integration of third-party services while maintaining performance.",
-      "Optimizing the platform for various devices and screen sizes.",
+      "Learning Next.js from scratch while building a complex, dynamic CMS that could handle real-world content management needs.",
+      "Mastering Supabase SDK and understanding how to properly structure database operations and API calls for optimal performance.",
+      "Creating complex, responsive layouts with Tailwind CSS while maintaining clean code and ensuring everything works across different devices.",
     ],
+
     learnings: [
-      "Gained extensive experience in building scalable full-stack applications with Next.js and Supabase.",
-      "Improved skills in designing and implementing robust CMS solutions.",
-      "Learned to prioritize user experience in complex digital health platforms.",
+      "Got my first real taste of Next.js and full-stack frameworks, discovering both their power and their quirks through hands-on development.",
+      "Developed proficiency with Supabase SDK, learning how to handle authentication, database operations, and real-time features effectively.",
+      "Significantly improved my Tailwind CSS skills, especially with complex layouts and responsive design patterns that actually work in production.",
     ],
+
     thumbnailUrl: "/projects/ziro-space/ziro-space-thumb.webp",
     technologies: [
       "Prisma",
