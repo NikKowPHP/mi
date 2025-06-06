@@ -117,21 +117,26 @@ export const projectsData: ProjectType[] = [
     title: "Personal Portfolio Website",
     slug: "personal-portfolio-website",
     excerpt:
-      "This very website! A modern, responsive personal portfolio built to showcase my projects and skills.",
+      "This very website! My first dive into Svelte - turned out to be exactly the quick dev solution I was looking for.",
+
     description:
-      "This very website! A modern, responsive personal portfolio built to showcase my projects and skills. Features dynamic routing, dark mode toggle, and SEO optimization for project details. Designed for a seamless user experience across all devices.",
+      "This is the website you're currently browsing! I built it as my introduction to Svelte, having zero previous experience with the framework. I was looking for a fast development and deployment solution, and Svelte delivered exactly that. It's responsive, features dark mode, and showcases all my projects.",
+
     longDescription:
-      "This is my personal portfolio website, a modern and responsive platform meticulously crafted to showcase my diverse projects and extensive skill set as a web developer. It features dynamic routing for individual project details, ensuring a smooth and intuitive navigation experience. A user-friendly dark mode toggle allows for personalized browsing. The site is highly optimized for SEO, with dynamic metadata for each project to enhance discoverability and social media sharing. Designed with a focus on seamless user experience, it performs flawlessly across all devices, from desktops to mobile phones.",
+      "You're looking at my first Svelte project right now! I decided to build my portfolio website using a completely new technology I'd never touched before - Svelte. I was searching for something that would let me develop and deploy quickly without sacrificing quality, and honestly, Svelte blew me away.\n\nComing from React and other frameworks, Svelte felt refreshingly different. The learning curve wasn't as steep as I expected, and the development experience was surprisingly smooth. I managed to implement dynamic routing, a dark mode toggle, SEO optimization for each project page, and full responsiveness across devices - all while learning the framework from scratch.\n\nWhat impressed me most was how fast everything compiled and how little boilerplate code I needed to write. Svelte just gets out of your way and lets you focus on building. The hot reloading was instant, deployment was straightforward, and the final bundle size was tiny compared to what I was used to.\n\nThis project became both my portfolio and my Svelte playground. Every feature I added taught me something new about the framework, and I kept being surprised by how intuitive and powerful it is. If you're looking for a quick dev/deploy solution that doesn't compromise on performance or developer experience, I can't recommend Svelte enough.",
+
     challenges: [
-      "Optimizing performance and loading times for a rich visual experience.",
-      "Implementing dynamic SEO metadata for each project page.",
-      "Ensuring full responsiveness across a wide range of devices and screen sizes.",
+      "Learning Svelte's unique approach to reactivity and component architecture while building a production-ready website.",
+      "Implementing dynamic SEO metadata and routing patterns using SvelteKit's file-based routing system as a complete beginner.",
+      "Figuring out how to structure a Svelte project properly while ensuring optimal performance and maintainability.",
     ],
+
     learnings: [
-      "Enhanced proficiency in SvelteKit for building fast and reactive web applications.",
-      "Gained deeper insights into SEO best practices for single-page applications.",
-      "Improved skills in CSS animations and transitions for a polished user interface.",
+      "Discovered that Svelte's learning curve is much gentler than expected, with incredibly intuitive syntax and powerful reactive features.",
+      "Gained hands-on experience with SvelteKit's file-based routing, SSR capabilities, and build optimizations for fast, modern web apps.",
+      "Learned that sometimes trying a completely new technology can lead to finding your new favorite development tool - Svelte just works beautifully.",
     ],
+
     thumbnailUrl: "/projects/personal-website/personal-webpage-thumb.webp",
     technologies: [
       "SvelteKit",
