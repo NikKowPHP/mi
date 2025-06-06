@@ -12,10 +12,10 @@ export interface Employment {
 export const employmentData: Employment[] = [
   {
     id: "emp1",
-    company: "Basesystem",
+    company: "BaseSystem",
     position: "FullStack Web Developer",
     duration: "Feb 2024 - Present",
-    location: "Krzeszowice",
+    location: "Poland, Krzeszowice",
     description:
       "- Developed and maintained complex e-commerce web applications and APIs, ensuring seamless functionality and an optimized user experience.\n- Designed and implemented new features to enhance performance.\n- Integrated third-party services, such as payment gateways and social media APIs.",
     technologies: [
@@ -35,7 +35,7 @@ export const employmentData: Employment[] = [
     company: "Freelance Web Developer",
     position: "Freelance Web Developer",
     duration: "Jan 2023 - Present",
-    location: "",
+    location: "remote",
     description:
       "Developed a series of fullstack web applications, focusing on both user-friendly interfaces and efficient backend solutions.",
     technologies: [

@@ -75,7 +75,7 @@
     <div class="header-content">
       <h1 class="page-title">My Projects</h1>
       <p class="page-subtitle">
-        A collection of my latest work and experiments
+        A collection of my latest work and experiments in free time
       </p>
     </div>
   </section>

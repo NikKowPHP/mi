@@ -468,7 +468,6 @@
     }
 
     .contact-info {
-      align-items: center;
     }
 
     .social-links {

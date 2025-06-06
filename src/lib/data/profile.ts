@@ -8,7 +8,7 @@ export const profileData = {
   contactInfo: {
     email: "kawaliou.mikita@gmail.com",
     phone: "+48 664 431 074",
-    location: "Piotra Stachiewicza 40, Krakow, Poland",
+    location: "Krakow, Poland",
   },
   socialLinks: [
     { name: "GitHub", url: "https://github.com/NikKowPHP", icon: "github" },
@@ -60,6 +60,12 @@ export const profileData = {
       level: "B1 (Intermediate)",
       proficiency: 60,
       icon: "🇩🇪",
+    },
+    {
+      name: "French",
+      level: "A2 (Elementary)",
+      proficiency: 40,
+      icon: "🇫🇷",
     },
   ],
   interests: ["Language learning", "Sports", "Reading"],
