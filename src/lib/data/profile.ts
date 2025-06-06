@@ -91,7 +91,15 @@ export const profileData = {
     },
     {
       category: "Tools",
-      technologies: ["Git", "Docker", "AWS", "Google Cloud", "Firebase"],
+      technologies: [
+        "Git",
+        "Docker",
+        "AWS",
+        "Google Cloud",
+        "Firebase",
+        "Linux",
+        "Neovim",
+      ],
     },
     {
       category: "Databases",
