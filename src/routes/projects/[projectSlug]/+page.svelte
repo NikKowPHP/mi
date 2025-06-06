@@ -22,7 +22,24 @@
 {#if project}
   <main class="main-content">
     <section class="project-detail-header" class:mounted>
+      <a href="/projects" class="project-link back-link-top">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M19 12H5" />
+          <polyline points="12 19 5 12 12 5" />
+        </svg>
+        Back to Projects
+      </a>
       <div class="header-content">
+        <div class="flex"></div>
         <h1 class="project-title">{project.title}</h1>
         <p class="project-description">{project.description}</p>
         <div class="project-links">
@@ -158,6 +175,8 @@
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    padding-top: 6rem; /* Adjust padding to make space for the absolute positioned back button */
   }
 
   .project-detail-header.mounted {
@@ -212,6 +231,27 @@
     color: var(--text-primary);
     font-weight: 500;
     transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .project-link.back-link-top {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    color: var(--text-primary);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    backdrop-filter: blur(10px);
+  }
+  .flex {
+    display: flex;
+  }
+
+  .project-link.back-link-top:hover {
+    background: rgba(255, 255, 255, 0.95);
+    transform: translateY(-2px);
   }
 
   .project-link:hover {
@@ -384,6 +424,13 @@
       font-size: 2.5rem;
     }
 
+    .project-link.back-link-top {
+      top: 1rem;
+      left: 1rem;
+      padding: 0.4rem 0.8rem;
+      font-size: 0.8rem;
+    }
+
     .project-description {
       font-size: 1.1rem;
     }
@@ -392,6 +439,10 @@
     .project-detail-content,
     .project-gallery-section {
       padding: 2rem 1rem;
+    }
+
+    .project-detail-header {
+      padding-top: 5rem; /* Adjust padding for smaller screens */
     }
 
     .gallery-container,
