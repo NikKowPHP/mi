@@ -52,6 +52,7 @@ export const projectsData: ProjectType[] = [
       "Prisma",
       "Next.js",
       "React.js",
+      "TypeScript",
       "Tailwind CSS",
       "PostgreSQL",
       "Supabase",
@@ -164,7 +165,7 @@ export const projectsData: ProjectType[] = [
 
     thumbnailUrl: "/projects/lessay-web-app/lessay-web-app-thumb.webp",
     technologies: [
-      "React",
+      "React.js",
       "Next.js",
       "TypeScript",
       "Node.js",
