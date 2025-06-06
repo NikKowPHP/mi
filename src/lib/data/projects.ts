@@ -71,20 +71,24 @@ export const projectsData: ProjectType[] = [
     title: "ZIRO.FIT - Fitness Trainer Platform",
     slug: "ziro-fit-fitness-trainer-platform",
     excerpt:
-      "A comprehensive digital business card, portfolio, and client engagement platform designed specifically for fitness trainers.",
+      "A digital business card and client engagement platform made just for fitness trainers who want to grow their brand and connect with clients.",
+
     description:
-      "A comprehensive digital business card, portfolio, and client engagement platform designed specifically for fitness trainers. ZIRO.FIT enables trainers to build their brand, showcase results, and grow their fitness business through personalized pitch pages. Features a comprehensive CMS allowing trainers to configure all details on their personal pages, integrated contact forms, payment processing, and calendar booking system for seamless client management and trainer scheduling.",
+      "ZIRO.FIT is built to help fitness trainers showcase their work, share success stories, and manage their business all in one place. It's designed to be easy to use and customizable, so trainers can create a personal pitch page that truly represents them.",
+
     longDescription:
-      "ZIRO.FIT is a comprehensive digital business card, portfolio, and client engagement platform meticulously designed for fitness trainers. This platform empowers trainers to effectively build their personal brand, showcase client success stories and results, and significantly grow their fitness business. It achieves this through highly personalized pitch pages that trainers can customize to reflect their unique offerings. Key features include a robust CMS for managing all personal page details, integrated contact forms for lead generation, secure payment processing for services, and a streamlined calendar booking system to ensure seamless client management and efficient trainer scheduling.",
+      "ZIRO.FIT is more than just a digital business card — it's a full platform designed to help fitness trainers grow their business and connect with clients in a meaningful way. Trainers can create personalized pages that highlight their unique style and success stories, making it easy to attract and engage new clients.\n\nThe platform includes tools like a flexible CMS to manage all the details and integrated contact forms to capture leads. Payment processing and calendar booking systems are planned features that will be added soon to keep everything running smoothly. It's built to be simple yet powerful, so trainers can focus on what they do best — helping people get fit.\n\nI wanted to create something that actually addresses the real challenges fitness trainers face when trying to build their online presence and manage their client relationships. No more juggling multiple apps or dealing with generic solutions that don't understand the fitness industry.",
+
     challenges: [
-      "Integrating complex payment processing and calendar booking systems.",
-      "Ensuring data security and privacy for sensitive client information.",
-      "Developing a highly customizable CMS for trainers with varying needs.",
+      "Planning and preparing for future payment gateway integrations and calendar booking systems.",
+      "Implementing robust data security measures to protect sensitive client information.",
+      "Creating a CMS flexible enough to handle different trainer needs while keeping it simple enough for non-tech people to use.",
     ],
+
     learnings: [
-      "Deepened understanding of Laravel and Livewire for rapid application development.",
-      "Gained experience in implementing secure payment gateways and scheduling functionalities.",
-      "Learned to design flexible database schemas for diverse user configurations.",
+      "Got hands-on experience with Laravel and Livewire, discovering how powerful they are for building interactive web applications quickly.",
+      "Gained foundational knowledge in planning secure payment processing and scheduling systems, preparing for future implementation.",
+      "Developed skills in designing database schemas that can adapt to diverse user needs without becoming overly complex.",
     ],
     thumbnailUrl: "/projects/ziro-fit/zirofit-thumb.webp",
     technologies: [
