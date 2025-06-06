@@ -86,7 +86,14 @@ export const projectsData: ProjectType[] = [
       "Learned to design flexible database schemas for diverse user configurations.",
     ],
     thumbnailUrl: "https://picsum.photos/seed/zirofit/400/300",
-    technologies: ["AWS"],
+    technologies: [
+      "AWS",
+      "Laravel",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "Alpine.js",
+      "Livewire",
+    ],
     liveUrl: "https://ziro.fit",
     repoUrl: null,
     images: [
