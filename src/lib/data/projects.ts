@@ -28,6 +28,47 @@ function slugify(text: string) {
 
 export const projectsData: ProjectType[] = [
   {
+    id: "proj6",
+    title: "LinguaScribe - AI Language Learning Platform",
+    slug: "linguascribe-ai-language-learning-platform",
+    excerpt:
+      "A PWA that revolutionizes language learning by focusing on active creation through AI-powered journaling and feedback.",
+    description:
+      "LinguaScribe is an AI-powered PWA designed to help users master a language by writing. It provides instant, contextual feedback on journal entries, turning every writing session into a personalized lesson. The platform uses a spaced repetition system (SRS) to reinforce learning and provides detailed analytics to track progress.",
+    longDescription:
+      "LinguaScribe is a Progressive Web App (PWA) designed to revolutionize language learning by shifting the focus from passive consumption to active creation. The core philosophy is that users improve best by doing. By providing instant, AI-powered feedback on journal entries, the app turns every writing session into a targeted lesson.\n\nThe system features an AI-driven analysis engine that provides feedback on grammar, phrasing, and vocabulary. Mistakes identified in journal entries can be seamlessly converted into flashcards for a personalized Spaced Repetition System (SRS) study deck. For Pro users, features like in-editor translation and AI-powered sentence completion enhance the writing experience.\n\nThe application is built with a modern, scalable tech stack including Next.js, Prisma, PostgreSQL, and Supabase for authentication, all orchestrated to deliver a seamless and adaptive learning journey.",
+    challenges: [
+      "Designing a robust and scalable architecture to handle asynchronous AI analysis jobs without blocking the user interface.",
+      "Implementing a fair and effective tiered rate-limiting system for AI-features to manage costs while providing value to free users.",
+      "Integrating multiple services (Supabase Auth, Stripe Billing, Gemini AI) into a cohesive user experience within a Next.js application.",
+    ],
+    learnings: [
+      "Gained deep experience in building complex, full-stack applications with Next.js App Router and server components.",
+      "Mastered asynchronous job processing and state management for long-running AI tasks using React Query.",
+      "Developed a strong understanding of integrating and managing third-party services like Stripe for subscriptions and Supabase for authentication within a cohesive architecture.",
+    ],
+    thumbnailUrl: "/projects/linguascribe/linguascribe-thumb.webp",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma",
+      "Supabase",
+      "Stripe",
+      "Gemini",
+      "Tailwind CSS",
+      "shadcn/ui",
+    ],
+    liveUrl: null,
+    repoUrl: null,
+    images: [
+      "https://picsum.photos/seed/linguascribe-1/1200/800",
+      "https://picsum.photos/seed/linguascribe-2/1200/800",
+      "https://picsum.photos/seed/linguascribe-3/1200/800",
+    ],
+  },
+  {
     id: "proj2",
     title: "ZIRO.SPACE - Digital Health Design Agency",
     slug: "ziro-digital-health-design-agency",
