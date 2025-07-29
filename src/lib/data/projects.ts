@@ -29,43 +29,91 @@ function slugify(text: string) {
 export const projectsData: ProjectType[] = [
   {
     id: "proj6",
-    title: "LinguaScribe - AI Language Learning Platform",
-    slug: "linguascribe-ai-language-learning-platform",
+    title: "Lexity: AI Language Learning PWA",
+    slug: "lexity-ai-language-learning-pwa",
     excerpt:
-      "A PWA that revolutionizes language learning by focusing on active creation through AI-powered journaling and feedback.",
+      "A PWA that revolutionizes language learning by shifting from passive consumption to active creation, with AI-driven feedback and mistake-drilling exercises.",
     description:
-      "LinguaScribe is an AI-powered PWA designed to help users master a language by writing. It provides instant, contextual feedback on journal entries, turning every writing session into a personalized lesson. The platform uses a spaced repetition system (SRS) to reinforce learning and provides detailed analytics to track progress.",
-    longDescription:
-      "LinguaScribe is a Progressive Web App (PWA) designed to revolutionize language learning by shifting the focus from passive consumption to active creation. The core philosophy is that users improve best by doing. By providing instant, AI-powered feedback on journal entries, the app turns every writing session into a targeted lesson.\n\nThe system features an AI-driven analysis engine that provides feedback on grammar, phrasing, and vocabulary. Mistakes identified in journal entries can be seamlessly converted into flashcards for a personalized Spaced Repetition System (SRS) study deck. For Pro users, features like in-editor translation and AI-powered sentence completion enhance the writing experience.\n\nThe application is built with a modern, scalable tech stack including Next.js, Prisma, PostgreSQL, and Supabase for authentication, all orchestrated to deliver a seamless and adaptive learning journey.",
+      "Lexity is a PWA designed to revolutionize language learning by focusing on active creation. It leverages a deeply integrated AI core to provide a personalized, adaptive, and effective writing-centric learning experience, with robust drilling exercises for user's specific mistakes.",
+    longDescription: `Lexity is a Progressive Web App (PWA) designed to revolutionize language learning by shifting the focus from passive consumption to active creation. The application leverages a deeply integrated AI core to provide a personalized, adaptive, and effective writing-centric learning experience. Users improve by doing—receiving instant, contextual feedback, engaging in robust drilling exercises on their specific mistakes, and visualizing their predicted path to fluency.
+
+A key feature is the "Write -> Analyze -> Practice" loop. A user writes, the AI analyzes mistakes, and for each mistake, the user can start a Practice Session. This triggers a robust AI-powered drilling feature that generates new, targeted exercises to reinforce the correct concept.
+
+The system utilizes a multi-provider AI strategy to balance cost, speed, and capability, using powerful models like Google Gemini for complex analysis and high-speed models like Cerebras/Groq for instant translations.`,
     challenges: [
-      "Designing a robust and scalable architecture to handle asynchronous AI analysis jobs without blocking the user interface.",
-      "Implementing a fair and effective tiered rate-limiting system for AI-features to manage costs while providing value to free users.",
-      "Integrating multiple services (Supabase Auth, Stripe Billing, Gemini AI) into a cohesive user experience within a Next.js application.",
+      "Implementing a multi-provider AI strategy to balance cost, speed, and capability for different tasks (e.g., complex analysis vs. high-speed translation).",
+      "Developing a robust AI-powered 'drilling' feature to generate targeted practice exercises for specific user mistakes.",
+      "Creating a hybrid forecasting model (Holt's Linear/Damped Trend) to predict a user's path to fluency based on performance data.",
+      "Integrating a headless rich text editor (Tiptap) for the core writing experience while maintaining a seamless UI.",
     ],
     learnings: [
-      "Gained deep experience in building complex, full-stack applications with Next.js App Router and server components.",
-      "Mastered asynchronous job processing and state management for long-running AI tasks using React Query.",
-      "Developed a strong understanding of integrating and managing third-party services like Stripe for subscriptions and Supabase for authentication within a cohesive architecture.",
+      "Architected a multi-provider AI system, abstracting different LLMs behind service interfaces to optimize for both performance and cost.",
+      "Built a complex, interactive learning loop involving journal analysis, mistake identification, and dynamic practice generation.",
+      "Gained experience with data forecasting models to provide users with predictive analytics on their learning progress.",
+      "Integrated and customized the Tiptap rich text editor for a seamless and extensible writing experience.",
     ],
-    thumbnailUrl: "/projects/linguascribe/linguascribe-thumb.webp",
+    thumbnailUrl: "/projects/lexity/lexity-thumb.webp",
     technologies: [
       "Next.js",
-      "React",
-      "TypeScript",
-      "PostgreSQL",
       "Prisma",
+      "PostgreSQL",
       "Supabase",
       "Stripe",
-      "Gemini",
+      "Multi-Provider AI (Gemini, Groq)",
       "Tailwind CSS",
-      "shadcn/ui",
+      "Tiptap",
+      "Zustand",
+      "React Query",
     ],
     liveUrl: null,
     repoUrl: null,
     images: [
-      "https://picsum.photos/seed/linguascribe-1/1200/800",
-      "https://picsum.photos/seed/linguascribe-2/1200/800",
-      "https://picsum.photos/seed/linguascribe-3/1200/800",
+      "https://picsum.photos/seed/lexity-1/1200/800",
+      "https://picsum.photos/seed/lexity-2/1200/800",
+      "https://picsum.photos/seed/lexity-3/1200/800",
+    ],
+  },
+  {
+    id: "proj7",
+    title: "Interly: AI Interview Prep Platform",
+    slug: "interly-ai-interview-prep-platform",
+    excerpt:
+      "An AI-driven PWA to help users prepare for technical interviews using voice-based practice, real-time feedback, and a systematic, data-driven process.",
+    description:
+      "Interly is a PWA and SaaS Platform designed to help users prepare for technical interviews using AI-driven voice-based practice and real-time feedback. It replaces guesswork with a systematic, data-driven, and confidence-building process.",
+    longDescription: `Interly is a Progressive Web App (PWA) designed to help users prepare for technical interviews using AI-driven voice-based practice and real-time feedback. The core philosophy is to replace guesswork and anxiety in interview preparation with a systematic, data-driven, and confidence-building process.
+
+The system is built on a modern stack including Next.js, Supabase for backend services, Prisma for type-safe database access, and Google's Gemini API for all core AI tasks, including question generation and voice answer evaluation. A key feature is the asynchronous handling of initial question generation for new interview objectives, providing a seamless user experience while background tasks run. The platform is currently free, with future plans for a premium tier offering advanced analytics and content.`,
+    challenges: [
+      "Implementing a 'fire-and-forget' background job for question generation with client-side polling for status updates.",
+      "Ensuring low latency and high accuracy for real-time voice transcription and AI-driven feedback.",
+      "Managing the cost and performance of the Google Gemini API by optimizing prompts and implementing strict, IP-based rate limiting.",
+      "Designing a seamless, mobile-first PWA experience with a native-like feel for the core practice loop.",
+    ],
+    learnings: [
+      "Developed a full-stack, scalable PWA using the Next.js App Router, Server Components, and Vercel.",
+      "Gained deep experience integrating Supabase for Authentication and Storage, and PostgreSQL with Prisma for a fully type-safe data layer.",
+      "Mastered the use of Google's Gemini API for complex, multimodal tasks including voice evaluation and content generation.",
+      "Built a highly accessible and responsive UI using Tailwind CSS and shadcn/ui, following a mobile-first design philosophy.",
+    ],
+    thumbnailUrl: "/projects/interly/interly-thumb.webp",
+    technologies: [
+      "Next.js",
+      "Supabase",
+      "PostgreSQL",
+      "Prisma",
+      "Google Gemini",
+      "Tailwind CSS",
+      "Zustand",
+      "Zod",
+      "Vercel",
+    ],
+    liveUrl: null,
+    repoUrl: null,
+    images: [
+      "https://picsum.photos/seed/interview-ai-1/1200/800",
+      "https://picsum.photos/seed/interview-ai-2/1200/800",
+      "https://picsum.photos/seed/interview-ai-3/1200/800",
     ],
   },
   {

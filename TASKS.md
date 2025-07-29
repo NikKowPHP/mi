@@ -1,0 +1,3 @@
+- [x] Add Lexity and AI Interview Prep projects to the portfolio.
+- [x] Update the AI Interview Prep project to "Interly" with new details.
+- [x] Update the Lexity project with the new description and feature set.
