@@ -249,8 +249,7 @@ The system is built on a modern stack including Next.js, Supabase for backend se
     longDescription: `This project is an automated system designed to bridge the gap between Instagram post engagement and direct user interaction. When a user comments on a monitored Instagram post with a specific keyword, a Python-based bot automatically sends them a pre-configured Direct Message.
 
 The entire system is managed through a secure, web-based admin panel built with Next.js 15. Administrators can log in to perform CRUD operations on keyword triggers and the associated DM responses, which can include both text and media. They can also view basic statistics on trigger performance.
-
-The architecture is designed for local development and testing, containerized using Docker Compose. This allows for a single-command startup (\`docker-compose up\`) that launches the Next.js frontend, the Python bot, and a local Supabase instance for the database and storage, creating a fully isolated and reproducible environment.`,
+`,
     challenges: [
       "Containerizing a multi-language (Python/JS) application into a cohesive system using Docker Compose.",
       "Designing a decoupled architecture where the Python bot and Next.js panel communicate asynchronously via a shared Supabase database.",
