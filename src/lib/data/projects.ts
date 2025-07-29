@@ -15,17 +15,6 @@ export interface ProjectType {
   pinned?: boolean;
 }
 
-function slugify(text: string) {
-  return text
-    .toString()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .trim()
-    .replace(/\s+/g, "-")
-    .replace(/[^\w-]+/g, "")
-    .replace(/--+/g, "-");
-}
 
 export const projectsData: ProjectType[] = [
   {
@@ -66,7 +55,7 @@ The system utilizes a multi-provider AI strategy to balance cost, speed, and cap
       "Zustand",
       "React Query",
     ],
-    liveUrl: null,
+    liveUrl: "https://lexity.app",
     repoUrl: null,
     images: [
       "https://picsum.photos/seed/lexity-1/1200/800",
@@ -110,7 +99,7 @@ The system is built on a modern stack including Next.js, Supabase for backend se
       "Zod",
       "Vercel",
     ],
-    liveUrl: null,
+    liveUrl: "https://interly.app",
     repoUrl: null,
     images: [
       "https://picsum.photos/seed/interview-ai-1/1200/800",
@@ -121,16 +110,16 @@ The system is built on a modern stack including Next.js, Supabase for backend se
   },
   {
     id: "proj2",
-    title: "ZIRO.SPACE - Digital Health Design Agency",
+    title: "ZIRO.HEALTH - Digital Health Design Agency",
     slug: "ziro-digital-health-design-agency",
     excerpt:
       "My take on building a digital health design agency website - experimenting with Next.js and modern full-stack development.",
 
     description:
-      "ZIRO.SPACE represents my exploration into building professional agency websites with modern technologies. It's a digital health design agency platform where I experimented with Next.js, Supabase, and complex Tailwind layouts. The site includes a comprehensive admin dashboard that lets administrators manage every section dynamically.",
+      "ZIRO.HEALTH represents my exploration into building professional agency websites with modern technologies. It's a digital health design agency platform where I experimented with Next.js, Supabase, and complex Tailwind layouts. The site includes a comprehensive admin dashboard that lets administrators manage every section dynamically.",
 
     longDescription:
-      "ZIRO.SPACE was my playground for learning Next.js and modern full-stack development. I wanted to create something that looked professional while giving me hands-on experience with technologies I'd been curious about.\n\nThis digital health design agency website became my testing ground for Supabase SDK, complex Tailwind CSS layouts, and figuring out how server-client connections actually work in practice. The admin dashboard was particularly challenging - I wanted administrators to be able to configure and manage every section of the website dynamically, which meant diving deep into state management and database operations.\n\nBuilding this taught me that creating something that looks simple on the surface often requires solving complex problems behind the scenes. Every smooth interaction and responsive layout represents hours of wrestling with APIs, database queries, and making sure everything actually works together.\n\nIt's designed around digital health solutions because I believe technology should make healthcare more human, not less. But honestly, this project was as much about my own learning journey as it was about the final product.",
+      "ZIRO.HEALTH was my playground for learning Next.js and modern full-stack development. I wanted to create something that looked professional while giving me hands-on experience with technologies I'd been curious about.\n\nThis digital health design agency website became my testing ground for Supabase SDK, complex Tailwind CSS layouts, and figuring out how server-client connections actually work in practice. The admin dashboard was particularly challenging - I wanted administrators to be able to configure and manage every section of the website dynamically, which meant diving deep into state management and database operations.\n\nBuilding this taught me that creating something that looks simple on the surface often requires solving complex problems behind the scenes. Every smooth interaction and responsive layout represents hours of wrestling with APIs, database queries, and making sure everything actually works together.\n\nIt's designed around digital health solutions because I believe technology should make healthcare more human, not less. But honestly, this project was as much about my own learning journey as it was about the final product.",
 
     challenges: [
       "Learning Next.js from scratch while building a complex, dynamic CMS that could handle real-world content management needs.",
@@ -155,7 +144,7 @@ The system is built on a modern stack including Next.js, Supabase for backend se
       "Supabase",
       "Supabase Auth",
     ],
-    liveUrl: "https://www.ziro.space/en",
+    liveUrl: "https://www.ziro.health/en",
     repoUrl: null,
     images: [
       "https://picsum.photos/seed/ziro-1/1200/800",
@@ -248,86 +237,5 @@ The system is built on a modern stack including Next.js, Supabase for backend se
       "https://picsum.photos/seed/portfolio-3/1200/800",
     ],
     pinned: false,
-  },
-  {
-    id: "proj1",
-    title: "Lessay Web App",
-    slug: "lessay-web-app",
-    excerpt:
-      "A full-stack web app built from my experience as a polyglot - bringing proven language learning techniques to life.",
-    description:
-      "As someone who speaks 7 languages, I've learned what actually works and what doesn't in language acquisition. This web app is my attempt to digitize the personal techniques and best practices I've developed over years of learning languages. It's constantly evolving as I refine the approach, so expect some glitches - this is very much a work in progress and a demo of what's possible.",
-    longDescription:
-      "This web app represents everything I've learned about effective language acquisition, distilled into code. Speaking 7 languages didn't happen by accident - it took years of experimenting with different methods, failing, adapting, and discovering what actually sticks.\n\nI built Lessay Web App to capture those hard-earned insights and make them accessible to other language learners. The AI integration isn't just for show - it's designed around the specific learning patterns and techniques that have worked for me across multiple languages. From spaced repetition timing to context-aware practice, every feature reflects real-world learning strategies.\n\nSince I'm constantly refining my understanding of how language acquisition works, this app is in perpetual development. You'll probably encounter some bugs and rough edges - that's the nature of turning personal learning methodologies into working software. Think of this as a live demo of my language learning philosophy in action.\n\nThe platform adapts to how people actually learn languages, not how textbooks think they should. It's messy, iterative, and very much a reflection of my own journey from monolingual to polyglot. If you're serious about language learning and want to try an approach that's been battle-tested across 7 languages, this might be worth exploring.\n\nJust remember - this is a demo app, so patience with the occasional glitch is appreciated while I continue building and improving it.",
-
-    challenges: [
-      "Wrestling with complex application logic and intricate statistics aggregation systems to track meaningful learning progress across multiple languages.",
-      "Managing sophisticated UI state across different learning modules while keeping the interface responsive and intuitive for users.",
-      "Implementing complex database operations and data manipulations to handle diverse user learning patterns and multilingual content efficiently.",
-    ],
-
-    learnings: [
-      "Developed deep expertise in handling complex state management patterns in React, learning to balance performance with maintainable code architecture.",
-      "Mastered advanced database query optimization and aggregation techniques, particularly for calculating learning statistics and progress metrics.",
-      "Gained valuable experience in breaking down complex business logic into manageable components, improving both code quality and debugging capabilities.",
-    ],
-
-    thumbnailUrl: "/projects/lessay-web-app/lessay-web-app-thumb.webp",
-    technologies: [
-      "React.js",
-      "Next.js",
-      "TypeScript",
-      "Node.js",
-      "ExpressJS",
-      "MongoDB",
-      "AI",
-    ],
-    liveUrl: "https://lessay-app.vercel.app/app",
-    repoUrl: null,
-    images: [
-      "https://picsum.photos/seed/lessay-web-1/1200/800",
-      "https://picsum.photos/seed/lessay-web-2/1200/800",
-      "https://picsum.photos/seed/lessay-web-3/1200/800",
-    ],
-    pinned: false,
-  },
-  {
-    id: "proj5",
-    title: "Lessay Language Learning App",
-    slug: "lessay-language-learning-app",
-    excerpt:
-      "A language learning app that actually gets how people learn - combining smart AI translation with personalized flashcards.",
-
-    description:
-      "I created Lessay because I was tired of language apps that felt robotic and disconnected from real learning. This AI-powered app translates with context and personality, not just word-for-word conversions. The best part? You can instantly save interesting phrases and turn them into custom flashcard decks that actually matter to you. It's like having a smart study buddy that knows exactly what you need to practice.",
-    longDescription:
-      "Learning a new language can be challenging, but it doesn't have to be overwhelming. That's why I built Lessay - an AI-powered language learning app that actually makes sense.\n\nWhat started as a simple translation tool evolved into something much more comprehensive. The AI translator doesn't just convert words - it understands context, tone, and formality levels, so whether you're texting a friend or writing a business email, you'll get translations that actually sound natural.\n\nBut here's where it gets interesting: instead of just translating and forgetting, you can save phrases that catch your attention and turn them into personalized flashcard decks. No more generic vocabulary lists that don't relate to your interests.\n\nThe app uses spaced repetition - basically, it shows you cards right when you're about to forget them, which is scientifically proven to help you remember better. You can track your progress with detailed stats and heatmaps that show exactly how you're improving over time.\n\nI've also included text-to-speech support because pronunciation matters, and let's be honest - sometimes you need to hear how something actually sounds. The app works offline too, so you can study your flashcards anywhere, even without internet.\n\nWhether you're a student cramming for exams, planning a trip abroad, or just curious about learning something new, this app adapts to how you actually learn. It's not perfect, but it's designed by someone who understands the real struggles of language learning.\n\nKey features:\n- Smart AI translation with context awareness\n- Custom flashcard creation from your saved phrases\n- Spaced repetition system for better retention\n- Progress tracking and performance insights\n- Text-to-speech for pronunciation practice\n- Offline study mode\n- Support for multiple languages",
-    challenges: [
-      "Overcoming complex implementation hurdles throughout the development process, requiring creative problem-solving and iterative refinement.",
-      "Implementing sophisticated SRS (Spaced Repetition System) logic to optimize learning efficiency and user retention rates.",
-      "Ensuring seamless integration between multiple system components, including the Flutter frontend, backend services, and AI APIs working in harmony.",
-      "Navigating the complexities of AI API integration and agent creation, including handling API limitations, response formatting, and intelligent agent behavior design.",
-    ],
-    learnings: [
-      "Mastered proper UI design and development patterns in Flutter, creating intuitive and responsive user interfaces for mobile applications.",
-      "Developed comprehensive fullstack development skills, including server communication, API integration, and end-to-end application architecture.",
-      "Gained hands-on experience with the complete Flutter development lifecycle, from initial setup to production deployment and maintenance.",
-      "Acquired expertise in AI integration and API implementation, including working with various AI services and creating intelligent agents for language processing tasks.",
-    ],
-    thumbnailUrl: "/projects/lessay-app/lessay-app-thumb.webp",
-    technologies: ["Flutter", "Node.js", "ExpressJS", "MongoDB", "AI"],
-    liveUrl:
-      "https://play.google.com/store/apps/details?id=com.lessay.translate",
-    repoUrl: null,
-    images: [
-      "/projects/lessay-app/lessay-1.webp",
-      "/projects/lessay-app/lessay-2.webp",
-      "/projects/lessay-app/lessay-3.webp",
-      "/projects/lessay-app/lessay-4.webp",
-      "/projects/lessay-app/lessay-5.webp",
-      "/projects/lessay-app/lessay-6.webp",
-      "/projects/lessay-app/lessay-7.webp",
-    ],
-    pinned: false,
-  },
+  }
 ];
