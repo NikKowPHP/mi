@@ -4,7 +4,13 @@
   import ProjectCard from "$lib/components/ProjectCard.svelte";
 
   let mounted = $state(false);
-  let filteredProjects = $state(projectsData);
+
+  const pinnedProjects = projectsData.filter((p) => p.pinned);
+  const otherProjects = projectsData.filter((p) => !p.pinned);
+
+  let filteredPinnedProjects = $state(pinnedProjects);
+  let filteredOtherProjects = $state(otherProjects);
+
   let selectedTech = $state("All");
 
   // Get all unique technologies
@@ -20,9 +26,13 @@
   function filterProjects(tech: string) {
     selectedTech = tech;
     if (tech === "All") {
-      filteredProjects = projectsData;
+      filteredPinnedProjects = pinnedProjects;
+      filteredOtherProjects = otherProjects;
     } else {
-      filteredProjects = projectsData.filter((project) =>
+      filteredPinnedProjects = pinnedProjects.filter((project) =>
+        project.technologies.includes(tech),
+      );
+      filteredOtherProjects = otherProjects.filter((project) =>
         project.technologies.includes(tech),
       );
     }
@@ -97,21 +107,50 @@
     </div>
   </section>
 
-  <section class="projects-grid">
-    <div class="grid-container">
-      {#each filteredProjects as project, index}
-        <div class="project-item" style="animation-delay: {index * 0.1}s">
-          <ProjectCard {project} />
-        </div>
-      {/each}
-    </div>
+  {#if filteredPinnedProjects.length > 0}
+    <section class="projects-grid pinned-projects">
+      <div class="section-title-container">
+        <h2 class="section-title">Pinned Projects</h2>
+      </div>
+      <div class="grid-container">
+        {#each filteredPinnedProjects as project, index}
+          <div class="project-item" style="animation-delay: {index * 0.1}s">
+            <ProjectCard {project} />
+          </div>
+        {/each}
+      </div>
+    </section>
+  {/if}
 
-    {#if filteredProjects.length === 0}
+  {#if filteredOtherProjects.length > 0}
+    <section class="projects-grid">
+      {#if filteredPinnedProjects.length > 0}
+        <div class="section-title-container">
+          <h2 class="section-title">All Projects</h2>
+        </div>
+      {/if}
+      <div class="grid-container">
+        {#each filteredOtherProjects as project, index}
+          <div
+            class="project-item"
+            style="animation-delay: {index *
+              0.1 *
+              (filteredPinnedProjects.length > 0 ? 0 : 1)}s"
+          >
+            <ProjectCard {project} />
+          </div>
+        {/each}
+      </div>
+    </section>
+  {/if}
+
+  {#if filteredPinnedProjects.length === 0 && filteredOtherProjects.length === 0}
+    <section class="projects-grid">
       <div class="no-projects">
         <p>No projects found for the selected technology.</p>
       </div>
-    {/if}
-  </section>
+    </section>
+  {/if}
 </main>
 
 <style>
@@ -215,6 +254,21 @@
 
   .projects-grid {
     padding: 4rem 2rem;
+  }
+
+  .projects-grid.pinned-projects {
+    padding-bottom: 0;
+  }
+
+  .section-title-container {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-primary);
   }
 
   .grid-container {

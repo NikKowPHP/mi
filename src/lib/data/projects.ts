@@ -12,6 +12,7 @@ export interface ProjectType {
   liveUrl: string | null;
   repoUrl: string | null;
   images: string[];
+  pinned?: boolean;
 }
 
 function slugify(text: string) {
@@ -72,6 +73,7 @@ The system utilizes a multi-provider AI strategy to balance cost, speed, and cap
       "https://picsum.photos/seed/lexity-2/1200/800",
       "https://picsum.photos/seed/lexity-3/1200/800",
     ],
+    pinned: true,
   },
   {
     id: "proj7",
@@ -115,6 +117,7 @@ The system is built on a modern stack including Next.js, Supabase for backend se
       "https://picsum.photos/seed/interview-ai-2/1200/800",
       "https://picsum.photos/seed/interview-ai-3/1200/800",
     ],
+    pinned: true,
   },
   {
     id: "proj2",
@@ -159,6 +162,7 @@ The system is built on a modern stack including Next.js, Supabase for backend se
       "https://picsum.photos/seed/ziro-2/1200/800",
       "https://picsum.photos/seed/ziro-3/1200/800",
     ],
+    pinned: false,
   },
   {
     id: "proj3",
@@ -200,6 +204,7 @@ The system is built on a modern stack including Next.js, Supabase for backend se
       "https://picsum.photos/seed/zirofit-2/1200/800",
       "https://picsum.photos/seed/zirofit-3/1200/800",
     ],
+    pinned: true,
   },
   {
     id: "proj4",
@@ -242,6 +247,7 @@ The system is built on a modern stack including Next.js, Supabase for backend se
       "https://picsum.photos/seed/portfolio-2/1200/800",
       "https://picsum.photos/seed/portfolio-3/1200/800",
     ],
+    pinned: false,
   },
   {
     id: "proj1",
@@ -283,6 +289,7 @@ The system is built on a modern stack including Next.js, Supabase for backend se
       "https://picsum.photos/seed/lessay-web-2/1200/800",
       "https://picsum.photos/seed/lessay-web-3/1200/800",
     ],
+    pinned: false,
   },
   {
     id: "proj5",
@@ -321,5 +328,6 @@ The system is built on a modern stack including Next.js, Supabase for backend se
       "/projects/lessay-app/lessay-6.webp",
       "/projects/lessay-app/lessay-7.webp",
     ],
+    pinned: false,
   },
 ];
