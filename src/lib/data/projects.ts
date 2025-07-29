@@ -42,7 +42,7 @@ The system utilizes a multi-provider AI strategy to balance cost, speed, and cap
       "Gained experience with data forecasting models to provide users with predictive analytics on their learning progress.",
       "Integrated and customized the Tiptap rich text editor for a seamless and extensible writing experience.",
     ],
-    thumbnailUrl: "/projects/lexity/lexity-thumb.webp",
+    thumbnailUrl: "/projects/lexity/lexity.png",
     technologies: [
       "Next.js",
       "Prisma",
@@ -87,7 +87,7 @@ The system is built on a modern stack including Next.js, Supabase for backend se
       "Mastered the use of Google's Gemini API for complex, multimodal tasks including voice evaluation and content generation.",
       "Built a highly accessible and responsive UI using Tailwind CSS and shadcn/ui, following a mobile-first design philosophy.",
     ],
-    thumbnailUrl: "/projects/interly/interly-thumb.webp",
+    thumbnailUrl: "/projects/interly/interly.png",
     technologies: [
       "Next.js",
       "Supabase",
@@ -262,7 +262,7 @@ The entire system is managed through a secure, web-based admin panel built with 
       "Mastered secure CRUD operations in a Next.js application using Prisma ORM against a Supabase PostgreSQL database.",
       "Developed a deeper understanding of building event-driven systems based on user interactions from third-party platforms.",
     ],
-    thumbnailUrl: "/projects/instagram-bot/instagram-bot-thumb.webp",
+    thumbnailUrl: "/projects/ig-bot/ig-8.jpg",
     technologies: [
       "Python",
       "Next.js",
@@ -275,9 +275,15 @@ The entire system is managed through a secure, web-based admin panel built with 
     liveUrl: null,
     repoUrl: null,
     images: [
-      "https://picsum.photos/seed/ig-bot-1/1200/800",
-      "https://picsum.photos/seed/ig-bot-2/1200/800",
-      "https://picsum.photos/seed/ig-bot-3/1200/800",
+      "/projects/ig-bot/ig-8.jpg",
+      "/projects/ig-bot/ig-0.jpg",
+      "/projects/ig-bot/ig-1.jpg",
+          "/projects/ig-bot/ig-2.jpg",
+      "/projects/ig-bot/ig-3.jpg",
+      "/projects/ig-bot/ig-4.jpg",
+          "/projects/ig-bot/ig-6.jpg",
+      "/projects/ig-bot/ig-7.jpg",
+    
     ],
     pinned: false,
   },
