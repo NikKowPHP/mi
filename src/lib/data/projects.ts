@@ -237,5 +237,49 @@ The system is built on a modern stack including Next.js, Supabase for backend se
       "https://picsum.photos/seed/portfolio-3/1200/800",
     ],
     pinned: false,
-  }
+  },
+  {
+    id: "proj8",
+    title: "Instagram Comment-to-DM Bot System",
+    slug: "instagram-comment-to-dm-bot",
+    excerpt:
+      "An automated system that sends DMs to users who comment with specific keywords on Instagram posts, managed via a web panel.",
+    description:
+      "A full-stack system featuring a Python bot for Instagram monitoring and a Next.js admin panel for managing triggers and DM responses",
+    longDescription: `This project is an automated system designed to bridge the gap between Instagram post engagement and direct user interaction. When a user comments on a monitored Instagram post with a specific keyword, a Python-based bot automatically sends them a pre-configured Direct Message.
+
+The entire system is managed through a secure, web-based admin panel built with Next.js 15. Administrators can log in to perform CRUD operations on keyword triggers and the associated DM responses, which can include both text and media. They can also view basic statistics on trigger performance.
+
+The architecture is designed for local development and testing, containerized using Docker Compose. This allows for a single-command startup (\`docker-compose up\`) that launches the Next.js frontend, the Python bot, and a local Supabase instance for the database and storage, creating a fully isolated and reproducible environment.`,
+    challenges: [
+      "Containerizing a multi-language (Python/JS) application into a cohesive system using Docker Compose.",
+      "Designing a decoupled architecture where the Python bot and Next.js panel communicate asynchronously via a shared Supabase database.",
+      "Implementing secure authentication and authorization for the admin panel using Supabase Auth.",
+      "Ensuring the Instagram bot operates reliably in the background, handling potential API rate limits and errors gracefully.",
+    ],
+    learnings: [
+      "Gained hands-on experience orchestrating a multi-service application with Docker Compose.",
+      "Learned to build a full-stack, decoupled system where a Python service and a Next.js frontend interact through a shared database as a single source of truth.",
+      "Mastered secure CRUD operations in a Next.js application using Prisma ORM against a Supabase PostgreSQL database.",
+      "Developed a deeper understanding of building event-driven systems based on user interactions from third-party platforms.",
+    ],
+    thumbnailUrl: "/projects/instagram-bot/instagram-bot-thumb.webp",
+    technologies: [
+      "Python",
+      "Next.js",
+      "Docker",
+      "Supabase",
+      "PostgreSQL",
+      "Prisma",
+      "Tailwind CSS",
+    ],
+    liveUrl: null,
+    repoUrl: null,
+    images: [
+      "https://picsum.photos/seed/ig-bot-1/1200/800",
+      "https://picsum.photos/seed/ig-bot-2/1200/800",
+      "https://picsum.photos/seed/ig-bot-3/1200/800",
+    ],
+    pinned: false,
+  },
 ];

@@ -2,3 +2,4 @@
 - [x] Update the AI Interview Prep project to "Interly" with new details.
 - [x] Update the Lexity project with the new description and feature set.
 - [x] Implement "pinned projects" feature.
+- [x] Add Instagram Comment-to-DM Bot System project to the portfolio.
