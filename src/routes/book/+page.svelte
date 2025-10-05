@@ -105,7 +105,9 @@
     line-height: 1.7;
     color: var(--text-primary);
   }
-  .prose :global(h1, h2, h3) {
+  .prose :global(h1),
+  .prose :global(h2),
+  .prose :global(h3) {
     margin-bottom: 1rem;
   }
    .prose :global(p) {

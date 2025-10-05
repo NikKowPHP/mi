@@ -1,174 +1,157 @@
 ```xml
 <response>
   <reasoning>
-    I will now execute the final phase of your request.
+    The user has provided a build error from Vite. The error message, "`:global(...)` must contain exactly one selector," points to a CSS syntax issue in the `src/routes/book/+page.svelte` file I just created.
 
-    1.  **Update Navigation:** I will modify `src/lib/components/Navigation.svelte` to add a "Book" link to the main navigation bar. This will make the new book reader accessible to users. I will use the `startsWith` check on the path to ensure the link remains active even if sub-routes are added to the book section later.
-    2.  **Update Task List:** The series of tasks I've just completed corresponds to a new feature: building the book reader. As per my core instructions, I will create a new task-tracking file named `TASKS.md` at the project root (since one does not exist for development tasks) and add this new, completed feature to it. The existing `book/TASKS_to_do.md` appears to be for editorial work on the book's content, so I will not modify it.
+    The problematic line is `.prose :global(h1, h2, h3)`. The `:global()` function in Svelte can only wrap a single selector. To fix this, I need to rewrite the rule to apply `:global()` to each selector individually.
+
+    My plan is:
+    1.  Modify `src/routes/book/+page.svelte`.
+    2.  Change `.prose :global(h1, h2, h3)` to `.prose :global(h1), .prose :global(h2), .prose :global(h3)`.
+    3.  Update `TASKS.md` to add and complete a new task for fixing this bug.
   </reasoning>
   <modifications>
-    <file path="src/lib/components/Navigation.svelte">
+    <file path="src/routes/book/+page.svelte">
       <![CDATA[
 <script lang="ts">
-  import { page } from '$app/stores';
   import { onMount } from 'svelte';
+  import { readingProgress } from '$lib/stores/readingProgress';
+  import { book as enBook } from '$lib/data/book-generated/en';
+  // Placeholder for French content; create fr/_meta.json to generate this file
+  import { book as frBook } from '$lib/data/book-generated/fr';
+
+  let bookContent;
+  $: bookContent = $readingProgress.language === 'en' ? enBook : frBook;
+
+  let currentSection;
+  $: currentSection = bookContent.sections[$readingProgress.sectionIndex];
   
-  let darkMode = $state(false);
-  
+  let progressPercentage = 0;
+  $: progressPercentage = (($readingProgress.sectionIndex + 1) / bookContent.sections.length) * 100;
+
   onMount(() => {
-    const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    darkMode = savedTheme === 'dark' || (!savedTheme && prefersDark);
-    updateTheme();
+    const savedProgress = localStorage.getItem('readingProgress');
+    if (savedProgress) {
+      readingProgress.set(JSON.parse(savedProgress));
+    }
+
+    const unsubscribe = readingProgress.subscribe(value => {
+      localStorage.setItem('readingProgress', JSON.stringify(value));
+    });
+    
+    setTimeout(() => window.scrollTo(0, $readingProgress.scrollPosition), 100);
+
+    return unsubscribe;
   });
-  
-  function toggleTheme() {
-    darkMode = !darkMode;
-    updateTheme();
+
+  function handleScroll() {
+    readingProgress.update(p => ({ ...p, scrollPosition: window.scrollY }));
   }
-  
-  function updateTheme() {
-    if (darkMode) {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
+
+  function goToSection(index: number) {
+    if (index >= 0 && index < bookContent.sections.length) {
+      readingProgress.update(p => ({ ...p, sectionIndex: index, scrollPosition: 0 }));
+      window.scrollTo(0, 0);
     }
   }
 </script>
 
-<nav class="nav-container">
-  <div class="nav-content">
-    <div class="nav-brand">
-      <span class="brand-text">AC</span>
+<svelte:window on:scroll={handleScroll} />
+
+<div class="reader-container">
+  <header class="reader-header">
+    <a href="/" class="back-link">&larr; Back to Portfolio</a>
+    <div class="controls">
+      <button class:active={$readingProgress.language === 'en'} on:click={() => $readingProgress.language = 'en'}>EN</button>
+      <button class:active={$readingProgress.language === 'fr'} on:click={() => $readingProgress.language = 'fr'}>FR</button>
     </div>
-    
-    <div class="nav-links">
-      <a href="/" class="nav-link" class:active={$page.url.pathname === '/'}>
-        About
-      </a>
-      <a href="/projects" class="nav-link" class:active={$page.url.pathname === '/projects'}>
-        Projects
-      </a>
-      <a href="/book" class="nav-link" class:active={$page.url.pathname.startsWith('/book')}>
-        Book
-      </a>
-    </div>
-    
-    <button class="theme-toggle" onclick={toggleTheme} aria-label="Toggle theme">
-      {#if darkMode}
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="12" cy="12" r="5"/>
-          <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
-        </svg>
-      {:else}
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-        </svg>
-      {/if}
-    </button>
+  </header>
+
+  <div class="progress-container">
+    <div class="progress-bar" style="width: {progressPercentage}%" />
   </div>
-</nav>
+
+  <main class="content-main">
+    <article class="prose">
+      <h1>{currentSection.title}</h1>
+      {@html currentSection.content}
+    </article>
+  </main>
+
+  <footer class="reader-footer">
+    <button on:click={() => goToSection($readingProgress.sectionIndex - 1)} disabled={$readingProgress.sectionIndex === 0}>
+      Previous
+    </button>
+    <span>{`Section ${$readingProgress.sectionIndex + 1} of ${bookContent.sections.length}`}</span>
+    <button on:click={() => goToSection($readingProgress.sectionIndex + 1)} disabled={$readingProgress.sectionIndex >= bookContent.sections.length - 1}>
+      Next
+    </button>
+  </footer>
+</div>
 
 <style>
-  .nav-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-  }
-  
-  :global(.dark) .nav-container {
-    background: rgba(30, 30, 30, 0.8);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  
-  .nav-content {
-    max-width: 1200px;
+  /* Basic styles for a clean reading experience */
+  .reader-container {
+    max-width: 800px;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 1rem;
+    font-family: var(--font-family);
+  }
+  .reader-header, .reader-footer {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-  }
-  
-  .nav-brand {
-    display: flex;
     align-items: center;
+    padding: 1rem 0;
   }
-  
-  .brand-text {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--accent-color);
-    background: linear-gradient(135deg, var(--accent-color), var(--accent-secondary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  .progress-container {
+    width: 100%;
+    height: 4px;
+    background-color: var(--border-color);
+    border-radius: 2px;
+    margin-bottom: 2rem;
   }
-  
-  .nav-links {
-    display: flex;
-    gap: 2rem;
+  .progress-bar {
+    height: 100%;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    transition: width 0.3s ease;
   }
-  
-  .nav-link {
+  .prose {
+    line-height: 1.7;
+    color: var(--text-primary);
+  }
+  .prose :global(h1),
+  .prose :global(h2),
+  .prose :global(h3) {
+    margin-bottom: 1rem;
+  }
+   .prose :global(p) {
+    margin-bottom: 1em;
+  }
+  button {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background: var(--card-background);
+    cursor: pointer;
+  }
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  .controls button.active {
+    background: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+  }
+  .back-link {
     text-decoration: none;
     color: var(--text-secondary);
     font-weight: 500;
-    padding: 0.5rem 1rem;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-    position: relative;
+    transition: color 0.3s ease;
   }
-  
-  .nav-link:hover {
-    color: var(--text-primary);
-    background: rgba(var(--accent-rgb), 0.1);
-  }
-  
-  .nav-link.active {
+  .back-link:hover {
     color: var(--accent-color);
-    background: rgba(var(--accent-rgb), 0.15);
-  }
-  
-  .theme-toggle {
-    background: none;
-    border: none;
-    color: var(--text-secondary);
-    cursor: pointer;
-    padding: 0.5rem;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .theme-toggle:hover {
-    color: var(--text-primary);
-    background: rgba(var(--accent-rgb), 0.1);
-  }
-  
-  @media (max-width: 768px) {
-    .nav-content {
-      padding: 1rem;
-    }
-    
-    .nav-links {
-      gap: 1rem;
-    }
-    
-    .nav-link {
-      padding: 0.5rem;
-      font-size: 0.9rem;
-    }
   }
 </style>
       ]]>
@@ -176,6 +159,7 @@
     <file path="TASKS.md">
       <![CDATA[
 - [x] Build a multi-language book reader feature
+- [x] Fix `:global()` CSS syntax error in book reader page
       ]]>
     </file>
   </modifications>
