@@ -6,4 +6,10 @@
 - [x] Translate Chapters 7, 8, 9, 10, and 11 to French
 - [x] Fix book reader page content being overlapped by navbar
 - [x] Translate book frontmatter (Preface, Introduction) to French
+- [x] Add font size and padding controls to book reader and improve mobile UI
+- [x] Add password protection to the /book route
+- [x] Fix Svelte 5 reactivity errors by migrating to runes
+- [x] Fix SvelteKit error by moving form `actions` to `+page.server.ts`
+- [x] Fix invalid placement of `<svelte:window>` tag
+- [x] Fix invalid Svelte 5 import for `$effect` rune
       

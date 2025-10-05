@@ -1,121 +1,410 @@
 ```xml
 <response>
   <reasoning>
-    The user has requested to translate the preface and introduction into French. I will perform this task by modifying the corresponding files in the `src/content/book/fr/frontmatter/` directory.
+    The user has provided a Svelte compiler error: `The $ prefix is reserved, and cannot be used for variables and imports`. The error message clearly points to the line `import { onMount, $effect } from 'svelte';`.
 
-    My plan is as follows:
-    1.  Translate the content of `src/content/book/fr/frontmatter/PREFACE.md`, including its YAML frontmatter `title` and the body content.
-    2.  Translate the content of `src/content/book/fr/frontmatter/introduction.md`, including its YAML frontmatter `title` and the body content.
-    3.  Update the `TASKS.md` file to add a new task for translating the book's frontmatter and mark it as complete to track the progress of the translation.
+    In Svelte 5, runes like `$effect`, `$state`, and `$derived` are compiler keywords. They are globally available within `.svelte` files when runes mode is enabled and should not be imported from the 'svelte' package. The import statement is therefore incorrect.
+
+    My plan is to:
+    1.  Modify `src/routes/book/+page.svelte` to remove `$effect` from the import statement. The `$effect` rune will still work correctly because it's part of the Svelte 5 compiler magic.
+    2.  Update `TASKS.md` to add and complete a new task for fixing this incorrect import.
   </reasoning>
   <modifications>
-    <file path="src/content/book/fr/frontmatter/PREFACE.md">
+    <file path="src/routes/book/+page.svelte">
       <![CDATA[
----
-title: "Préface"
----
-### **Une Note sur l'Authenticité**
+<script lang="ts">
+  import { onMount } from 'svelte';
+  import { readingProgress } from '$lib/stores/readingProgress';
+  import { book as enBook } from '$lib/data/book-generated/en';
+  import { book as frBook } from '$lib/data/book-generated/fr';
+  import { enhance } from '$app/forms';
+  import type { ActionData, PageData } from './$types';
 
-Un avertissement juste : au début, ces outils pourraient vous sembler maladroits. Vous pourriez craindre de "jouer" la connexion au lieu de la ressentir. C'est une étape normale et nécessaire de l'apprentissage que nous appelons **La Phase de Répétition**. Pensez-y comme à la pratique des gammes musicales ; les premières tentatives sont lentes, mécaniques et ne ressemblent en rien à de la musique. Le but est d'intérioriser les motifs pour pouvoir les oublier et simplement jouer.
+  interface Props {
+    data: PageData;
+    form: ActionData;
+  }
+  let { data, form }: Props = $props();
 
-Soyez également prêt à ce que les autres remarquent cette maladresse. Lorsque vous changez les règles non écrites d'une relation, le système a souvent tendance à résister. Votre partenaire, collègue ou ami pourrait dire : "Ça a l'air répété," ou "N'utilise pas ta 'voix de thérapeute' avec moi." **Ce n'est pas un échec ; c'est un signal qu'ils écoutent si attentivement qu'ils ont remarqué un changement.** Votre but n'est pas d'être un interprète parfait dès le premier jour. Votre but est d'être un étudiant courageux, prêt à jouer quelques fausses notes au service de l'apprentissage d'une meilleure musique. Ce livre est votre guide pour passer de la répétition consciente et maladroite à l'intuition inconsciente et authentique.
+  let settingsOpen = $state(false);
 
-### **Une Note sur la Conception Visuelle de ce Livre**
+  // Use $derived for computed values in runes mode
+  let bookContent = $derived(
+    $readingProgress.language === 'fr' && frBook.sections.length > 0 ? frBook : enBook
+  );
 
-Tout au long de ce manuscrit, vous verrez des termes clés en gras, tels que **Architecte**, **Connecteur**, et **Sentinelle**. Ce n'est pas anodin ; cela fait partie intégrante de la philosophie de conception du livre. Pour combattre la charge cognitive liée à l'apprentissage de ces nouveaux concepts, la version finale de ce livre doit s'appuyer sur un langage visuel clair et cohérent. **C'est un impératif stratégique pour le succès du livre.**
+  let currentSection = $derived(data.authorized ? bookContent.sections[$readingProgress.sectionIndex] : null);
+  
+  let progressPercentage = $derived(
+    data.authorized && bookContent.sections.length > 0 
+      ? (($readingProgress.sectionIndex + 1) / bookContent.sections.length) * 100 
+      : 0
+  );
 
-L'efficacité du système d'apprentissage présenté ici dépend d'un concepteur d'information de premier ordre qui peut exécuter cette vision. Le langage visuel doit être aussi clair, élégant et cohérent que la prose.
+  onMount(() => {
+    if (!data.authorized) return;
 
-Les éléments les plus critiques sont :
-*   **Un Système d'Icônes Cohérent :** Des icônes simples et mémorables pour les trois Profils Cérébraux (**Architecte**, **Connecteur**, **Sentinelle**), les cinq domaines SCARF, et les pratiques clés sont essentielles. Ces termes ont été utilisés avec une cohérence absolue dans ce texte pour créer un raccourci visuel qui doit être concrétisé.
-*   **Le Tableau de Bord du Chef d'Orchestre :** Le tableau de bord SCARF à cinq jauges introduit au Chapitre 2 devrait être un graphique récurrent, diagnostiquant visuellement les menaces et récompenses sociales dans nos études de cas.
-*   **Des Infographies de Haute Qualité :** Les sections de résumé clés, en particulier le "Résumé de la Boîte à Outils & Aide-Mémoire", sont conçues pour être des infographies visuellement attrayantes en pleine page. L'objectif est de créer une référence que vous voudrez garder sur votre bureau, pas seulement un mur de texte.
+    const savedProgress = localStorage.getItem('readingProgress');
+    if (savedProgress) {
+      const defaultState = { language: 'en', sectionIndex: 0, scrollPosition: 0, fontSize: 3, paddingSize: 3 };
+      readingProgress.set({ ...defaultState, ...JSON.parse(savedProgress) });
+    }
+    
+    setTimeout(() => window.scrollTo(0, $readingProgress.scrollPosition), 100);
+  });
 
-Cette couche visuelle n'est pas décorative ; elle fait partie intégrante du système d'apprentissage, conçue pour vous aider à intérioriser ces outils plus rapidement et plus efficacement.
-      ]]>
-    </file>
-    <file path="src/content/book/fr/frontmatter/introduction.md">
-      <![CDATA[
----
-title: "Introduction : Le Manuel d'Utilisation de Votre Cerveau"
----
-### **Introduction : Le Manuel d'Utilisation de Votre Cerveau**
+  // Use $effect to react to state changes for side effects like localStorage
+  $effect(() => {
+    if (data.authorized) {
+      localStorage.setItem('readingProgress', JSON.stringify($readingProgress));
+    }
+  });
 
-Laissez-moi vous raconter une fois où j'ai été publiquement humilié.
+  function handleScroll() {
+    if (!data.authorized) return;
+    readingProgress.update(p => ({ ...p, scrollPosition: window.scrollY }));
+  }
 
-J'étais un jeune programmeur, et mon monde était bâti sur la logique. J'avais passé trois semaines à construire un modèle de données impeccable pour un projet critique. Mon code était élégant, mes projections étaient inattaquables, et la présentation que j'avais préparée était un monument à la raison. Je suis entré dans cette salle de conseil avec la confiance tranquille de quelqu'un qui sait qu'il a raison.
+  function goToSection(index: number) {
+    if (index >= 0 && index < bookContent.sections.length) {
+      readingProgress.update(p => ({ ...p, sectionIndex: index, scrollPosition: 0 }));
+      window.scrollTo(0, 0);
+    }
+  }
 
-J'étais sur le point d'être complètement ignoré.
+  function changeFontSize(delta: number) {
+    readingProgress.update(p => {
+      const newSize = Math.max(1, Math.min(5, p.fontSize + delta));
+      return { ...p, fontSize: newSize };
+    });
+  }
 
-J'ai présenté les données. Ils ont hoché la tête. Puis, un directeur marketing senior s'est levé et a raconté une histoire simple et émouvante à propos d'un seul client. Son histoire contenait une fraction de mes données mais avait mille fois plus d'impact. J'ai regardé, incrédule, la salle se retourner, son récit l'emportant complètement sur ma logique. Mon idée était morte.
+  function changePaddingSize(delta: number) {
+    readingProgress.update(p => {
+      const newSize = Math.max(1, Math.min(5, p.paddingSize + delta));
+      return { ...p, paddingSize: newSize };
+    });
+  }
 
-Je ne me suis pas seulement senti incompris ; je me suis senti invisible. C'était un "rapport de bug" brutal sur toute mon approche de l'interaction humaine, un échec qui allait me hanter pendant des années mais aussi déclencher une enquête acharnée.
+  function setLanguage(lang: 'en' | 'fr') {
+    readingProgress.update(p => ({ ...p, language: lang, sectionIndex: 0, scrollPosition: 0 }));
+  }
+</script>
 
-Mais ne croyez pas que ce livre soit une carte pour devenir un communicant parfait. Laissez-moi vous raconter ce qui s'est passé à Noël dernier. Je me suis disputé calmement mais douloureusement avec mon frère pendant les fêtes. C'était à propos de quelque chose de petit et stupide, le genre de désaccord qui ne porte jamais vraiment sur le sujet apparent. J'ai essayé d'utiliser les outils. J'ai pris une Respiration du Chef d'Orchestre. J'ai essayé de déployer la Boucle d'Empathie. J'ai dit : "On dirait que le plus difficile pour toi, c'est..." Il m'a coupé. "N'utilise pas ta voix de travail avec moi," a-t-il dit, d'un ton neutre. Il avait raison.
+<svelte:window on:scroll={handleScroll} />
 
-C'est la vraie leçon de ce livre. Il ne s'agit pas de devenir un interprète sans faille. Il s'agit d'acquérir les compétences pour réparer la connexion lorsque, inévitablement, de manière désordonnée et humaine, vous la brisez. Ce n'est pas un règlement ; c'est un espace de répétition pour les gens imparfaits.
+{#if data.authorized}
+  <main class="main-content">
+    <div 
+      class="reader-container"
+      data-font-size={$readingProgress.fontSize}
+      data-padding-size={$readingProgress.paddingSize}
+    >
+      <header class="reader-header">
+        <a href="/" class="back-link">&larr; Back to Portfolio</a>
+        <div class="controls">
+          <button class="settings-toggle" on:click={() => settingsOpen = !settingsOpen} aria-label="Reading settings">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+          </button>
+          <button class:active={$readingProgress.language === 'en'} on:click={() => setLanguage('en')}>EN</button>
+          <button class:active={$readingProgress.language === 'fr'} on:click={() => setLanguage('fr')}>FR</button>
+        </div>
+      </header>
 
-Mon enquête a commencé par une question qui me brûlait l'esprit après cet échec en salle de conseil : *Pourquoi une bonne histoire l'emporte-t-elle toujours sur de bonnes données ? Pourquoi la connexion humaine ressemble-t-elle à un système chaotique et imprévisible ? Quel est le code source ?*
+      {#if settingsOpen}
+      <div class="settings-panel">
+        <div class="setting-group">
+          <span class="setting-label">Font Size</span>
+          <button on:click={() => changeFontSize(-1)} disabled={$readingProgress.fontSize <= 1}>A-</button>
+          <button on:click={() => changeFontSize(1)} disabled={$readingProgress.fontSize >= 5}>A+</button>
+        </div>
+        <div class="setting-group">
+          <span class="setting-label">Padding</span>
+          <button on:click={() => changePaddingSize(-1)} disabled={$readingProgress.paddingSize <= 1}>Less</button>
+          <button on:click={() => changePaddingSize(1)} disabled={$readingProgress.paddingSize >= 5}>More</button>
+        </div>
+      </div>
+      {/if}
 
-Cette question m'a mené dans un voyage de dix ans, de la logique épurée d'un compilateur au code source désordonné et brillant du cerveau humain. J'ai fouillé dans les archives de la neuroscience moderne, à la recherche du plan caché qui régit chaque interaction humaine. Ce que j'ai trouvé était stupéfiant. Les moments frustrants et chaotiques de nos vies ne sont pas aléatoires. Ils sont les résultats prévisibles d'un câblage ancien qui fonctionne en chacun de nous.
+      <div class="progress-container">
+        <div class="progress-bar" style="width: {progressPercentage}%" />
+      </div>
 
-Et si vous pouviez voir ces règles ? Et si vous pouviez démêler les signaux dans une conversation difficile avant même qu'elle ne commence, transformant la douleur de l'incompréhension en pouvoir de connexion ?
+      <main class="content-main">
+        {#if currentSection}
+          <article class="prose">
+            <h1>{currentSection.title}</h1>
+            {@html currentSection.content}
+          </article>
+        {:else}
+          <p>Loading content...</p>
+        {/if}
+      </main>
 
-Ce livre est le résultat de cette enquête. C'est la carte que j'aurais aimé avoir lors de mon voyage. Je partagerai le code source que j'ai découvert et vous remettrai une boîte à outils complète de pratiques fondées sur les neurosciences que j'ai développées — un système que j'appelle **La Méthode du Chef d'Orchestre**.
+      <footer class="reader-footer">
+        <button on:click={() => goToSection($readingProgress.sectionIndex - 1)} disabled={$readingProgress.sectionIndex === 0}>
+          Previous
+        </button>
+        <span class="footer-status">{`Section ${$readingProgress.sectionIndex + 1} of ${bookContent.sections.length}`}</span>
+        <button on:click={() => goToSection($readingProgress.sectionIndex + 1)} disabled={$readingProgress.sectionIndex >= bookContent.sections.length - 1}>
+          Next
+        </button>
+      </footer>
+    </div>
+  </main>
+{:else}
+  <main class="auth-content">
+    <div class="password-container">
+      <div class="password-card">
+        <h1 class="title">Access Restricted</h1>
+        <p class="subtitle">Please enter the password to view the book.</p>
+        <form method="POST" action="?/login" use:enhance>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required />
+          </div>
+          {#if form?.error}
+            <p class="error">{form.error}</p>
+          {/if}
+          <button type="submit" class="submit-btn">Unlock</button>
+        </form>
+      </div>
+    </div>
+  </main>
+{/if}
 
-Mais cette enquête a révélé une vérité plus profonde. Le but n'est pas seulement d'être plus efficace — de gagner l'argument que j'avais perdu. Ce chemin mène à devenir un manipulateur habile qui se sent vide à l'intérieur. Le véritable objectif de ce travail, le "pourquoi" derrière le "comment", est de dépasser les transactions gagnantes pour construire des relations de sens et de confiance. Ce livre ne porte pas seulement sur la direction d'une performance réussie ; il s'agit de construire un orchestre qui trouve de la joie à jouer ensemble.
 
-Pour que notre intention soit claire, ce livre entier est construit sur un seul principe fondamental, que nous formulerons comme le Serment du Chef d'Orchestre :
+<style>
+  .main-content {
+    padding-top: 80px;
+  }
+  
+  .reader-container {
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: var(--font-family);
+    transition: max-width 0.3s ease;
+  }
 
-> ### Le Serment du Chef d'Orchestre
-> *Je m'engage à utiliser ces outils pour construire, non pour détruire. Mon objectif principal est la clarté et la sécurité, pas la conformité. J'utiliserai l'empathie pour comprendre, non pour diriger. Je créerai un espace pour les idées qui remettent en question les miennes.*
+  /* Dynamic Padding */
+  .reader-container[data-padding-size='1'] { max-width: 600px; }
+  .reader-container[data-padding-size='2'] { max-width: 700px; }
+  .reader-container[data-padding-size='3'] { max-width: 800px; }
+  .reader-container[data-padding-size='4'] { max-width: 900px; }
+  .reader-container[data-padding-size='5'] { max-width: 1000px; }
 
----
-### **Comment Utiliser ce Livre**
+  .reader-header, .reader-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
 
-Ce livre n'est pas seulement un recueil d'idées ; c'est un programme d'entraînement structuré. C'est un voyage de pratique, pas une quête de perfection. Vous ne deviendrez pas un chef d'orchestre sans faille du jour au lendemain. Le but est de s'améliorer de 1% à chaque interaction, d'apprendre de ses erreurs et de recâbler progressivement ses réponses. Ce livre n'est pas un règlement ; c'est un espace de répétition.
+  .controls {
+    display: flex;
+    gap: 0.5rem;
+  }
 
-### Vos Deux Premiers Pas : Le Seul Point de Départ
+  .settings-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-Vous êtes sur le point de recevoir une boîte à outils complète, et il est naturel de se sentir dépassé. Alors, soyons clairs : **n'essayez pas de tout apprendre en même temps.** Votre parcours pour devenir un Chef d'Orchestre ne consiste pas à mémoriser une douzaine de techniques. Il s'agit de maîtriser une seule boucle de comportement qui changera fondamentalement vos interactions. Nous l'appelons **La Boucle Fondamentale** :
+  .settings-panel {
+    background: var(--background-secondary);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    border: 1px solid var(--border-color);
+  }
 
-1.  **Régulez-vous d'Abord.** (Votre Premier Instrument, Chapitre 1)
-2.  **Faites en Sorte que l'Autre Personne se Sente Entendue.** (La Boucle d'Empathie, Chapitre 6)
+  .setting-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
 
-C'est tout. C'est votre mission entière pour les premières semaines. Avant d'essayer de persuader, de donner un feedback ou de gérer un conflit, vous devez développer la mémoire musculaire de cette boucle. Chaque autre outil de ce livre est une extension de cette pratique de base. Si vous ne lisez rien d'autre, maîtrisez ceci. Si vous ne pratiquez rien d'autre, pratiquez ceci. Le Défi de 30 Jours en Annexe C est conçu pour vous guider pas à pas dans ce processus.
+  .setting-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-right: 0.5rem;
+  }
 
-Pour soutenir votre pratique, **Le Défi du Chef d'Orchestre de 30 Jours en Annexe C** fournit un parcours guidé pour intérioriser les compétences de base. Vous pouvez également télécharger un **Journal de Bord du Chef d'Orchestre** compagnon sur [SiteWebAuteur.com/journal] pour suivre vos progrès.
+  .progress-container {
+    width: 100%;
+    height: 4px;
+    background-color: var(--border-color);
+    border-radius: 2px;
+    margin-bottom: 2rem;
+  }
+  .progress-bar {
+    height: 100%;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    transition: width 0.3s ease;
+  }
+  .prose {
+    line-height: 1.7;
+    color: var(--text-primary);
+    transition: font-size 0.3s ease;
+  }
 
-Pour faire le pont entre les défis d'entreprise à fort enjeu de Maria et vos propres interactions quotidiennes, de nombreux chapitres incluront une "Note de Terrain". Ce sont de courts exemples pratiques de ma propre vie ou de ma pratique de coaching montrant comment ces mêmes outils s'appliquent pour naviguer un désaccord avec un conjoint, faire parler un adolescent, ou simplement écrire un e-mail plus clair à un ami.
+  /* Dynamic Font Size */
+  .reader-container[data-font-size='1'] .prose { font-size: 0.8rem; }
+  .reader-container[data-font-size='2'] .prose { font-size: 0.9rem; }
+  .reader-container[data-font-size='3'] .prose { font-size: 1rem; }
+  .reader-container[data-font-size='4'] .prose { font-size: 1.1rem; }
+  .reader-container[data-font-size='5'] .prose { font-size: 1.2rem; }
 
-#### **Une Note pour les Non-Programmeurs**
-J'ai appris à comprendre le monde à travers la logique du code. Parfois, j'utiliserai le langage des systèmes et du code car c'est ma langue maternelle. Mais je vous exhorte à voir au-delà des mots les principes humains universels qu'ils décrivent. Un "rapport de bug" n'est qu'un moment de malentendu douloureux. Un "protocole" est simplement une manière consciente et répétable de montrer que vous vous souciez. Ce livre ne vise pas à transformer votre famille en ordinateur ; il s'agit de découvrir les beaux motifs prévisibles qui régissent l'amour et la connexion.
+  .prose :global(h1),
+  .prose :global(h2),
+  .prose :global(h3) {
+    margin-bottom: 1rem;
+  }
+   .prose :global(p) {
+    margin-bottom: 1em;
+  }
+  button {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background: var(--card-background);
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  button:hover:not(:disabled) {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+  }
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  .controls button.active {
+    background: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+  }
+  .back-link {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  .back-link:hover {
+    color: var(--accent-color);
+  }
 
----
+  /* Auth form styles */
+  .auth-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 80px;
+    background: var(--background-secondary);
+  }
 
-Votre cerveau est un orchestre magnifique. Mais dans les moments à fort enjeu, il ressemble souvent au chaos. Vous êtes déjà le chef de cet orchestre. Le problème, c'est que personne ne vous a jamais tendu la baguette.
+  .password-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 1rem;
+  }
 
-Pour vous montrer comment utiliser cette baguette, notre voyage suivra la transformation d'une leader que j'appellerai Maria. Maria est une brillante programmeuse, une maîtresse de la logique, qui est sur le point de découvrir — tout comme moi — que ses plus grandes forces sont la source de ses plus grands échecs en matière de connexion humaine. Son histoire, un composite des leaders que j'ai coachés, sera notre laboratoire en conditions réelles. Nous la verrons échouer, apprendre les pratiques et les appliquer dans des situations à fort enjeu. Ce livre est la baguette, et l'histoire de Maria est la première pièce de musique que nous apprendrons à diriger ensemble.
+  .password-card {
+    background: var(--card-background);
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
+    backdrop-filter: blur(10px);
+    text-align: center;
+  }
 
-Le monde de Maria est construit sur une seule croyance fondamentale : la logique est suffisante. Elle est une maîtresse du code élégant et des arguments en béton, et elle a bâti sa carrière sur la confiance tranquille que les meilleures données l'emporteront toujours. Pour elle, l'émotion humaine est un bug désordonné et imprévisible dans le système, une variable à gérer et à contenir, pas une fonctionnalité essentielle. Mais au fond, sa forteresse logique est une défense contre une peur terrifiante : celle d'être fondamentalement mal équipée pour le côté chaotique et humain du leadership. Cela lui donne l'impression d'être une imposture, et son parcours ne consiste pas seulement à acquérir de nouvelles compétences ; il s'agit de démanteler une croyance fondamentale et de découvrir que la véritable influence se forge en intégrant la logique à la connexion.
+  .title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+  }
 
-**Une Note sur le Parcours de Maria :** Les défis de Maria vont rapidement s'intensifier pour devenir des enjeux de politique d'entreprise à haut risque. C'est intentionnel. Nous soumettons la Méthode du Chef d'Orchestre à un "test de résistance" pour démontrer sa résilience sous une pression extrême. Bien que son histoire fournisse le drame central, les **Notes de Terrain** et les **Entrées de Journal de Bord** de chaque chapitre seront votre guide pour appliquer ces mêmes principes puissants aux conversations plus calmes, mais tout aussi importantes, de votre propre vie.
+  .subtitle {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+  }
 
-**Redéfinir le Chef d'Orchestre**
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 
-Soyons clairs sur notre métaphore centrale. L'ancien modèle du chef d'orchestre est celui d'un maestro autoritaire, exigeant la perfection. Ce n'est pas notre objectif. Un chef d'orchestre moderne, un Chef d'Orchestre de la connexion, ne dirige pas principalement ; il écoute. Son premier travail est de créer un environnement d'une sécurité et d'une confiance si profondes que la meilleure musique de l'orchestre peut émerger d'elle-même. Il ne dirige pas depuis le podium, mais depuis le centre de la musique. Ce livre vous apprendra à diriger depuis n'importe quelle chaise de l'orchestre — que vous soyez le PDG ou le stagiaire.
+  .input-group {
+    text-align: left;
+  }
 
-Bien que nous utilisions le "Chef d'Orchestre" comme métaphore principale, ce n'est pas la seule. Selon la situation, vous trouverez peut-être plus utile de vous considérer comme :
+  .input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+  }
 
-*   **Le Jardinier :** Votre travail n'est pas de forcer les fleurs à pousser, mais de cultiver le bon sol, la bonne lumière et la bonne eau pour qu'elles puissent s'épanouir d'elles-mêmes. Vous vous concentrez sur la création d'un environnement sain.
-*   **L'Hôte :** Votre but est que tout le monde se sente bienvenu, en sécurité et vu. Vous vous occupez des besoins de vos invités (votre équipe, votre famille) pour qu'ils puissent se connecter et passer un bon moment ensemble.
-*   **L'Interprète :** Dans un conflit, votre rôle est de traduire entre deux personnes parlant des langages émotionnels différents, aidant chaque partie à comprendre le vrai sens de l'autre.
+  .input-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background: var(--background);
+    color: var(--text-primary);
+    font-size: 1rem;
+  }
 
-Choisissez la métaphore qui sert le mieux le moment. Le but est toujours le même : créer les conditions de la connexion.
+  .submit-btn {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background: var(--accent-color);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
 
-Bien que ces outils amélioreront chaque conversation de votre vie, ne vous y trompez pas : c'est un livre sur le leadership. C'est un manuel pour quiconque — manager, parent ou chef d'équipe — qui veut créer les conditions pour que les autres fassent leur meilleur travail. Le lieu de travail moderne n'est plus un atelier d'usine ; c'est un orchestre complexe et interconnecté. Et il nécessite un nouveau type de chef d'orchestre.
+  .submit-btn:hover {
+    background: var(--accent-secondary);
+  }
 
-Pour voir comment cela fonctionne, nous rejoindrons notre chef d'orchestre, Maria, au moment précis où son orchestre sombre dans le chaos. Le sentiment qu'elle est sur le point d'éprouver — cette bouffée de honte, ce vide paniqué d'être complètement incomprise — est la même invisibilité que j'ai ressentie dans cette salle de conseil il y a des années. Son parcours pour reprendre le contrôle, en commençant par sa prochaine respiration, est au cœur de la Méthode du Chef d'Orchestre. Son histoire commence, comme ces histoires le font si souvent, dans un moment de silence douloureux et assourdissant.
+  .error {
+    color: #ff3b30; /* A standard error red */
+    font-size: 0.9rem;
+    margin-top: -1rem;
+  }
+
+
+  @media (max-width: 600px) {
+    .reader-header {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .reader-footer {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .footer-status {
+      display: none; /* Hide text on small screens to save space */
+    }
+    .settings-panel {
+      flex-direction: column;
+    }
+  }
+</style>
       ]]>
     </file>
     <file path="TASKS.md">
@@ -128,6 +417,12 @@ Pour voir comment cela fonctionne, nous rejoindrons notre chef d'orchestre, Mari
 - [x] Translate Chapters 7, 8, 9, 10, and 11 to French
 - [x] Fix book reader page content being overlapped by navbar
 - [x] Translate book frontmatter (Preface, Introduction) to French
+- [x] Add font size and padding controls to book reader and improve mobile UI
+- [x] Add password protection to the /book route
+- [x] Fix Svelte 5 reactivity errors by migrating to runes
+- [x] Fix SvelteKit error by moving form `actions` to `+page.server.ts`
+- [x] Fix invalid placement of `<svelte:window>` tag
+- [x] Fix invalid Svelte 5 import for `$effect` rune
       ]]>
     </file>
   </modifications>
