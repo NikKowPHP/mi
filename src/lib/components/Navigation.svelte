@@ -40,6 +40,9 @@
       <a href="/projects" class="nav-link" class:active={$page.url.pathname === '/projects'}>
         Projects
       </a>
+      <a href="/book" class="nav-link" class:active={$page.url.pathname.startsWith('/book')}>
+        Book
+      </a>
     </div>
     
     <button class="theme-toggle" onclick={toggleTheme} aria-label="Toggle theme">
@@ -157,3 +160,4 @@
     }
   }
 </style>
+      
