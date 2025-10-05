@@ -1,5 +1,13 @@
 {
-    "title": "La Méthode du Chef d'Orchestre",
-    "readingOrder": []
+  "title": "La Méthode du Chef d'Orchestre",
+  "readingOrder": [
+    "frontmatter/PREFACE",
+    "frontmatter/introduction",
+    "chapters",
+    "backmatter/conclusion",
+    "appendices",
+    "backmatter/about_the_author",
+    "backmatter/acknowledgments"
+  ]
 }
       
