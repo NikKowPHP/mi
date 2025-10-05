@@ -1,88 +1,162 @@
 ```xml
 <response>
   <reasoning>
-    The user wants me to "proceed" with the task of translating the book into French. The last action I took was translating Chapter 1. The logical next step is to translate Chapter 2.
+    The user has reported a CSS layout bug where the fixed navigation bar is overlapping the content on the new book reader page. This is because the page content doesn't have any top padding or margin to offset the height of the fixed navbar.
 
-    My plan is as follows:
-    1.  Translate the content of `src/content/book/fr/chapters/chapter-2.md`. This includes both the YAML frontmatter `title` and the body of the chapter. I will ensure the translation is accurate and maintains the original Markdown formatting and key terms like "SCARF model".
-    2.  Update the `TASKS.md` file. I will add a new, specific task for translating Chapter 2 and mark it as complete. This will track the progress of the translation effort.
+    To fix this, I will follow the pattern established on other pages of the site (`/`, `/projects`, etc.).
+    1.  I will wrap the entire content of `src/routes/book/+page.svelte` within a `<main class="main-content">` element.
+    2.  I will add a CSS rule for `.main-content` within the same file, giving it `padding-top: 80px;`. This will push the reader content down, clearing the navigation bar and resolving the overlap issue.
+    3.  Finally, I will update `TASKS.md` to add and complete a new task for fixing this UI bug.
   </reasoning>
   <modifications>
-    <file path="src/content/book/fr/chapters/chapter-2.md">
+    <file path="src/routes/book/+page.svelte">
       <![CDATA[
----
-title: "Chapitre 2 : Le Code Caché : Pourquoi les Mots Peuvent Blesser"
----
-### **Chapitre 2 : Le Code Caché : Pourquoi les Mots Peuvent Blesser**
+<script lang="ts">
+  import { onMount } from 'svelte';
+  import { readingProgress } from '$lib/stores/readingProgress';
+  import { book as enBook } from '$lib/data/book-generated/en';
+  // Placeholder for French content; create fr/_meta.json to generate this file
+  import { book as frBook } from '$lib/data/book-generated/fr';
 
-Après mon humiliation en salle de conseil, la question qui me hantait n'était pas seulement "Pourquoi ai-je perdu ?" C'était "Pourquoi cela a-t-il fait *si mal* ?" Ce n'était pas seulement une déception professionnelle ; c'était une piqûre profonde et personnelle de me sentir totalement invisible. Ce sentiment — cette douleur aiguë et physique d'être rejeté — est le véritable point de départ de notre enquête. Avant de pouvoir créer du lien, nous devons comprendre l'anatomie de la blessure.
+  let bookContent;
+  $: bookContent = $readingProgress.language === 'en' ? enBook : frBook;
 
----
+  let currentSection;
+  $: currentSection = bookContent.sections[$readingProgress.sectionIndex];
+  
+  let progressPercentage = 0;
+  $: progressPercentage = (($readingProgress.sectionIndex + 1) / bookContent.sections.length) * 100;
 
-Dans le froid stérile de la climatisation excessive, Mark a claqué son stylo sur la table. Le bruit sec a résonné dans la pièce autrement silencieuse, un son bien trop fort pour l'espace. "Ce n'est pas un risque, c'est un fantasme."
+  onMount(() => {
+    const savedProgress = localStorage.getItem('readingProgress');
+    if (savedProgress) {
+      readingProgress.set(JSON.parse(savedProgress));
+    }
 
-Les bras de Jane se sont croisés, son expression se durcissant en un masque de scepticisme familier. "Le fantasme, c'est de penser que nous pouvons changer l'architecture de base un mois avant le lancement. C'est imprudent."
+    const unsubscribe = readingProgress.subscribe(value => {
+      localStorage.setItem('readingProgress', JSON.stringify(value));
+    });
+    
+    setTimeout(() => window.scrollTo(0, $readingProgress.scrollPosition), 100);
 
-Leo, le Connecteur de l'équipe, s'est simplement tu, semblant se recroqueviller sur sa chaise. Maria a regardé les lignes invisibles de tension dans la pièce se tendre. Ce qui avait commencé comme une simple mise à jour de statut dans une pièce qui sentait légèrement le café rassis de la veille avait dégénéré en une dispute tendue en moins de cinq minutes. Elle avait essayé de servir de médiateur, mais c'était comme si chaque mot qu'elle disait jetait de l'huile sur le feu.
+    return unsubscribe;
+  });
 
-Plus tard dans la journée, en rejouant la conversation dans son esprit, elle se sentait comme une programmeuse face à un bug qu'elle ne pouvait pas reproduire. Les réactions de l'équipe étaient viscérales, émotionnelles et — pour son esprit logique — complètement disproportionnées par rapport au désaccord technique en jeu. Le système était cassé, mais les journaux d'erreurs étaient invisibles. Son enquête devait commencer par la question qui la tourmentait depuis le premier appel désastreux avec Mark : pourquoi cela faisait-il *si mal* ?
+  function handleScroll() {
+    readingProgress.update(p => ({ ...p, scrollPosition: window.scrollY }));
+  }
 
-Cette nuit-là, Maria ne pouvait pas dormir. La dispute tournait en boucle dans sa tête, un morceau de code cassé qu'elle ne pouvait pas réparer. Frustrée, elle a ouvert son ordinateur portable et est tombée dans un gouffre d'articles de neurosciences, à la recherche d'une réponse. Une seule découverte surprenante l'a arrêtée net. Pendant des décennies, nous avons parlé de la douleur sociale — la piqûre du rejet, la honte de l'exclusion — comme si c'était une métaphore.
+  function goToSection(index: number) {
+    if (index >= 0 && index < bookContent.sections.length) {
+      readingProgress.update(p => ({ ...p, sectionIndex: index, scrollPosition: 0 }));
+      window.scrollTo(0, 0);
+    }
+  }
+</script>
 
-**Ce n'est pas le cas.**
+<svelte:window on:scroll={handleScroll} />
 
-Elle a lu les travaux d'une équipe de neuroscientifiques pionniers à l'UCLA, dirigée par le Dr Matthew Lieberman et le Dr Naomi Eisenberger. Ils ont découvert que la partie du cerveau qui s'illumine lorsque vous êtes socialement exclu est le **cortex cingulaire antérieur dorsal** — le même circuit neuronal qui s'active lorsque vous vous coincez le doigt dans une portière de voiture.
+<main class="main-content">
+  <div class="reader-container">
+    <header class="reader-header">
+      <a href="/" class="back-link">&larr; Back to Portfolio</a>
+      <div class="controls">
+        <button class:active={$readingProgress.language === 'en'} on:click={() => $readingProgress.language = 'en'}>EN</button>
+        <button class:active={$readingProgress.language === 'fr'} on:click={() => $readingProgress.language = 'fr'}>FR</button>
+      </div>
+    </header>
 
-> *Du point de vue de votre cerveau, un mot méprisant d'un collègue peut être ressenti de manière neurologiquement identique à une blessure physique.*
+    <div class="progress-container">
+      <div class="progress-bar" style="width: {progressPercentage}%" />
+    </div>
 
-C'était la clé. Quand Jane a qualifié l'idée de Mark d'"imprudente", elle ne faisait pas que ne pas être d'accord avec lui. À ce moment-là, le cerveau de Mark a interprété ses mots comme une véritable menace, un coup neurologique. Mais cela a conduit à la question cruciale suivante : si la douleur sociale est réelle, qu'est-ce qui la déclenche ?
+    <main class="content-main">
+      <article class="prose">
+        <h1>{currentSection.title}</h1>
+        {@html currentSection.content}
+      </article>
+    </main>
 
-Ses recherches l'ont finalement menée aux travaux du neuroscientifique David Rock, et à un modèle si simple et puissant qu'il ressemblait à un décodeur secret pour le chaos de sa journée. Il s'appelait le **modèle SCARF**, et il révélait les cinq domaines clés de l'expérience sociale que le cerveau traite comme des questions de survie. Une menace perçue dans l'un de ces domaines peut déclencher une réponse défensive, de "détournement".
+    <footer class="reader-footer">
+      <button on:click={() => goToSection($readingProgress.sectionIndex - 1)} disabled={$readingProgress.sectionIndex === 0}>
+        Previous
+      </button>
+      <span>{`Section ${$readingProgress.sectionIndex + 1} of ${bookContent.sections.length}`}</span>
+      <button on:click={() => goToSection($readingProgress.sectionIndex + 1)} disabled={$readingProgress.sectionIndex >= bookContent.sections.length - 1}>
+        Next
+      </button>
+    </footer>
+  </div>
+</main>
 
-SCARF est devenu le tableau de bord de Maria. Elle a imaginé un tableau de bord dans son esprit, avec cinq jauges simples : Statut, Certitude, Autonomie, Relationnel et Équité (Fairness). Dans toute interaction sociale, ces jauges clignotent constamment, passant d'un état de récompense (vert froid) à un état de menace (rouge clignotant). Le travail d'un chef d'orchestre est de surveiller ce tableau de bord chez les autres et de gérer le sien. Pour la première fois, elle pouvait analyser les débris de sa réunion et voir les journaux d'erreurs invisibles.
-
-#### **S - Statut : L'Ordre Hiérarchique**
-*   **Ce que c'est :** Notre sentiment d'importance, de compétence et de rang par rapport aux autres.
-*   **Déclencheurs de menace :** Se sentir méprisé, être corrigé en public, recevoir des conseils non sollicités, voir ses contributions rejetées.
-*   **L'Épave :** Lorsque Jane a rejeté catégoriquement la proposition de Mark comme "imprudente", elle a involontairement déclenché une menace massive de **Statut**. Sa jauge de Statut interne est passée dans le rouge. Mark base son identité professionnelle sur la qualité de sa logique. Le rejet public n'était pas seulement une critique de son idée ; il était ressenti comme un jugement sur sa compétence. Les centres de la douleur de son cerveau se sont allumés, et son esprit rationnel a été instantanément détourné par le besoin de défendre son statut.
-
-#### **C - Certitude : La Boule de Cristal**
-*   **Ce que c'est :** Le besoin profond de notre cerveau de prédire l'avenir et de comprendre les règles du jeu. Le cerveau est une machine à prédictions, et l'ambiguïté est une menace.
-*   **Déclencheurs de menace :** Instructions vagues, changements inattendus, et propositions qui semblent instables ou risquées.
-*   **L'Épave :** La préoccupation principale de Jane était la **Certitude**. De son point de vue, la proposition de Mark, avec ses calculs "théoriques", créait un avenir imprévisible et dangereux. Sa jauge de Certitude est passée en alerte maximale. Son scepticisme n'était pas seulement un trait de personnalité ; c'était une réponse biologique à un manque perçu de stabilité, la poussant à bloquer la menace.
-
-#### **A - Autonomie : Le Volant**
-*   **Ce que c'est :** Notre sentiment de contrôle sur les événements ; le sentiment que nous avons des choix.
-*   **Déclencheurs de menace :** Être micro-managé, voir des décisions prises pour soi, sentir que son avis ne compte pas.
-*   **L'Épave :** En tant que leader, Maria subissait une profonde menace d'**Autonomie**. Sa jauge clignotait en rouge alors que la réunion lui échappait. Ses tentatives de médiation échouaient, et la direction du projet était bloquée par des querelles intestines. Ce sentiment d'impuissance est un puissant déclencheur du propre détournement d'un leader.
-
-#### **R - Relationnel (Relatedness) : La Tribu**
-*   **Ce que c'est :** Notre sentiment de sécurité avec les autres ; la décision fondamentale "ami contre ennemi". C'est le besoin d'appartenir et de se sentir en sécurité au sein d'un groupe.
-*   **Déclencheurs de menace :** Conflit, se sentir exclu, langage "nous contre eux", rencontrer de nouvelles personnes.
-*   **L'Épave :** Leo s'est tu dès que la dispute a commencé. Pour quelqu'un qui privilégie la connexion, un conflit ouvert fait passer la jauge de **Relationnel** dans le rouge. Cela signale que la tribu se fracture. Son silence n'était pas un manque d'opinion ; c'était une retraite neurologique vers la sécurité face au danger social.
-
-#### **F - Équité (Fairness) : La Balance de la Justice**
-*   **Ce que c'est :** Notre perception que les échanges et les règles sont appliqués équitablement.
-*   **Déclencheurs de menace :** Voir quelqu'un d'autre s'attribuer le mérite de votre travail, des règles inégales, des promesses non tenues, sentir que votre voix n'est pas entendue de manière égale.
-*   **L'Épave :** Bien que ce ne soit pas le principal déclencheur de la dispute, le contexte de la pression politique de David a créé un nuage d'**Inéquité** sur toute la réunion, faisant vibrer cette jauge avec une électricité statique de bas grade. L'équipe sentait qu'elle faisait du bon travail dans des contraintes impossibles, pour être ensuite sapée par un étranger. Ce sentiment latent d'injustice a abaissé le seuil de tolérance de chacun aux autres menaces.
-
-Pour Maria, voir l'interaction à travers le tableau de bord SCARF, c'était comme allumer une caméra thermique dans une pièce sombre. Les signatures thermiques invisibles de la menace étaient soudainement, brillamment claires. Le chaos n'était pas aléatoire ; c'était un affrontement prévisible de pulsions de survie concurrentes. Elle n'avait pas géré un désaccord technique ; elle se tenait au milieu d'un incendie SCARF à cinq alarmes.
-
----
-### **Pratique du Chef d'Orchestre**
-
-#### **Résumé de la Boîte à Outils**
-*   **Principe : La Douleur Sociale est une Douleur Réelle.** Le cerveau traite les menaces sociales dans les mêmes circuits neuronaux que les blessures physiques.
-*   **Outil : Le Tableau de Bord SCARF.** Utilisez **S**tatut, **C**ertitude, **A**utonomie, **R**elationnel (Relatedness), et **É**quité (Fairness) comme une lentille de diagnostic pour comprendre les moteurs cachés d'une interaction sociale.
-
-#### **L'Amélioration de 1%**
-Pour les prochaines 24 heures, votre seule mission est de commencer à utiliser ce nouvel outil de diagnostic. Lorsque vous voyez une petite flambée de tension dans une conversation, un e-mail ou une réunion, demandez-vous simplement : *Laquelle des cinq jauges SCARF vient de passer dans le rouge ?* N'essayez rien de réparer. Entraînez-vous simplement à voir le code.
-
-#### **Entrée de Journal de Bord**
-*   **L'Expérience :** Quelle petite expérience réalisable allez-vous mener ? (par ex., "Dans une conversation à venir, mon objectif est de prédire quel domaine SCARF est le plus susceptible d'être menacé pour un participant clé, et de simplement observer.")
-*   **La Répétition Chaotique (Ce qui s'est passé) :** Décrivez ce qui s'est réellement passé. Était-ce maladroit ? A-t-il "échoué" ? Quelle a été la réaction de l'autre personne ? (par ex., "J'avais prédit que mon patron ressentirait une menace de Statut si je le corrigeais lors de la réunion d'équipe. C'est arrivé. Mon ancien instinct était de défendre mon point de vue, mais à la place, j'ai juste observé. C'était incroyablement difficile de rester silencieux.")
-*   **Les Données (Ce que vous avez appris) :** Qu'a révélé cette tentative 'imparfaite' ? Traitez le résultat comme des données pures, pas comme une note sur votre performance. (par ex., "Les données montrent que le Statut est un déclencheur puissant pour lui, encore plus que je ne le pensais. Les données montrent aussi que mon envie de prouver que j'ai raison est un comportement de recherche de Statut de ma part. Mon silence était une forme d'autorégulation.")
-*   **La Prochaine Itération :** Sur la base des données, quelle est la prochaine expérience, encore plus petite ? (par ex., "La prochaine fois, j'essaierai de valider son Statut publiquement avant de présenter un contre-argument en privé.")
+<style>
+  .main-content {
+    padding-top: 80px;
+  }
+  /* Basic styles for a clean reading experience */
+  .reader-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: var(--font-family);
+  }
+  .reader-header, .reader-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  .progress-container {
+    width: 100%;
+    height: 4px;
+    background-color: var(--border-color);
+    border-radius: 2px;
+    margin-bottom: 2rem;
+  }
+  .progress-bar {
+    height: 100%;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    transition: width 0.3s ease;
+  }
+  .prose {
+    line-height: 1.7;
+    color: var(--text-primary);
+  }
+  .prose :global(h1),
+  .prose :global(h2),
+  .prose :global(h3) {
+    margin-bottom: 1rem;
+  }
+   .prose :global(p) {
+    margin-bottom: 1em;
+  }
+  button {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background: var(--card-background);
+    cursor: pointer;
+  }
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  .controls button.active {
+    background: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+  }
+  .back-link {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  .back-link:hover {
+    color: var(--accent-color);
+  }
+</style>
       ]]>
     </file>
     <file path="TASKS.md">
@@ -91,6 +165,9 @@ Pour les prochaines 24 heures, votre seule mission est de commencer à utiliser 
 - [x] Fix `:global()` CSS syntax error in book reader page
 - [x] Set up French translation files and provide a translated example
 - [x] Translate Chapter 2 to French
+- [x] Translate Chapters 3, 4, 5, and 6 to French
+- [x] Translate Chapters 7, 8, 9, 10, and 11 to French
+- [x] Fix book reader page content being overlapped by navbar
       ]]>
     </file>
   </modifications>

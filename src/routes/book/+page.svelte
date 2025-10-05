@@ -43,38 +43,43 @@
 
 <svelte:window on:scroll={handleScroll} />
 
-<div class="reader-container">
-  <header class="reader-header">
-    <a href="/" class="back-link">&larr; Back to Portfolio</a>
-    <div class="controls">
-      <button class:active={$readingProgress.language === 'en'} on:click={() => $readingProgress.language = 'en'}>EN</button>
-      <button class:active={$readingProgress.language === 'fr'} on:click={() => $readingProgress.language = 'fr'}>FR</button>
+<main class="main-content">
+  <div class="reader-container">
+    <header class="reader-header">
+      <a href="/" class="back-link">&larr; Back to Portfolio</a>
+      <div class="controls">
+        <button class:active={$readingProgress.language === 'en'} on:click={() => $readingProgress.language = 'en'}>EN</button>
+        <button class:active={$readingProgress.language === 'fr'} on:click={() => $readingProgress.language = 'fr'}>FR</button>
+      </div>
+    </header>
+
+    <div class="progress-container">
+      <div class="progress-bar" style="width: {progressPercentage}%" />
     </div>
-  </header>
 
-  <div class="progress-container">
-    <div class="progress-bar" style="width: {progressPercentage}%" />
+    <main class="content-main">
+      <article class="prose">
+        <h1>{currentSection.title}</h1>
+        {@html currentSection.content}
+      </article>
+    </main>
+
+    <footer class="reader-footer">
+      <button on:click={() => goToSection($readingProgress.sectionIndex - 1)} disabled={$readingProgress.sectionIndex === 0}>
+        Previous
+      </button>
+      <span>{`Section ${$readingProgress.sectionIndex + 1} of ${bookContent.sections.length}`}</span>
+      <button on:click={() => goToSection($readingProgress.sectionIndex + 1)} disabled={$readingProgress.sectionIndex >= bookContent.sections.length - 1}>
+        Next
+      </button>
+    </footer>
   </div>
-
-  <main class="content-main">
-    <article class="prose">
-      <h1>{currentSection.title}</h1>
-      {@html currentSection.content}
-    </article>
-  </main>
-
-  <footer class="reader-footer">
-    <button on:click={() => goToSection($readingProgress.sectionIndex - 1)} disabled={$readingProgress.sectionIndex === 0}>
-      Previous
-    </button>
-    <span>{`Section ${$readingProgress.sectionIndex + 1} of ${bookContent.sections.length}`}</span>
-    <button on:click={() => goToSection($readingProgress.sectionIndex + 1)} disabled={$readingProgress.sectionIndex >= bookContent.sections.length - 1}>
-      Next
-    </button>
-  </footer>
-</div>
+</main>
 
 <style>
+  .main-content {
+    padding-top: 80px;
+  }
   /* Basic styles for a clean reading experience */
   .reader-container {
     max-width: 800px;
