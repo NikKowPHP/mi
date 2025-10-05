@@ -5,4 +5,5 @@
 - [x] Translate Chapters 3, 4, 5, and 6 to French
 - [x] Translate Chapters 7, 8, 9, 10, and 11 to French
 - [x] Fix book reader page content being overlapped by navbar
+- [x] Translate book frontmatter (Preface, Introduction) to French
       
