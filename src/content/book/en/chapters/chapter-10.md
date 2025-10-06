@@ -16,7 +16,11 @@ A week later, David's words came back to haunt her. Her boss, Frank, pulled her 
 
 Frank leaned forward. "He started by praising you. He said you had a 'very productive chat.' He said he was relieved that you were starting to see the 'big picture.' Then he painted this picture of the 'Acme Disaster' from years ago—a project that failed catastrophically. He said the team culture was *too* good. Too much harmony, not enough hard questions. He positioned himself as the lone voice of reason who saw it coming."
 
-Frank sighed, rubbing his temples. "Then he delivered the punchline. He told me, with this look of grave concern, that you had confided in him that you were seeing the 'same patterns' in the Phoenix Project. He said you shared his 'deep concerns' about the risks. He twisted your empathy into an admission of doubt, Maria. He used your own tool against you."
+Frank sighed, rubbing his temples. "Then he delivered the punchline."
+
+*David leaned forward in the chair opposite Frank's desk, his expression one of grave concern. "The thing is, Frank," he'd said, his voice a confidential murmur, "Maria even admitted it to me herself. She told me she's seeing the 'same patterns' from the Acme disaster in her own team. Her words, not mine. She's worried, and frankly, so am I."*
+
+Frank watched her face, his own expression grim. "He twisted your empathy into an admission of doubt, Maria. He used your own tool against you."
 
 "What? No," Maria said, stunned. "That's not what I said at all. I was just trying to understand his perspective."
 

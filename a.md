@@ -1,428 +1,130 @@
 ```xml
 <response>
   <reasoning>
-    The user has provided a Svelte compiler error: `The $ prefix is reserved, and cannot be used for variables and imports`. The error message clearly points to the line `import { onMount, $effect } from 'svelte';`.
+    My plan is to implement the user's suggestion to increase the dramatic tension in Chapter 14. I will rewrite the end of the boardroom scene to show the CEO delivering the verdict of the 20% budget cut directly, rather than having it reported second-hand. This will make the moment more immediate and impactful for the reader.
 
-    In Svelte 5, runes like `$effect`, `$state`, and `$derived` are compiler keywords. They are globally available within `.svelte` files when runes mode is enabled and should not be imported from the 'svelte' package. The import statement is therefore incorrect.
-
-    My plan is to:
-    1.  Modify `src/routes/book/+page.svelte` to remove `$effect` from the import statement. The `$effect` rune will still work correctly because it's part of the Svelte 5 compiler magic.
-    2.  Update `TASKS.md` to add and complete a new task for fixing this incorrect import.
+    1.  I will modify `src/content/book/en/chapters/chapter-14.md`.
+    2.  After Maria's "antidote" speech, I will remove the summary of the outcome.
+    3.  I will insert the suggested scene where the CEO announces his decision in the room, creating a moment of rising hope followed by a sudden letdown for Maria.
+    4.  I will slightly adjust the subsequent paragraph, where Maria's boss speaks to her, to reflect that it's a reaction to the event they just witnessed together.
+    5.  Finally, I will update `TASKS.md` to add and complete this new task.
   </reasoning>
   <modifications>
-    <file path="src/routes/book/+page.svelte">
+    <file path="src/content/book/en/chapters/chapter-14.md">
       <![CDATA[
-<script lang="ts">
-  import { onMount } from 'svelte';
-  import { readingProgress } from '$lib/stores/readingProgress';
-  import { book as enBook } from '$lib/data/book-generated/en';
-  import { book as frBook } from '$lib/data/book-generated/fr';
-  import { enhance } from '$app/forms';
-  import type { ActionData, PageData } from './$types';
+---
+title: "Chapter 14: The Conductor's Legacy: The Final Performance"
+---
+### **Chapter 14: The Conductor's Legacy: The Final Performance**
+#### Navigating Disappointment and Building a Self-Tuning Orchestra
 
-  interface Props {
-    data: PageData;
-    form: ActionData;
-  }
-  let { data, form }: Props = $props();
+> ### **The Final Performance Capstone**
+>
+> This chapter brings together every practice you have learned. We follow Maria through the final, high-stakes political battle for the Phoenix Project's resources and her subsequent challenge: leading her team through a bitter disappointment without letting the culture collapse.
 
-  let settingsOpen = $state(false);
+---
+### **Part 1: The Cost of the Performance (The Regression)**
 
-  // Use $derived for computed values in runes mode
-  let bookContent = $derived(
-    $readingProgress.language === 'fr' && frBook.sections.length > 0 ? frBook : enBook
-  );
+The week before the final budget showdown with David was one of the most intense of Maria's career. The entire team was exhausted, and the pressure was immense. The morning of the final prep meeting, the stress finally boiled over.
 
-  let currentSection = $derived(data.authorized ? bookContent.sections[$readingProgress.sectionIndex] : null);
-  
-  let progressPercentage = $derived(
-    data.authorized && bookContent.sections.length > 0 
-      ? (($readingProgress.sectionIndex + 1) / bookContent.sections.length) * 100 
-      : 0
-  );
+During the session, Leo started outlining a nuanced user-experience concern, his thinking process verbal and slightly meandering. The old Maria, the brutally efficient Architect, surfaced with a vengeance.
 
-  onMount(() => {
-    if (!data.authorized) return;
+"Leo, we don't have time for philosophy," she snapped, her voice sharp. "Give me the data point and the action item. Nothing else matters right now."
 
-    const savedProgress = localStorage.getItem('readingProgress');
-    if (savedProgress) {
-      const defaultState = { language: 'en', sectionIndex: 0, scrollPosition: 0, fontSize: 3, paddingSize: 3 };
-      readingProgress.set({ ...defaultState, ...JSON.parse(savedProgress) });
-    }
-    
-    setTimeout(() => window.scrollTo(0, $readingProgress.scrollPosition), 100);
-  });
+The effect on the room was instantaneous. The fragile psychological safety they had built over the past months evaporated. Leo fell silent, his face a mask of hurt. Jane’s pen stopped moving. The team was hijacked, and she was the one who had pulled the alarm. It was a complete regression, a momentary but devastating return to her old programming.
 
-  // Use $effect to react to state changes for side effects like localStorage
-  $effect(() => {
-    if (data.authorized) {
-      localStorage.setItem('readingProgress', JSON.stringify($readingProgress));
-    }
-  });
+A few hours later, the weight of her failure settled in. The Conductor's Burden isn't just seeing the code in others; it's seeing it with horrifying clarity in yourself, especially when you fail. She knew she couldn't walk into the most important meeting of the project with a fractured orchestra.
 
-  function handleScroll() {
-    if (!data.authorized) return;
-    readingProgress.update(p => ({ ...p, scrollPosition: window.scrollY }));
-  }
+She called an emergency huddle. "I need to own what happened this morning," she began, her voice quiet and devoid of defensiveness. "My comment to you, Leo, was out of line. It was a direct result of my own stress hijack, and it was unfair. I talk all the time about creating safety, and I was the biggest threat in the room today. I'm truly sorry."
 
-  function goToSection(index: number) {
-    if (index >= 0 && index < bookContent.sections.length) {
-      readingProgress.update(p => ({ ...p, sectionIndex: index, scrollPosition: 0 }));
-      window.scrollTo(0, 0);
-    }
-  }
+She then turned to the whole team. "The pressure is getting to me. That was my old Architect brain taking over. But that's not an excuse; it's just an explanation. I need to do better. Can we try that conversation again?"
 
-  function changeFontSize(delta: number) {
-    readingProgress.update(p => {
-      const newSize = Math.max(1, Math.min(5, p.fontSize + delta));
-      return { ...p, fontSize: newSize };
-    });
-  }
+It wasn't a magic fix. The tension didn't disappear. But by owning her failure, taking responsibility, and using the shared language of their new culture, she had done something more important than being a perfect conductor. She had modeled what it looked like to be an imperfect one who was committed to the work of recovery and repair.
 
-  function changePaddingSize(delta: number) {
-    readingProgress.update(p => {
-      const newSize = Math.max(1, Math.min(5, p.paddingSize + delta));
-      return { ...p, paddingSize: newSize };
-    });
-  }
+#### **Maria's Log: The Weight of the Work**
+That evening, Maria reflected on the day. Her logbook entry was short and raw.
+*   **The Data:** High stress and pressure are reliable triggers for my old Architect programming. My apology and explanation seemed to repair the immediate damage and reinforce the team's shared language.
+*   **The Personal:** I'm so tired of having to be 'on' all the time. Today I failed, and the worst part is, it felt easier than succeeding. It's exhausting trying to build these new neural pathways when the old ones are right there, waiting.
+*   **The Next Iteration:** I can't promise I won't get hijacked again. I can only promise to keep taking responsibility for it when I do. The work isn't about being perfect; it's about getting better at the cleanup.
 
-  function setLanguage(lang: 'en' | 'fr') {
-    readingProgress.update(p => ({ ...p, language: lang, sectionIndex: 0, scrollPosition: 0 }));
-  }
-</script>
+It was this act of self-aware resilience that allowed them to walk into the final performance not as a fractured group, but as a clear-eyed team.
 
-<svelte:window on:scroll={handleScroll} />
+The next day, facing the grim task of cutting 20% of the features, Maria started to default to her Architect brain, creating a logical but top-down plan. It was Leo who stepped in.
 
-{#if data.authorized}
-  <main class="main-content">
-    <div 
-      class="reader-container"
-      data-font-size={$readingProgress.fontSize}
-      data-padding-size={$readingProgress.paddingSize}
-    >
-      <header class="reader-header">
-        <a href="/" class="back-link">&larr; Back to Portfolio</a>
-        <div class="controls">
-          <button class="settings-toggle" on:click={() => settingsOpen = !settingsOpen} aria-label="Reading settings">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
-          </button>
-          <button class:active={$readingProgress.language === 'en'} on:click={() => setLanguage('en')}>EN</button>
-          <button class:active={$readingProgress.language === 'fr'} on:click={() => setLanguage('fr')}>FR</button>
-        </div>
-      </header>
+"Maria," he began, his voice quiet but steady. "I hear the logic in your plan, and I know we need to move fast." He paused, taking a breath that looked familiar. "If I could offer a different perspective... the 'hardest part' of this for the team won't be losing the features. It will be losing our sense of agency in the process. We'll feel like the cuts happened *to* us."
 
-      {#if settingsOpen}
-      <div class="settings-panel">
-        <div class="setting-group">
-          <span class="setting-label">Font Size</span>
-          <button on:click={() => changeFontSize(-1)} disabled={$readingProgress.fontSize <= 1}>A-</button>
-          <button on:click={() => changeFontSize(1)} disabled={$readingProgress.fontSize >= 5}>A+</button>
-        </div>
-        <div class="setting-group">
-          <span class="setting-label">Padding</span>
-          <button on:click={() => changePaddingSize(-1)} disabled={$readingProgress.paddingSize <= 1}>Less</button>
-          <button on:click={() => changePaddingSize(1)} disabled={$readingProgress.paddingSize >= 5}>More</button>
-        </div>
-      </div>
-      {/if}
+He had used her own tool, the Empathy Loop, to diagnose the room's central SCARF threat: a loss of **Autonomy**.
 
-      <div class="progress-container">
-        <div class="progress-bar" style="width: {progressPercentage}%" />
-      </div>
+"So," he continued, "I propose we take one day, as a team, to decide on the cuts together. It might be slower, but we'll own the outcome."
 
-      <main class="content-main">
-        {#if currentSection}
-          <article class="prose">
-            <h1>{currentSection.title}</h1>
-            {@html currentSection.content}
-          </article>
-        {:else}
-          <p>Loading content...</p>
-        {/if}
-      </main>
+Maria looked at him, a sense of profound pride overriding her stress. The orchestra was learning to conduct itself. "You're right, Leo," she said. "That's a much better plan. Let's do it."
 
-      <footer class="reader-footer">
-        <button on:click={() => goToSection($readingProgress.sectionIndex - 1)} disabled={$readingProgress.sectionIndex === 0}>
-          Previous
-        </button>
-        <span class="footer-status">{`Section ${$readingProgress.sectionIndex + 1} of ${bookContent.sections.length}`}</span>
-        <button on:click={() => goToSection($readingProgress.sectionIndex + 1)} disabled={$readingProgress.sectionIndex >= bookContent.sections.length - 1}>
-          Next
-        </button>
-      </footer>
-    </div>
-  </main>
-{:else}
-  <main class="auth-content">
-    <div class="password-container">
-      <div class="password-card">
-        <h1 class="title">Access Restricted</h1>
-        <p class="subtitle">Please enter the password to view the book.</p>
-        <form method="POST" action="?/login" use:enhance>
-          <div class="input-group">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" required />
-          </div>
-          {#if form?.error}
-            <p class="error">{form.error}</p>
-          {/if}
-          <button type="submit" class="submit-btn">Unlock</button>
-        </form>
-      </div>
-    </div>
-  </main>
-{/if}
+---
+### **Part 2: The Conductor's Legacy (The Capstone Climax)**
 
+***The Setup: The Final Performance.*** *David’s campaign of quiet sabotage has succeeded in creating enough doubt to force a final, high-stakes leadership meeting. The agenda was simple: a go/no-go decision on Phase 2 of the Phoenix Project. Maria knew David's goal was not just to cut the budget, but to have the project killed entirely, freeing up its resources for his own initiatives. This was her final exam.*
 
-<style>
-  .main-content {
-    padding-top: 80px;
-  }
-  
-  .reader-container {
-    margin: 0 auto;
-    padding: 1rem;
-    font-family: var(--font-family);
-    transition: max-width 0.3s ease;
-  }
+The mood in the boardroom was tense, the only sound the low, anxious hum of the projector fan. As Maria began to speak, she could feel her heart starting to race. She paused, took a silent **Conductor’s Breath**, and began.
 
-  /* Dynamic Padding */
-  .reader-container[data-padding-size='1'] { max-width: 600px; }
-  .reader-container[data-padding-size='2'] { max-width: 700px; }
-  .reader-container[data-padding-size='3'] { max-width: 800px; }
-  .reader-container[data-padding-size='4'] { max-width: 900px; }
-  .reader-container[data-padding-size='5'] { max-width: 1000px; }
+David struck. "Maria, this is all very compelling," he said. "But I've seen this movie before. It was called the Acme project. A great story, a connected team, and a catastrophic failure because the hard questions weren't welcome. We can't be burning money on a project that prioritizes feel-good engineering over fiscal reality."
 
-  .reader-header, .reader-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
-    gap: 1rem;
-  }
+The old Maria would have defended her data. The new Maria took a breath.
+"David brings up an incredibly important point," she began, turning to the CEO. "He is right to be focused on the risk. His experience with the Acme project taught this company a painful and vital lesson: a positive culture is meaningless if it isn't paired with rigorous accountability. He's holding us to that standard, and frankly, he should be."
 
-  .controls {
-    display: flex;
-    gap: 0.5rem;
-  }
+She saw a flicker of surprise in David's eyes. She had disarmed him by agreeing with the value of his perspective.
 
-  .settings-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+"And that lesson is the very foundation of the Phoenix Project," she continued. "We've built in redundant checks and invited external audits at every stage. But the data from Acme taught us another lesson: that project failed not because the team felt too safe, but because the underlying system was so brittle they were afraid to touch it. The greatest risk we face isn't a single technical failure; it's the systemic risk of stagnation that comes from a team that is afraid to innovate. Therefore, the Phoenix Project, with its modern architecture and its culture of psychological safety, isn't a repeat of Acme's risk. It is the direct antidote to it."
 
-  .settings-panel {
-    background: var(--background-secondary);
-    border-radius: 12px;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    display: flex;
-    justify-content: space-around;
-    gap: 1rem;
-    border: 1px solid var(--border-color);
-  }
+The CEO held up a hand, silencing any further debate. He looked at David, then at Maria. "Maria, your defense is noted and, frankly, impressive. David, your caution is warranted." A long pause stretched the silence. "For that reason, I am approving Phase 2 of the Phoenix Project." Maria felt a surge of adrenaline, a victory— "With a revised budget," the CEO continued, his eyes locking on hers. "We're cutting it by 20%, effective immediately, out of an abundance of caution." The word "caution" landed like a punch. It wasn't a win. It was a clear, public, and painful loss.
 
-  .setting-group {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
+As they left the room, Maria's boss pulled her aside. "You and your team handled that ambush well," he said, his expression grim. "You held it together. But make no mistake, this is a real loss. David got his pound of flesh. Now you have to lead your team through the fallout. That's the job now."
 
-  .setting-label {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    margin-right: 0.5rem;
-  }
+In the debrief meeting, no one spoke. Mark stared at the blank whiteboard, his knuckles white where he gripped a dry-erase marker, his jaw tight. Jane methodically cleaned her glasses, a tiny, repetitive motion in the heavy silence. This was Maria's true final test: conducting her team through a bitter disappointment. She let them vent, validating their frustration. "It feels deeply unfair," she said.
 
-  .progress-container {
-    width: 100%;
-    height: 4px;
-    background-color: var(--border-color);
-    border-radius: 2px;
-    margin-bottom: 2rem;
-  }
-  .progress-bar {
-    height: 100%;
-    background-color: var(--accent-color);
-    border-radius: 2px;
-    transition: width 0.3s ease;
-  }
-  .prose {
-    line-height: 1.7;
-    color: var(--text-primary);
-    transition: font-size 0.3s ease;
-  }
+Hoping to salvage the moment, she tried to reframe the loss into a lesson. "We didn't win the budget we wanted, but I want you to look at what just happened. A month ago, a public attack like that would have torn us apart. Instead, we came together... What we've built is permanent."
 
-  /* Dynamic Font Size */
-  .reader-container[data-font-size='1'] .prose { font-size: 0.8rem; }
-  .reader-container[data-font-size='2'] .prose { font-size: 0.9rem; }
-  .reader-container[data-font-size='3'] .prose { font-size: 1rem; }
-  .reader-container[data-font-size='4'] .prose { font-size: 1.1rem; }
-  .reader-container[data-font-size='5'] .prose { font-size: 1.2rem; }
+The speech landed with a thud. It was Leo who finally broke the silence, his voice quiet but sharp with disillusionment. "Permanent? What's permanent is that we have to kill the features our users were most excited about. The features we were proudest of. It feels like we fought a war just to lose the peace."
 
-  .prose :global(h1),
-  .prose :global(h2),
-  .prose :global(h3) {
-    margin-bottom: 1rem;
-  }
-   .prose :global(p) {
-    margin-bottom: 1em;
-  }
-  button {
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
-    background: var(--card-background);
-    cursor: pointer;
-    transition: all 0.2s ease;
-  }
-  button:hover:not(:disabled) {
-    border-color: var(--accent-color);
-    color: var(--accent-color);
-  }
-  button:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-  }
-  .controls button.active {
-    background: var(--accent-color);
-    color: white;
-    border-color: var(--accent-color);
-  }
-  .back-link {
-    text-decoration: none;
-    color: var(--text-secondary);
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-  .back-link:hover {
-    color: var(--accent-color);
-  }
+His words pierced Maria's carefully constructed conductor's poise. Her reframe had failed. She had no script to run. She had to simply sit in the uncomfortable, unresolved dissonance.
 
-  /* Auth form styles */
-  .auth-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding-top: 80px;
-    background: var(--background-secondary);
-  }
+"You're right, Leo," she said, her voice softer, all the performance gone. "It's a huge loss. It sucks. And I don't have a speech that can fix it."
 
-  .password-container {
-    width: 100%;
-    max-width: 400px;
-    padding: 1rem;
-  }
+The meeting ended not with a resolution, but with a shared acknowledgment of the defeat.
 
-  .password-card {
-    background: var(--card-background);
-    border-radius: 16px;
-    padding: 2.5rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid var(--border-color);
-    backdrop-filter: blur(10px);
-    text-align: center;
-  }
+The next morning, the reality of the 20% cut set in. "Okay," Maria said, standing at the whiteboard. "We have to make some hard choices."
 
-  .title {
-    font-size: 1.75rem;
-    font-weight: 600;
-    color: var(--text-primary);
-    margin-bottom: 0.5rem;
-  }
+It was a painful, grinding conversation about what to sacrifice. Mark argued for a delay; Jane for hitting the date. Maria didn't have the answer. All she could do was conduct the painful conversation, using every tool to keep it from becoming destructive. She used the Empathy Loop to ensure Mark felt his plea for quality was heard, and then did the same for Jane's case for reliability.
 
-  .subtitle {
-    color: var(--text-secondary);
-    margin-bottom: 2rem;
-  }
+Finally, grudgingly, they reached a consensus. They would hit the date, but they would have to shelve the features they loved. It wasn't a moment of quiet resolve; it was a moment of shared, pragmatic grief.
 
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
+As she watched them argue, disagree, and ultimately coalesce, a quiet thought cut through her own disappointment. *This is it. This is the whole thing.* The feeling wasn't triumph; it was a deep, resonant sense of peace. Maria realized her legacy was not a political victory or a perfect project launch. It was this. It was a team that had learned how to have the hardest conversations, how to disagree without destroying each other, how to face a bitter disappointment and still choose a path forward together. The self-tuning orchestra was real, not because they played in perfect harmony, but because they had learned to hold the dissonance.
 
-  .input-group {
-    text-align: left;
-  }
+It wasn't a victory. It was something more durable: a team that had learned how to stay in the room, even when the music was hard to play. And for a conductor, that was enough.
 
-  .input-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-  }
+#### **The Science: Psychological Safety**
 
-  .input-group input {
-    width: 100%;
-    padding: 0.75rem;
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
-    background: var(--background);
-    color: var(--text-primary);
-    font-size: 1rem;
-  }
+Watching her team, Maria finally understood what all the research she'd been reading was pointing toward. Her legacy wasn't a political victory; it was this resilient culture. She finally had a name for it: **psychological safety**—a shared belief that the team is safe for interpersonal risk-taking. It wasn't an abstract concept anymore; it was the tangible, durable outcome of consistently nurturing the five SCARF domains.
 
-  .submit-btn {
-    padding: 0.75rem;
-    border: none;
-    border-radius: 8px;
-    background: var(--accent-color);
-    color: white;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+As a leader, your job is to be the chief architect of this environment.
 
-  .submit-btn:hover {
-    background: var(--accent-secondary);
-  }
+#### **The Practice: The Cultural Blueprint**
 
-  .error {
-    color: #ff3b30; /* A standard error red */
-    font-size: 0.9rem;
-    margin-top: -1rem;
-  }
+A conductor must design a system where safety is the natural output.
 
+1.  **Model the practice of calibrated vulnerability (Chapter 6):** Safety starts at the top. The fastest way to create it is for the leader to admit fault.
+2.  **Systematize SCARF Rewards:** Design routines to reward the social brain (e.g., beginning debriefs by having each person share one thing they are proud of to reward Status).
+3.  **Frame Work as Learning, Not Performing:** When a mistake happens: *Do ask:* *"What did we learn from this, and how can we use that learning to make our next experiment better?"* (Frames work as discovery).
+4.  **Distribute Competence with a Shared Language:** Give your team a shared, non-judgmental language ("SCARF," "amygdala hijack"). This creates a powerful shortcut to empathy and leads to a self-tuning orchestra.
 
-  @media (max-width: 600px) {
-    .reader-header {
-      flex-direction: column;
-      gap: 1rem;
-    }
-    .reader-footer {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    .footer-status {
-      display: none; /* Hide text on small screens to save space */
-    }
-    .settings-panel {
-      flex-direction: column;
-    }
-  }
-</style>
+By implementing these routines, you nurture their brains. You create a culture where everyone feels responsible for the music. This is the conductor's true legacy.
       ]]>
     </file>
     <file path="TASKS.md">
       <![CDATA[
-- [x] Build a multi-language book reader feature
-- [x] Fix `:global()` CSS syntax error in book reader page
-- [x] Set up French translation files and provide a translated example
-- [x] Translate Chapter 2 to French
-- [x] Translate Chapters 3, 4, 5, and 6 to French
-- [x] Translate Chapters 7, 8, 9, 10, and 11 to French
-- [x] Fix book reader page content being overlapped by navbar
-- [x] Translate book frontmatter (Preface, Introduction) to French
-- [x] Add font size and padding controls to book reader and improve mobile UI
-- [x] Add password protection to the /book route
-- [x] Fix Svelte 5 reactivity errors by migrating to runes
-- [x] Fix SvelteKit error by moving form `actions` to `+page.server.ts`
-- [x] Fix invalid placement of `<svelte:window>` tag
-- [x] Fix invalid Svelte 5 import for `$effect` rune
+- [x] Revise scenes to 'show, don't tell' Maria's emotional state.
+- [x] Show David's betrayal in Chapter 10 directly with a flashback.
+- [x] Improve narrative pacing by breaking up internal monologue in Chapter 6.
+- [x] Increase tension in Chapter 14 by having the CEO deliver the budget cut decision directly.
       ]]>
     </file>
   </modifications>

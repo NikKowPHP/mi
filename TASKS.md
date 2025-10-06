@@ -1,15 +1,5 @@
-- [x] Build a multi-language book reader feature
-- [x] Fix `:global()` CSS syntax error in book reader page
-- [x] Set up French translation files and provide a translated example
-- [x] Translate Chapter 2 to French
-- [x] Translate Chapters 3, 4, 5, and 6 to French
-- [x] Translate Chapters 7, 8, 9, 10, and 11 to French
-- [x] Fix book reader page content being overlapped by navbar
-- [x] Translate book frontmatter (Preface, Introduction) to French
-- [x] Add font size and padding controls to book reader and improve mobile UI
-- [x] Add password protection to the /book route
-- [x] Fix Svelte 5 reactivity errors by migrating to runes
-- [x] Fix SvelteKit error by moving form `actions` to `+page.server.ts`
-- [x] Fix invalid placement of `<svelte:window>` tag
-- [x] Fix invalid Svelte 5 import for `$effect` rune
+- [x] Revise scenes to 'show, don't tell' Maria's emotional state.
+- [x] Show David's betrayal in Chapter 10 directly with a flashback.
+- [x] Improve narrative pacing by breaking up internal monologue in Chapter 6.
+- [x] Increase tension in Chapter 14 by having the CEO deliver the budget cut decision directly.
       

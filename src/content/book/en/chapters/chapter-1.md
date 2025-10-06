@@ -4,7 +4,7 @@ title: "Chapter 1: Your First Instrument: The Emergency Reset"
 ### **Chapter 1: Your First Instrument: The Emergency Reset**
 #### How to Find the Brake Pedal for Your Brain
 
-The silence in the video call was so absolute, Maria could hear the frantic drumming of her own heart. A hot flush crept up her neck, a familiar, humiliating heat. Her mind, usually a fortress of logic and plans, was a chaotic blank.
+The silence in the video call was so absolute, Maria could hear the frantic drumming of her own heart. A hot flush crept up her neck, a familiar, humiliating heat. She reached for a logical argument, a line of code to fix the conversation, but her thoughts shattered. Fragments of the project plan, an email she forgot to send, Mark's frozen face—it was all there, a meaningless jumble of digital noise.
 
 Her top engineer, Mark, stared back at her from the screen, his face a perfect, frozen mask of anger, made slightly monstrous by the pixelated freeze-frame of a weak connection. Just moments before, she had shared her screen to review his latest work. A frantic Slack notification from her own boss popped up on her second monitor. Distracted and pressed for time, she glanced back at his screen and, trying to be efficient, said the words that detonated the meeting: *"This needs a lot of work."*
 

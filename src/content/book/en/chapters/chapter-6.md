@@ -25,7 +25,9 @@ Maria knew she had broken something. Her old way—logic—wouldn’t fix it. Sh
 
 Maria felt a flicker of success. *Okay, I have the data point.* Her Architect brain immediately switched into problem-solving mode. "Okay, invisible. I get it. To fix that, from now on, I'll make sure to get your input first on all new mockups before the team review. That will solve the visibility problem."
 
-The effect was a disaster. Leo didn't respond. He just gave a slight, humorless smile and turned back to his screen. The silence was worse than an argument. *Damn it. I did it again,* she thought. *I heard the word, but I didn't let him feel heard. I just tried to solve it.* Her internal monologue was a cascade of frustration. *Why is this so hard? It's inefficient. It's like trying to debug a system with no documentation and random outputs.*
+The effect was a disaster. Leo didn't respond. He just gave a slight, humorless smile and turned back to his screen. The silence was worse than an argument. *Damn it. I did it again,* she thought. *I heard the word, but I didn't let him feel heard. I just tried to solve it.*
+
+She looked down at her keyboard, the neat, logical grid of keys suddenly feeling like a foreign language. She had the right input, the right command. Why was the output always an error? It was like trying to debug a system with no documentation and completely random outputs.
 
 Her failure with Leo was a new kind of bug, one that logic couldn't solve. It forced her back to her research, where she started to understand the science of what was happening underneath the surface of her clumsy conversations.
 
