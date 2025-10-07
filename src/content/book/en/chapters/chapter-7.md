@@ -24,7 +24,7 @@ The board was convinced. They funded the project that afternoon.
 
 As the board members filed out, offering congratulations, Maria noticed one person who remained, observing from the side. It was David, a senior leader from the enterprise division, known for his political acumen and a history of seeing cross-departmental projects as either threats or opportunities. He had been silent during the presentation, but his attention was a tangible, unreadable presence in the room.
 
-But as Maria was packing up her laptop, David, a senior leader from another division, approached her. He was tall, moved with the unhurried confidence of someone who never had to rush, and wore a perfectly tailored suit that seemed out of place in their casual engineering culture.
+As Maria was packing up her laptop, David approached her. He was tall, moved with the unhurried confidence of someone who never had to rush, and wore a perfectly tailored suit that seemed out of place in their casual engineering culture.
 
 "Congratulations, Maria. Great story," he said, his smile smooth and political, not quite reaching his eyes. He leaned in slightly. "But a good story can blind people to foundational risks." As he spoke, he casually picked up Maria's pen from the table, examined it as if testing its weight, and then placed it back down, but slightly to the side, just out of her easy reach. It was a tiny, almost unnoticeable gesture of control. He mentioned a potential data pipeline issue she hadn't known about, a small, sharp barb of a warning. He was testing her.
 

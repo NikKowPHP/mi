@@ -56,10 +56,9 @@ Do this once or twice. This is the reset command. The long exhale activates your
 Do not wait for a crisis to practice this. Practice The Conductor's Breath three times today when you are perfectly calm—waiting for code to compile, sitting at a red light. By doing this, you are building a new neural pathway so that when the real alarm bell rings, your brain already knows the path to safety.
 
 #### **Logbook Entry**
-*   **My First Breath Practice:** What small, achievable experiment will you run? (e.g., "My goal this week is to simply notice my primary hijack 'tell' in a real-time interaction.")
-*   **My Real-Time Hijack Attempt:** Describe what actually happened. Did it feel clumsy? Did it "fail"? What was the other person's reaction? (e.g., "In a tense budget meeting, I felt that familiar heat in my neck. I tried to do the breath, but I felt self-conscious and only did one short one. I still felt hijacked, but I was aware of it for the first time.")
-*   **What the Data from My Nervous System Shows:** What did this 'imperfect' attempt reveal? Treat the outcome as pure data, not a grade on your performance. (e.g., "The data shows that my 'tell' is a reliable early-warning sign. It also shows that practicing this in a real meeting is harder than I thought. The barrier isn't just memory; it's social pressure.")
-*   **My Next Breath Experiment:** Based on the data, what is the next, even smaller, experiment? (e.g., "My next experiment will be to practice the breath at my desk *right before* a meeting I know will be stressful.")
+*   **Your Hijack 'Tell':** What is the first physical sensation you notice when you start to feel stressed or defensive (e.g., heat in the face, tightness in the chest)? Your mission this week is to notice it in real-time, just once, without judgment.
+*   **Your First Breath Practice:** Describe your first 'imperfect' attempt at using the Conductor's Breath in a real (even mildly stressful) situation. Did it feel clumsy? Did it 'work'? What did you learn from the attempt itself?
+*   **Data, Not a Grade:** What did the 'imperfect' attempt reveal? Treat the outcome as pure data. (e.g., "The data shows I get hijacked when my competence is questioned," or "The data shows that my first sign is heat in my neck.")
 
 ---
 ### **Dashboard Update**

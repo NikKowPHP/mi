@@ -60,8 +60,7 @@ Maria a utilisé une approche superposée (La Respiration + le principe de conne
 ### **Pratique du Chef d'Orchestre**
 
 #### **Entrée de Journal de Bord**
-Cette semaine, vous mènerez une expérience lors d'une réunion, même si vous n'êtes pas le leader officiel.
-*   **Mon Expérience de Chef d'Orchestre en Réunion :** Mon objectif est de mettre en œuvre une seule pratique de ce chapitre, comme ouvrir la réunion en énonçant les rôles pour récompenser le Statut.
-*   **Comment la Performance s'est Déroulée :** Ma tentative d'ouvrir la réunion avec les rôles a semblé performative et a mal atterri — le roulement des yeux était une donnée claire que cette équipe rejette le 'jargon de management'. La leçon est de construire la connexion par une action directe, pas par des scripts formels.
-*   **Ma Prochaine Répétition :** Ma prochaine expérience sera de sauter l'ouverture formelle et d'envoyer à la place un e-mail de suivi clair après la réunion, en me concentrant uniquement sur une clarté maximale des décisions et des actions à entreprendre.
+*   **La Conception de Votre Réunion :** Choisissez une réunion à venir. Quel est son unique et plus important objectif ? Réécrivez l'ordre du jour pour refléter cet unique objectif, en utilisant des questions pour encadrer les points de discussion.
+*   **Votre Expérience en Réunion :** Pendant une réunion cette semaine (même si vous ne la dirigez pas), votre objectif est de pratiquer une petite compétence. Exemples : Utiliser la Boucle d'Empathie sur un collègue qui est interrompu, ou pratiquer le Silence Stratégique après un moment tendu. Qu'avez-vous fait ?
+*   **Le Suivi :** Après une réunion, écrivez l'e-mail de suivi que vous *auriez souhaité* que le leader envoie, en vous concentrant sur une clarté maximale pour les décisions et les actions à entreprendre. Quelle est la différence entre votre version et ce qui a été (ou n'a pas été) envoyé ?
       

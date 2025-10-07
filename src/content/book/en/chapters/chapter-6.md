@@ -108,10 +108,9 @@ You can't force trust, but you can practice behaviors that trigger an oxytocin r
 *   🔧 **Tool: The Connection & Trust Framework.** This is a suite of behaviors for making others feel seen, heard, and safe. Use presence, the Empathy Loop ("What's the hardest part...?"), and Calibrated Vulnerability to create psychological safety and rapport. This is the first essential tool of your **Core Duo**.
 
 #### **Logbook Entry**
-*   **My Connection Experiment:** What small, achievable experiment will you run? (e.g., "In one conversation this week, my goal is to practice one part of the Connection & Trust framework, like asking 'What's the hardest part?' or sending one 'social sonar ping' of vulnerability.")
-*   **My Clumsy Empathy Loop Attempt:** Describe what actually happened. Did it feel clumsy? Did it "fail"? What was the other person's reaction? (e.g., "I tried to use the 'What's the hardest part?' line with a colleague. It felt so scripted, and I think they could tell. They gave a short answer and changed the subject. The silence was excruciating.")
-*   **What I Learned from the Awkwardness:** What did this 'imperfect' attempt reveal? Treat the outcome as pure data, not a grade on your performance. (e.g., "The data shows that my delivery was inauthentic. It also shows the level of trust with this person isn't ready for this tool yet. **The data also shows that the feeling of 'excruciating silence' is a hijack tell for me.**")
-*   **My Next Connection Attempt:** Based on the data, what is the next, even smaller, experiment? (e.g., "My next experiment will be much smaller. I will just focus on practicing the 'Intelligent Pause' and not offering solutions. I will build trust through quiet presence, not clumsy scripts.")
+*   **The 'No-Solve' Challenge:** In one low-stakes conversation this week, your only mission is to listen. When the other person shares a problem, resist the urge to offer a solution. How did it feel to just be present?
+*   **Your First Playback:** In a different conversation, try using "The Playback" just once. Summarize the underlying emotion you heard (e.g., "It sounds like that was really frustrating."). What was their reaction? Did it feel clumsy?
+*   **Your Social Sonar Ping:** Try one small, 'calibrated vulnerability' with someone you already trust (e.g., "I'm still getting the hang of this new software."). What was their response? What did this data tell you about the safety level in the relationship?
 
 #### **Troubleshooting**
 *   **Q: "I tried the Empathy Loop, but they just shut down and said, 'I'm fine.'"**

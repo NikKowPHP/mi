@@ -60,8 +60,7 @@ Maria used a layered approach (The Breath + the principle of connection) to co-r
 ### **Conductor's Practice**
 
 #### **Logbook Entry**
-This week, you will conduct one experiment in a meeting, even if you are not the official leader.
-*   **My Meeting Conductor Experiment:** My goal is to implement one single practice from this chapter, such as opening the meeting by stating roles to reward Status.
-*   **How the Performance Unfolded:** My attempt to open the meeting with roles felt performative and landed badly—the eye-roll was clear data that this team rejects 'management-speak.' The lesson is to build connection through direct action, not formal scripts.
-*   **My Next Rehearsal:** My next experiment will be to skip the formal opening and instead send one clear follow-up email after the meeting, focusing only on maximum clarity of decisions and action items.
+*   **Your Meeting Design:** Pick one upcoming meeting. What is its single, most important goal? Rewrite the agenda to reflect that one goal, using questions to frame the discussion points.
+*   **Your In-Meeting Experiment:** During one meeting this week (even one you don't lead), your goal is to practice one small skill. Examples: Use the Empathy Loop on a colleague who is interrupted, or practice Strategic Silence after a tense moment. What did you do?
+*   **The Follow-Up:** After one meeting, write the follow-up email you *wish* the leader had sent, focusing on maximum clarity for decisions and action items. What's the difference between your version and what was (or wasn't) sent?
       

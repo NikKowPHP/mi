@@ -67,8 +67,7 @@ For Maria, seeing the interaction through the SCARF dashboard was like switching
 For the next 24 hours, your only mission is to start using this new diagnostic tool. When you see a small flare-up of tension in a conversation, an email, or a meeting, just ask yourself: *Which of the five SCARF gauges just went into the red?* Don't try to fix anything. Just practice seeing the code.
 
 #### **Logbook Entry**
-*   **My SCARF Spotting Experiment:** What small, achievable experiment will you run? (e.g., "In one upcoming conversation, my goal is to predict which SCARF domain is most likely to be threatened for a key participant, and simply observe.")
-*   **What Happened in the Wild:** Describe what actually happened. Did it feel clumsy? Did it "fail"? What was the other person's reaction? (e.g., "I predicted my boss would feel a Status threat if I corrected him in the team meeting. He did. My old instinct was to argue my point, but instead I just watched. It was incredibly hard to stay silent.")
-*   **What the SCARF Data Revealed:** What did this 'imperfect' attempt reveal? Treat the outcome as pure data, not a grade on your performance. (e.g., "The data shows that Status is a powerful trigger for him, even more than I thought. The data also shows that my urge to prove I'm right is a Status-seeking behavior of my own. My silence was a form of self-regulation.")
-*   **My Next Diagnostic Experiment:** Based on the data, what is the next, even smaller, experiment? (e.g., "Next time, I will try to validate his Status publicly before I present a counter-argument privately.")
+*   **The SCARF Diagnostic (Them):** Think of a recent, difficult interaction. Which of the five SCARF domains was most likely under threat for the *other* person? What specific words or actions triggered it?
+*   **The SCARF Diagnostic (You):** Now, run the same diagnostic on yourself. In that same interaction, which of *your* SCARF gauges went into the red? What was your internal or external reaction?
+*   **Your Next Observation:** Based on this data, what is one specific SCARF trigger you will watch for in your interactions this week (in yourself or others)?
       

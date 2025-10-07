@@ -358,4 +358,8 @@ This plan now includes a new phase dedicated to the subtitle, timed to occur *af
 *   [x] **Foreshadow antagonist in Chapter 7:** Added a transitional paragraph to introduce David before his confrontation with Maria, making his appearance feel more organic.
 *   [x] **Customize Logbook Prompts:** Tailored the "Logbook Entry" prompts in each chapter to reflect the chapter's specific topic, increasing reader engagement.
 *   [x] **Add warning for "Conductor's Shield" tool:** Inserted a cautionary paragraph in Chapter 10 to frame the tool as high-risk before its narrative failure.
-      
+*   [x] **Fix immersion-breaking production note in French Preface:** Removed the "Note on Visual Design" from `src/content/book/fr/frontmatter/PREFACE.md`.
+*   [x] **Refine antagonist's introduction in Chapter 7 to remove redundancy.**
+*   [x] **Improve narrative sequence of 'Conductor's Shield' in Chapter 10.**
+*   [x] **Customize Logbook Prompts:** Tailored the "Logbook Entry" prompts in each chapter to reflect the chapter's specific topic, increasing reader engagement.
+*   [x] **Refine 'Join the Orchestra' section for conciseness and impact.**
