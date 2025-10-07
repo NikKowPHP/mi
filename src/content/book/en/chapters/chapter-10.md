@@ -18,9 +18,9 @@ Frank leaned forward. "He started by praising you. He said you had a 'very produ
 
 Frank sighed, rubbing his temples. "Then he delivered the punchline."
 
-*David leaned forward in the chair opposite Frank's desk, his expression one of grave concern. "The thing is, Frank," he'd said, his voice a confidential murmur, "Maria even admitted it to me herself. She told me she's seeing the 'same patterns' from the Acme disaster in her own team. Her words, not mine. She's worried, and frankly, so am I."*
+*David leaned forward in the chair opposite Frank's desk, his expression one of grave concern. "She finally let her guard down with me, Frank, and I was glad to see it," he'd said, his voice a confidential murmur. "She admitted she's seeing the 'same patterns' from the Acme disaster in her own team. Her words, not mine. She's worried, and frankly, so am I."*
 
-Frank watched her face, his own expression grim. "He twisted your empathy into an admission of doubt, Maria. He used your own tool against you."
+Frank watched her face, his own expression grim. "He framed it as a moment of kinship. He made your empathy sound like a secret confession between allies. He twisted it into an admission of doubt, Maria. He used your own tool against you."
 
 "What? No," Maria said, stunned. "That's not what I said at all. I was just trying to understand his perspective."
 

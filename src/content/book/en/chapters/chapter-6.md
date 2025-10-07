@@ -78,7 +78,7 @@ Building on her small opening, Maria decided to try "calibrated vulnerability." 
 
 It was a powerful Status reward, framed not as a request for help, but as a consultation with an expert. It honored Jane's core identity. Maria then deployed a second, more direct form of vulnerability. "Honestly? I'm also asking because my attempts to connect with you have been a total disaster," she admitted. "I'm trying to learn how to lead this team better, and it's clear I can't do that without your trust."
 
-The raw honesty, combined with the respect for Jane's expertise, surprised her. It was a tiny crack in the wall, built on a slow process of demonstrating competence and respect over time.
+The raw honesty, combined with the respect for Jane's expertise, surprised her. It was a tiny crack in the wall, built not on feelings, but on a foundation of respect. Her investigation was revealing a second, crucial element: connection wasn't enough. She also had to understand the mechanics of trust.
 
 #### 🧠 **The Science and Practice of Trust**
 

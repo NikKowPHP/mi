@@ -19,7 +19,7 @@ During the session, Leo started outlining a nuanced user-experience concern, his
 
 The effect on the room was instantaneous. The fragile psychological safety they had built over the past months evaporated. Leo fell silent, his face a mask of hurt. Jane’s pen stopped moving. The team was hijacked, and she was the one who had pulled the alarm. It was a complete regression, a momentary but devastating return to her old programming.
 
-A few hours later, the weight of her failure settled in. The Conductor's Burden isn't just seeing the code in others; it's seeing it with horrifying clarity in yourself, especially when you fail. She knew she couldn't walk into the most important meeting of the project with a fractured orchestra.
+A few hours later, Maria found herself staring at a line of code she had written, but her mind wasn't on the syntax. All she could see was the look on Leo's face. She closed the laptop, the soft click of the lid sounding like a final verdict. The Conductor's Burden isn't just seeing the code in others; it's seeing it with horrifying clarity in yourself, especially when you fail. She knew she couldn't walk into the most important meeting of the project with a fractured orchestra.
 
 She called an emergency huddle. "I need to own what happened this morning," she began, her voice quiet and devoid of defensiveness. "My comment to you, Leo, was out of line. It was a direct result of my own stress hijack, and it was unfair. I talk all the time about creating safety, and I was the biggest threat in the room today. I'm truly sorry."
 
@@ -29,9 +29,8 @@ It wasn't a magic fix. The tension didn't disappear. But by owning her failure, 
 
 #### **Maria's Log: The Weight of the Work**
 That evening, Maria reflected on the day. Her logbook entry was short and raw.
-*   **The Data:** High stress and pressure are reliable triggers for my old Architect programming. My apology and explanation seemed to repair the immediate damage and reinforce the team's shared language.
-*   **The Personal:** I'm so tired of having to be 'on' all the time. Today I failed, and the worst part is, it felt easier than succeeding. It's exhausting trying to build these new neural pathways when the old ones are right there, waiting.
-*   **The Next Iteration:** I can't promise I won't get hijacked again. I can only promise to keep taking responsibility for it when I do. The work isn't about being perfect; it's about getting better at the cleanup.
+
+High stress is the trigger. It brings the old Architect roaring back. The apology worked, I think—it reinforced our shared language. But I'm so tired of being 'on.' Today it felt easier to fail than to succeed, and that scares me. I can't promise perfection. Only that I'll keep getting better at the cleanup.
 
 It was this act of self-aware resilience that allowed them to walk into the final performance not as a fractured group, but as a clear-eyed team.
 
@@ -98,7 +97,7 @@ As a leader, your job is to be the chief architect of this environment.
 A conductor must design a system where safety is the natural output.
 
 1.  **Model the practice of calibrated vulnerability (Chapter 6):** Safety starts at the top. The fastest way to create it is for the leader to admit fault.
-2.  **Systematize SCARF Rewards:** Design routines to reward the social brain (e.g., beginning debriefs by having each person share one thing they are proud of to reward Status).
+2.  **Systematize SCARF Rewards:** Design routines to reward the's social brain (e.g., beginning debriefs by having each person share one thing they are proud of to reward Status).
 3.  **Frame Work as Learning, Not Performing:** When a mistake happens: *Do ask:* *"What did we learn from this, and how can we use that learning to make our next experiment better?"* (Frames work as discovery).
 4.  **Distribute Competence with a Shared Language:** Give your team a shared, non-judgmental language ("SCARF," "amygdala hijack"). This creates a powerful shortcut to empathy and leads to a self-tuning orchestra.
 

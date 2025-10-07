@@ -22,7 +22,7 @@ In the meeting, she didn't open with a spreadsheet. She opened with a simple, th
 
 The board was convinced. They funded the project that afternoon. But as Maria was packing up her laptop, David, a senior leader from another division, approached her. He was tall, moved with the unhurried confidence of someone who never had to rush, and wore a perfectly tailored suit that seemed out of place in their casual engineering culture.
 
-"Congratulations, Maria. Great story," he said, his smile smooth and political, not quite reaching his eyes. He leaned in slightly, invading her personal space just enough to signal intimacy and control. "But a good story can blind people to foundational risks." He mentioned a potential data pipeline issue she hadn't known about, a small, sharp barb of a warning. He was testing her.
+"Congratulations, Maria. Great story," he said, his smile smooth and political, not quite reaching his eyes. He leaned in slightly. "But a good story can blind people to foundational risks." As he spoke, he casually picked up Maria's pen from the table, examined it as if testing its weight, and then placed it back down, but slightly to the side, just out of her easy reach. It was a tiny, almost unnoticeable gesture of control. He mentioned a potential data pipeline issue she hadn't known about, a small, sharp barb of a warning. He was testing her.
 
 That evening, an email from him arrived. It was a masterclass in corporate maneuvering.
 
@@ -37,7 +37,9 @@ That evening, an email from him arrived. It was a masterclass in corporate maneu
 > Best,
 > David
 
-Maria's stomach dropped. It wasn't a suggestion; it was a declaration. Odyssey was David's failing pet project, a notoriously unstable system. An integration would be a technical nightmare, a certain path to delays and missed deadlines. He had copied her boss and the entire executive team. It was a trap, sprung in public. Her goal was no longer just to build a great product. It was to politically and technically survive a forced dependency designed to make her fail. The real performance was just beginning.
+Maria's stomach dropped. It wasn't a suggestion; it was a declaration. Odyssey was David's failing pet project, a notoriously unstable system. An integration would be a technical nightmare, a certain path to delays and missed deadlines. He had copied her boss and the entire executive team. It was a trap, sprung in public. Her goal was no longer just to build a great product. It was to politically and technically survive a forced dependency designed to make her fail.
+
+The real performance was just beginning. Her victory with the board felt hollow now, a prelude to a much more dangerous game. To survive, she had to deconstruct not only her own success but David's attack. The two events, she realized, were built from the same two elements: the power of a clear structure and the undeniable influence of a story.
 
 ---
 ### **Chapter 7 Debrief: Clarity and Storytelling**

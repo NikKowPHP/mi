@@ -61,8 +61,7 @@ Maria used a layered approach (The Breath + the principle of connection) to co-r
 
 #### **Logbook Entry**
 This week, you will conduct one experiment in a meeting, even if you are not the official leader.
-*   **The Experiment:** What small, achievable experiment will you run? (e.g., "My goal is to implement one single practice from this chapter in an upcoming meeting (e.g., sending a SCARF-aware agenda, opening by stating roles, focusing on connection with one dissenter).")
-*   **The Messy Rehearsal (What Happened):** Describe what actually happened. Did it feel clumsy? Did it "fail"? What was the other person's reaction? (e.g., "I tried to open the meeting by giving everyone a clear role. It felt incredibly awkward and performative, like I was pretending to be a 'good manager.' One person rolled their eyes.")
-*   **The Data (What You Learned):** What did this 'imperfect' attempt reveal? Treat the outcome as pure data, not a grade on your performance. (e.g., "The data shows that this team's culture is cynical about 'management techniques.' The eye-roll wasn't a rejection of me, but a rejection of the perceived script. The attempt failed, but I learned that connection here must be built on direct, non-scripted actions, not meeting-opening pronouncements.")
-*   **The Next Iteration:** Based on the data, what is the next, even smaller, experiment? (e.g., "My next experiment will be to skip the formal opening and instead send one clear follow-up email after the meeting, focusing only on maximum clarity of decisions and action items.")
+*   **The Experiment:** My goal is to implement one single practice from this chapter, such as opening the meeting by stating roles to reward Status.
+*   **The Debrief:** My attempt to open the meeting with roles felt performative and landed badly—the eye-roll was clear data that this team rejects 'management-speak.' The lesson is to build connection through direct action, not formal scripts.
+*   **The Next Iteration:** My next experiment will be to skip the formal opening and instead send one clear follow-up email after the meeting, focusing only on maximum clarity of decisions and action items.
       
