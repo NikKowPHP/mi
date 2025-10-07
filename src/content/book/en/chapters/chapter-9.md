@@ -43,6 +43,11 @@ Before she could get to the "Offer," David smiled, a smooth, political gesture. 
 Maria was stunned. David had expertly taken her reasonable boundary and reframed it as a lack of strategic vision—a direct Status attack, performed for an audience. Her boss's expression became unreadable. The script had "worked"—David had backed down on the request—but the social cost was immediate and tangible. She had protected her team's time, but at the cost of her political capital. She logged the painful data: **a successful boundary doesn't guarantee a successful outcome.**
 
 ---
+
+> ### **A Critical Safety Warning: When These Tools Are Not Safe**
+> The tools in this chapter are for navigating conflict in relationships of good faith. If you are in a dynamic that you suspect is emotionally, psychologically, or physically abusive, these tools are not appropriate. Your goal is not to improve communication; your goal is safety. Please refer to the resources in Appendix D and seek professional help.
+
+---
 ### **Field Note: Setting a Boundary at Home**
 
 The "Validate, State, Offer" script isn't just for senior leaders like David; it's a vital tool for protecting your energy with the people you love most.
@@ -111,4 +116,3 @@ A "no" can feel like a severe **Relatedness** threat. This script is designed to
 *   **(S) State:** "My plate is full right now..." (Icon: A stop sign)
 *   **(O) Offer:** "While I can't, I can suggest..." (Icon: A gift)
 ---
-      

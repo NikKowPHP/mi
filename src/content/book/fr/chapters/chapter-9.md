@@ -18,14 +18,14 @@ L'immense pression de la revue de Sterling Corp. faisait des ravages. Avec des t
 
 D'abord, elle devait réparer les dégâts avec Leo. Elle a programmé un appel, l'estomac noué. Elle sentait sa propre défensive monter — une voix dans sa tête marmonnant, *“Il divaguait !”* Elle s'arrêta, ferma les yeux, et prit trois **Respirations du Chef d'Orchestre** lentes et délibérées. *Mon but n'est pas de gagner,* se dit-elle. *Mon but est de réparer ça.*
 
-Elle a commencé la conversation en essayant d'exécuter perfectly le script de la Conversation Difficile.
+Elle a commencé la conversation en essayant d'exécuter parfaitement le script de la Conversation Difficile.
 "Leo," commença-t-elle, sa voix sonnant formelle et rigide. "Je voulais partager une observation neutre. Quand je t'ai coupé dans la réunion, j'ai immédiatement vu que tu te fermais. Je ne peux qu'imaginer comment ça a dû être perçu. Peux-tu me dire ce qui se passait pour toi à ce moment-là ?"
 
 Leo resta silencieux un moment, son expression gardée. "Honnêtement, Maria ? Ça ressemble à quelque chose que tu as lu dans un livre de management. Je ne sais pas quoi répondre à ça."
 
 La réponse a frappé Maria comme un coup physique. Son visage rougit d'embarras. Maria sentit sa mâchoire se serrer. Elle eut une impulsion absurde de vérifier son propre reflet sur l'écran vide, pour voir si elle avait l'air aussi stupide qu'elle se sentait. Son cerveau d'Architecte cria que toute cette "affaire d'empathie" était une perte de temps. *Tu vois ? Ça ne marche pas. C'est juste du théâtre d'entreprise maladroit,* pensa-t-elle, une vague de honte et de colère montant en elle. Elle prit une autre respiration, presque imperceptible. Elle devait abandonner le script.
 
-"Tu as raison," dit-elle, sa voix plus douce, le langage performatif disparu. "C'était maladroit. Laisse-moi réessayer. J'ai été une vraie salope avec toi dans cette réunion. C'était irrespectueux, et je suis vraiment désolée. Il n'y a aucune excuse pour ça."
+"Tu as raison," dit-elle, sa voix plus douce, le langage performatif disparu. "C'était maladroit. Laisse-moi réessayer. J'ai été un vrai crétin avec toi dans cette réunion. C'était irrespectueux, et je suis vraiment désolé. Il n'y a aucune excuse pour ça."
 
 Le changement fut palpable. La posture de Leo se détendit légèrement. "J'ai... j'ai eu l'impression que tu me traitais d'idiot devant tout le monde," dit-il, la voix basse.
 
@@ -41,6 +41,11 @@ Lors d'une réunion avec son propre patron présent, elle a agi. "David, merci d
 Avant qu'elle ne puisse arriver à la "Proposition", David sourit, un geste lisse et politique. "Je comprends tout à fait les contraintes de ressources," dit-il, se tournant légèrement pour s'adresser au patron de Maria. "Mais il s'agit d'alignement stratégique. Je crains que l'équipe de Maria ne devienne un goulot d'étranglement. Nous avons besoin de partenaires qui peuvent voir la situation dans son ensemble et trouver un moyen de dire 'oui', pas de partenaires qui sont territoriaux avec leurs ressources."
 
 Maria était abasourdie. David avait expertement pris sa limite raisonnable et l'avait recadrée comme un manque de vision stratégique — une attaque directe de Statut, exécutée devant un public. L'expression de son patron devint illisible. Le script avait "fonctionné" — David avait reculé sur la demande — mais le coût social fut immédiat et tangible. Elle avait protégé le temps de son équipe, mais au prix de son capital politique. Elle a enregistré la douloureuse donnée : **une limite réussie ne garantit pas un résultat réussi.**
+
+---
+
+> ### **Un Avertissement de Sécurité Critique : Quand Ces Outils Ne Sont Pas Sûrs**
+> Les outils de ce chapitre sont destinés à la gestion des conflits dans des relations de bonne foi. Si vous êtes dans une dynamique que vous soupçonnez d'être émotionnellement, psychologiquement ou physiquement abusive, ces outils ne sont pas appropriés. Votre objectif n'est pas d'améliorer la communication ; votre objectif est la sécurité. Veuillez vous référer aux ressources de l'Annexe D et chercher une aide professionnelle.
 
 ---
 ### **Note de Terrain : Poser une Limite à la Maison**
