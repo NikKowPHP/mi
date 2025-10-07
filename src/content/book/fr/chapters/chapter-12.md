@@ -15,7 +15,7 @@ Alors que l'équipe du Projet Phoenix devenait plus distribuée pour respecter l
 > J'attends toujours les spécifications finales de Jane. Je ne peux pas finaliser les flux tant que je ne les ai pas.
 >
 > **Mark, 10:25**
-> Cela aurait dû être signalé hier. C'est un bloqueur.
+> La couche de cache est une dépendance pour tout le module d'auth. Ça aurait dû être signalé dans le journal des risques hier. La séquence est rompue.
 >
 > **Leo, 10:31**
 > Je ne suis pas le goulot d'étranglement ici.

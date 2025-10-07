@@ -15,7 +15,7 @@ As the Phoenix Project team became more distributed to hit their tight deadline,
 > I'm still waiting on the final spec from Jane. I can't finalize the flows until I have that.
 >
 > **Mark, 10:25 AM**
-> This should have been flagged yesterday. This is a blocker.
+> The caching layer is a dependency for the entire auth module. This should have been flagged in yesterday's risk log. We have a sequence break.
 >
 > **Leo, 10:31 AM**
 > I'm not the bottleneck here.
@@ -66,4 +66,3 @@ If a topic requires more than three back-and-forth replies to resolve, it has be
 
 *   **The Script:** Frame the move as collaborative.
     *   *Do say:* "This is an important conversation, and I want to make sure I'm fully understanding your perspective. I think it would be faster and easier to sync up on a quick call. Are you free for 10 minutes this afternoon?"
-      

@@ -363,3 +363,6 @@ This plan now includes a new phase dedicated to the subtitle, timed to occur *af
 *   [x] **Improve narrative sequence of 'Conductor's Shield' in Chapter 10.**
 *   [x] **Customize Logbook Prompts:** Tailored the "Logbook Entry" prompts in each chapter to reflect the chapter's specific topic, increasing reader engagement.
 *   [x] **Refine 'Join the Orchestra' section for conciseness and impact.**
+*   [x] **Streamline chapter endings:** Reworked lengthy "Debrief" sections (e.g., Chapter 9) to be more concise and better integrated with the narrative, improving pacing and reader immersion.
+*   [x] **Foreshadow antagonist's motivation in Chapter 7:** Added a specific line of dialogue referencing a past project failure ("Acme") to David's first interaction with Maria, making his character more complex from the start.
+*   [x] **Polish dialogue and descriptions for character specificity and immersion:** Refined Mark's dialogue in Ch. 12 to be more 'Architect-like' and Maria's internal reaction in Ch. 9 to be more visceral and less redundant.
