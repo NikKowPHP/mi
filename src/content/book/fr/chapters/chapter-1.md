@@ -56,10 +56,10 @@ Faites cela une ou deux fois. C'est la commande de réinitialisation. La longue 
 N'attendez pas une crise pour pratiquer cela. Pratiquez La Respiration du Chef d'Orchestre trois fois aujourd'hui lorsque vous êtes parfaitement calme — en attendant que le code compile, à un feu rouge. En faisant cela, vous construisez une nouvelle voie neuronale de sorte que lorsque la véritable alarme sonnera, votre cerveau connaîtra déjà le chemin vers la sécurité.
 
 #### **Entrée de Journal de Bord**
-*   **L'Expérience :** Quelle petite expérience réalisable allez-vous mener ? (par ex., "Mon objectif cette semaine est de simplement remarquer mon principal 'signe' de détournement lors d'une interaction en temps réel.")
-*   **La Répétition Chaotique (Ce qui s'est passé) :** Décrivez ce qui s'est réellement passé. Était-ce maladroit ? A-t-il "échoué" ? Quelle a été la réaction de l'autre personne ? (par ex., "Lors d'une réunion budgétaire tendue, j'ai senti cette chaleur familière dans mon cou. J'ai essayé de faire la respiration, mais je me sentais gêné et n'en ai fait qu'une courte. Je me sentais toujours détourné, mais j'en étais conscient pour la première fois.")
-*   **Les Données (Ce que vous avez appris) :** Qu'a révélé cette tentative 'imparfaite' ? Traitez le résultat comme des données pures, pas comme une note sur votre performance. (par ex., "Les données montrent que mon 'signe' est un signal d'alerte précoce fiable. Elles montrent aussi que pratiquer cela lors d'une vraie réunion est plus difficile que je ne le pensais. L'obstacle n'est pas seulement la mémoire ; c'est la pression sociale.")
-*   **La Prochaine Itération :** Sur la base des données, quelle est la prochaine expérience, encore plus petite ? (par ex., "Ma prochaine expérience sera de pratiquer la respiration à mon bureau *juste avant* une réunion que je sais être stressante.")
+*   **Ma Première Pratique de Respiration :** Quelle petite expérience réalisable allez-vous mener ? (par ex., "Mon objectif cette semaine est de simplement remarquer mon principal 'signe' de détournement lors d'une interaction en temps réel.")
+*   **Ma Tentative de Gérer un Détournement en Temps Réel :** Décrivez ce qui s'est réellement passé. Était-ce maladroit ? A-t-il "échoué" ? Quelle a été la réaction de l'autre personne ? (par ex., "Lors d'une réunion budgétaire tendue, j'ai senti cette chaleur familière dans mon cou. J'ai essayé de faire la respiration, mais je me sentais gêné et n'en ai fait qu'une courte. Je me sentais toujours détourné, mais j'en étais conscient pour la première fois.")
+*   **Ce que les Données de Mon Système Nerveux Révèlent :** Qu'a révélé cette tentative 'imparfaite' ? Traitez le résultat comme des données pures, pas comme une note sur votre performance. (par ex., "Les données montrent que mon 'signe' est un signal d'alerte précoce fiable. Elles montrent aussi que pratiquer cela lors d'une vraie réunion est plus difficile que je ne le pensais. L'obstacle n'est pas seulement la mémoire ; c'est la pression sociale.")
+*   **Ma Prochaine Expérience de Respiration :** Sur la base des données, quelle est la prochaine expérience, encore plus petite ? (par ex., "Ma prochaine expérience sera de pratiquer la respiration à mon bureau *juste avant* une réunion que je sais être stressante.")
 
 ---
 ### **Mise à Jour du Tableau de Bord**
@@ -70,3 +70,4 @@ N'attendez pas une crise pour pratiquer cela. Pratiquez La Respiration du Chef d
 ### **Défi du Chef d'Orchestre : Mission de la Semaine 1**
 
 Vous venez d'acquérir votre premier outil. Pour transformer cette connaissance en compétence, tournez-vous vers le **Défi du Chef d'Orchestre de 30 Jours (Annexe C)**. Votre mission pour la **Semaine 1** est de maîtriser La Respiration du Chef d'Orchestre. L'annexe fournit des exercices quotidiens spécifiques pour construire cette habitude fondamentale. Ne passez pas à l'outil suivant avant d'avoir terminé votre première semaine de pratique.
+      

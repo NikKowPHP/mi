@@ -349,4 +349,13 @@ This plan now includes a new phase dedicated to the subtitle, timed to occur *af
     -   [ ] Select the single best subtitle that captures the book's unique blend of story and science.
 -   [ ] **Implement the Change:**
     -   [ ] **Update `TITLE_PROPOSAL.md`:** Delete the brainstorming section and replace the old subtitle with the new, final one. This file is now the official source of truth for your book's title.
+
+---
+#### **Phase 6: Manuscript Refinements**
+
+*   [x] **Fix immersion-breaking production note in Preface:** Removed the "Note on Visual Design" from `PREFACE.md` and moved it to `EDITORIAL_NOTES.md`.
+*   [x] **Strengthen final call to action:** Rewrote the "Join the Orchestra" section to be more evocative and motivational.
+*   [x] **Foreshadow antagonist in Chapter 7:** Added a transitional paragraph to introduce David before his confrontation with Maria, making his appearance feel more organic.
+*   [x] **Customize Logbook Prompts:** Tailored the "Logbook Entry" prompts in each chapter to reflect the chapter's specific topic, increasing reader engagement.
+*   [x] **Add warning for "Conductor's Shield" tool:** Inserted a cautionary paragraph in Chapter 10 to frame the tool as high-risk before its narrative failure.
       

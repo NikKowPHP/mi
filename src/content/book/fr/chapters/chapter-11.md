@@ -61,6 +61,7 @@ Maria a utilisé une approche superposée (La Respiration + le principe de conne
 
 #### **Entrée de Journal de Bord**
 Cette semaine, vous mènerez une expérience lors d'une réunion, même si vous n'êtes pas le leader officiel.
-*   **L'Expérience :** Mon objectif est de mettre en œuvre une seule pratique de ce chapitre, comme ouvrir la réunion en énonçant les rôles pour récompenser le Statut.
-*   **Le Débriefing :** Ma tentative d'ouvrir la réunion avec les rôles a semblé performative et a mal atterri — le roulement des yeux était une donnée claire que cette équipe rejette le 'jargon de management'. La leçon est de construire la connexion par une action directe, pas par des scripts formels.
-*   **La Prochaine Itération :** Ma prochaine expérience sera de sauter l'ouverture formelle et d'envoyer à la place un e-mail de suivi clair après la réunion, en me concentrant uniquement sur une clarté maximale des décisions et des actions à entreprendre.
+*   **Mon Expérience de Chef d'Orchestre en Réunion :** Mon objectif est de mettre en œuvre une seule pratique de ce chapitre, comme ouvrir la réunion en énonçant les rôles pour récompenser le Statut.
+*   **Comment la Performance s'est Déroulée :** Ma tentative d'ouvrir la réunion avec les rôles a semblé performative et a mal atterri — le roulement des yeux était une donnée claire que cette équipe rejette le 'jargon de management'. La leçon est de construire la connexion par une action directe, pas par des scripts formels.
+*   **Ma Prochaine Répétition :** Ma prochaine expérience sera de sauter l'ouverture formelle et d'envoyer à la place un e-mail de suivi clair après la réunion, en me concentrant uniquement sur une clarté maximale des décisions et des actions à entreprendre.
+      

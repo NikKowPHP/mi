@@ -19,4 +19,18 @@ This document maps the key emotional turning points for Maria, our central chara
 
 *   **Read Aloud:** Before final publication, the entire manuscript should be read aloud from start to finish. This is the most effective way to catch awkward phrasing, identify jarring transitions, and ensure the authorial and narrative voices are consistent.
 *   **Beta Reader Feedback:** The questions in `BETA_READER_QUESTIONS.md` should be used to gather feedback specifically on the emotional journey of the characters. This feedback is critical for confirming that the narrative transformation has been successful.
+
+---
+### **Production Notes: Visual Design**
+
+Throughout this manuscript, you will see key terms in bold, such as **Architect**, **Connector**, and **Sentinel**. These are not incidental; they are a core part of the book's design philosophy. To combat the cognitive load of learning these new concepts, the final version of this book must rely on a clear and consistent visual language. **This is a strategic imperative for the book's success.**
+
+The effectiveness of the learning system presented here depends on a top-tier information designer who can execute this vision. The visual language needs to be as clear, elegant, and consistent as the prose.
+
+The most critical elements are:
+*   **A Consistent Icon System:** Simple, memorable icons for the three Brain Profiles (**Architect**, **Connector**, **Sentinel**), the five SCARF domains, and key practices are essential. These terms have been used with absolute consistency in this text to create a visual shorthand that must be brought to life.
+*   **The Conductor's Dashboard:** The five-gauge SCARF dashboard introduced in Chapter 2 should be a recurring graphic, visually diagnosing the social threats and rewards in our case studies.
+*   **High-Quality Infographics:** Key summary sections, especially the "Toolkit Summary & Cheat Sheet," are designed to be visually engaging, full-page infographics. The goal is to create a reference you will want to keep on your desk, not just a wall of text.
+
+This visual layer is not decorative; it is an integral part of the learning system, designed to help you internalize these tools more rapidly and effectively.
       

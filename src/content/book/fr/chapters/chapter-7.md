@@ -20,7 +20,11 @@ Lors de la réunion, elle n'a pas commencé avec un tableur. Elle a commencé av
 *   **"Mais..." (Le Problème/Tension) :** "**Mais** ce moteur est maintenant défaillant. Nous avons constaté une augmentation de 15% des erreurs de données, et il ne peut pas supporter la charge pour notre lancement critique du T4."
 *   **"Donc..." (La Solution/Résolution) :** "**Donc**, le Projet Phoenix n'est pas seulement une mise à niveau. C'est le seul moyen de protéger notre lancement du T4 et de construire la plateforme pour nos cinq prochaines années de croissance."
 
-Le conseil fut convaincu. Ils ont financé le projet cet après-midi-là. Mais alors que Maria rangeait son ordinateur portable, David, un dirigeant senior d'une autre division, s'est approché d'elle. Il était grand, se déplaçait avec la confiance tranquille de quelqu'un qui n'a jamais besoin de se presser, et portait un costume parfaitement taillé qui semblait déplacé dans leur culture d'ingénierie décontractée.
+Le conseil fut convaincu. Ils ont financé le projet cet après-midi-là.
+
+Alors que les membres du conseil sortaient en la félicitant, Maria remarqua une personne qui restait, observant depuis le côté. C'était David, un dirigeant senior de la division entreprise, connu pour son habileté politique et sa tendance à considérer les projets inter-départementaux soit comme des menaces, soit comme des opportunités. Il était resté silencieux pendant la présentation, mais son attention était une présence tangible et indéchiffrable dans la pièce.
+
+Mais alors que Maria rangeait son ordinateur portable, David, un dirigeant senior d'une autre division, s'est approché d'elle. Il était grand, se déplaçait avec la confiance tranquille de quelqu'un qui n'a jamais besoin de se presser, et portait un costume parfaitement taillé qui semblait déplacé dans leur culture d'ingénierie décontractée.
 
 "Félicitations, Maria. Belle histoire," dit-il, son sourire lisse et politique, n'atteignant pas tout à fait ses yeux. Il se pencha légèrement. "Mais une bonne histoire peut aveugler les gens sur les risques fondamentaux." En parlant, il prit nonchalamment le stylo de Maria sur la table, l'examina comme pour en tester le poids, puis le reposa, mais légèrement sur le côté, juste hors de sa portée facile. C'était un geste de contrôle minuscule, presque imperceptible. Il a mentionné un problème potentiel de pipeline de données dont elle n'était pas au courant, une petite pique acérée en guise d'avertissement. Il la testait.
 
@@ -76,3 +80,4 @@ Mais une partition claire ne suffit pas ; elle doit avoir une mélodie mémorabl
 ### **Note de Terrain de l'Auteur**
 
 Cette structure "Et, Mais, Donc" est l'outil qui me manquait dans cette salle de conseil il y a toutes ces années. Mes données impeccables n'étaient qu'une longue liste de "Et" ; le directeur marketing a gagné parce que, instinctivement, il a raconté une histoire avec un "Mais" et un "Donc".
+      

@@ -61,7 +61,7 @@ Maria used a layered approach (The Breath + the principle of connection) to co-r
 
 #### **Logbook Entry**
 This week, you will conduct one experiment in a meeting, even if you are not the official leader.
-*   **The Experiment:** My goal is to implement one single practice from this chapter, such as opening the meeting by stating roles to reward Status.
-*   **The Debrief:** My attempt to open the meeting with roles felt performative and landed badly—the eye-roll was clear data that this team rejects 'management-speak.' The lesson is to build connection through direct action, not formal scripts.
-*   **The Next Iteration:** My next experiment will be to skip the formal opening and instead send one clear follow-up email after the meeting, focusing only on maximum clarity of decisions and action items.
+*   **My Meeting Conductor Experiment:** My goal is to implement one single practice from this chapter, such as opening the meeting by stating roles to reward Status.
+*   **How the Performance Unfolded:** My attempt to open the meeting with roles felt performative and landed badly—the eye-roll was clear data that this team rejects 'management-speak.' The lesson is to build connection through direct action, not formal scripts.
+*   **My Next Rehearsal:** My next experiment will be to skip the formal opening and instead send one clear follow-up email after the meeting, focusing only on maximum clarity of decisions and action items.
       

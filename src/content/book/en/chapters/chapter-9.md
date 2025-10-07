@@ -116,3 +116,4 @@ A "no" can feel like a severe **Relatedness** threat. This script is designed to
 *   **(S) State:** "My plate is full right now..." (Icon: A stop sign)
 *   **(O) Offer:** "While I can't, I can suggest..." (Icon: A gift)
 ---
+      

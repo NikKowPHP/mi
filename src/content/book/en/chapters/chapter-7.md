@@ -20,7 +20,11 @@ In the meeting, she didn't open with a spreadsheet. She opened with a simple, th
 *   **"But..." (The Problem/Tension):** "**But** that engine is now failing. We've seen a 15% increase in data errors, and it cannot handle the load for our critical Q4 launch."
 *   **"Therefore..." (The Solution/Resolution):** "**Therefore**, the Phoenix Project isn't just an upgrade. It is the only way to protect our Q4 launch and build the platform for our next five years of growth."
 
-The board was convinced. They funded the project that afternoon. But as Maria was packing up her laptop, David, a senior leader from another division, approached her. He was tall, moved with the unhurried confidence of someone who never had to rush, and wore a perfectly tailored suit that seemed out of place in their casual engineering culture.
+The board was convinced. They funded the project that afternoon.
+
+As the board members filed out, offering congratulations, Maria noticed one person who remained, observing from the side. It was David, a senior leader from the enterprise division, known for his political acumen and a history of seeing cross-departmental projects as either threats or opportunities. He had been silent during the presentation, but his attention was a tangible, unreadable presence in the room.
+
+But as Maria was packing up her laptop, David, a senior leader from another division, approached her. He was tall, moved with the unhurried confidence of someone who never had to rush, and wore a perfectly tailored suit that seemed out of place in their casual engineering culture.
 
 "Congratulations, Maria. Great story," he said, his smile smooth and political, not quite reaching his eyes. He leaned in slightly. "But a good story can blind people to foundational risks." As he spoke, he casually picked up Maria's pen from the table, examined it as if testing its weight, and then placed it back down, but slightly to the side, just out of her easy reach. It was a tiny, almost unnoticeable gesture of control. He mentioned a potential data pipeline issue she hadn't known about, a small, sharp barb of a warning. He was testing her.
 
@@ -76,3 +80,4 @@ But a clear score is not enough; it must have a memorable melody. This technique
 ### **Author's Field Note**
 
 This "And, But, Therefore" structure is the tool I was missing in that boardroom all those years ago. My flawless data was just a long list of "Ands"; the marketing director won because he, instinctively, told a story with a "But" and a "Therefore".
+      
