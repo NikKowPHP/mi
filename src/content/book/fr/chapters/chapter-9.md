@@ -18,11 +18,11 @@ L'immense pression de la revue de Sterling Corp. faisait des ravages. Avec des t
 
 D'abord, elle devait réparer les dégâts avec Leo. Elle a programmé un appel, l'estomac noué. Elle sentait sa propre défensive monter — une voix dans sa tête marmonnant, *“Il divaguait !”* Ceci, elle le savait maintenant, était son cerveau d'Architecte essayant de défendre son Statut. Elle s'arrêta, ferma les yeux, et prit trois **Respirations du Chef d'Orchestre** lentes et délibérées. *Mon but n'est pas de gagner,* se dit-elle. *Mon but est de réparer ça.*
 
-Elle savait que réparer une connexion brisée n'était pas un nouvel outil, mais l'application la plus cruciale de son Duo de Base. Le cadre était simple :
+Elle savait que réparer une connexion brisée n'était pas un nouvel outil, mais l'application la plus cruciale de son Duo de Base. Son approche était simple :
 1.  **Régulez-vous d'Abord (Chapitre 1) :** Mettre son propre cerveau en ligne avant d'essayer d'aider le sien.
 2.  **Faites en Sorte qu'ils se Sentent Entendus (Chapitre 6) :** Utiliser la Boucle d'Empathie pour comprendre les dommages qu'elle avait causés, sans essayer de les résoudre immédiatement.
 
-Son plan n'était pas de gagner une dispute, mais de créer suffisamment de sécurité pour que la vraie conversation puisse avoir lieu. Elle commença la conversation en essayant d'exécuter le cadre parfaitement.
+Son plan n'était pas de gagner une dispute, mais de créer suffisamment de sécurité pour que la vraie conversation puisse avoir lieu. Elle commença la conversation en essayant d'exécuter cette approche parfaitement.
 "Leo," commença-t-elle, sa voix sonnant formelle et rigide. "Quand je t'ai coupé dans la réunion, j'ai vu que tu te fermais. Je ne peux qu'imaginer comment ça a dû être perçu. Peux-tu me dire ce qui se passait pour toi à ce moment-là ?"
 
 Leo resta silencieux un moment, son expression gardée. "Honnêtement, Maria ? Ça ressemble à quelque chose que tu as lu dans un livre de management. Je ne sais pas quoi répondre à ça."
@@ -38,7 +38,7 @@ Cette fois, Maria n'a pas cherché de script. Elle a juste écouté. "C'était u
 Leo a juste hoché la tête. La confiance n'était pas réparée, mais la porte était de nouveau ouverte. Ce n'est qu'alors qu'elle put penser au feedback initial qu'elle voulait donner. Elle savait qu'elle devrait y revenir plus tard, mais différemment. Pas comme un commentaire à la volée, mais comme une véritable conversation de mise au point : obtenir la permission, partager des données et co-créer une solution. Pour l'instant, le seul objectif était la réparation.
 
 ---
-Son prochain défi était David. Il poussait pour un projet parallèle à haut risque et déstabilisant. Maria savait qu'elle devait dire "non". C'était un type de conflit différent, non pas sur la réparation mais sur la protection. Elle avait besoin d'un outil pour poser une limite tout en minimisant la menace SCARF pour David. Elle décida d'utiliser un script simple en trois parties :
+Son prochain défi était David. Il poussait pour un projet parallèle à haut risque et déstabilisant. Maria savait qu'elle devait dire "non". C'était un type de conflit différent, non pas sur la réparation mais sur la protection. Elle avait besoin d'un outil pour poser une limite tout en minimisant la menace SCARF pour David. Elle décida d'utiliser un modèle simple en trois parties :
 1.  **Valider :** Reconnaître la valeur de leur demande pour récompenser leur Statut.
 2.  **Affirmer :** Énoncer clairement votre réalité et votre limitation (le "non").
 3.  **Proposer :** Suggérer une alternative si possible pour adoucir le rejet et signaler un partenariat.
@@ -74,7 +74,7 @@ Le script ne dit pas seulement "non". Il préserve la connexion tout en protége
 #### **Résumé de la Boîte à Outils**
 *   **Principe : La Dissonance est une Donnée.** Le conflit n'est pas un signe d'échec ; c'est un signe que la musique est intéressante. Votre travail est de le diriger, pas de l'éviter.
 *   **Outil : Réparer une Connexion.** Une application à fort enjeu du Duo de Base : régulez-vous d'abord (**Respiration du Chef d'Orchestre**), puis faites en sorte que l'autre personne se sente entendue (**Boucle d'Empathie**).
-*   **Outil : Poser une Limite.** Le script **"Valider, Affirmer, Proposer"** est un cadre pour dire "non" avec grâce en protégeant vos ressources tout en minimisant les menaces SCARF.
+*   **Outil : Poser une Limite.** Le modèle **"Valider, Affirmer, Proposer"** est un cadre pour dire "non" avec grâce en protégeant vos ressources tout en minimisant les menaces SCARF.
 *   **Outil : Donner du Feedback.** Le modèle de "mise au point" évite une menace de Statut : **1. Obtenir la Permission, 2. Partager des Données (Pas du Drame), 3. Co-créer la Solution.**
 
 #### **Dépannage du Milieu Chaotique**

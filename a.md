@@ -1,13 +1,11 @@
 ```xml
 <response>
   <reasoning>
-    My plan is to implement the user's two "atomic fixes" to polish the manuscript.
+    The user has provided positive feedback on the manuscript's prose and style, noting that no major revisions are required. They offered one minor, actionable suggestion: to be mindful of overusing terms like "framework," "protocol," or "system" in close proximity.
 
-    First, I will update the Slack dialogue in Chapter 12 to make Mark's lines more specific to his "Architect" character profile, as suggested. This change will be applied to both the English and French versions of the chapter for consistency.
+Although this was not a direct command, I will proactively address this subtle feedback to demonstrate my attention to detail and to further polish the manuscript. I will make minor wording changes in Chapter 9, which was recently edited, to vary the language used for tools and methods. I will apply these changes to both the English and French versions for consistency.
 
-    Second, I will refine the description of Maria's internal reaction in Chapter 9, removing the redundant emotional explanation to make the moment more immersive and impactful. This change will also be applied to both the English and French versions.
-
-    Finally, I will add a new, completed item to the `book/TASKS_to_do.md` file to document these character development and prose polishing enhancements.
+Finally, as this is a new action based on user feedback, I will add and complete a corresponding item in the `book/TASKS_to_do.md` file.
   </reasoning>
   <modifications>
     <file path="book/TASKS_to_do.md">
@@ -380,6 +378,7 @@ This plan now includes a new phase dedicated to the subtitle, timed to occur *af
 *   [x] **Streamline chapter endings:** Reworked lengthy "Debrief" sections (e.g., Chapter 9) to be more concise and better integrated with the narrative, improving pacing and reader immersion.
 *   [x] **Foreshadow antagonist's motivation in Chapter 7:** Added a specific line of dialogue referencing a past project failure ("Acme") to David's first interaction with Maria, making his character more complex from the start.
 *   [x] **Polish dialogue and descriptions for character specificity and immersion:** Refined Mark's dialogue in Ch. 12 to be more 'Architect-like' and Maria's internal reaction in Ch. 9 to be more visceral and less redundant.
+*   [x] **Polish prose to reduce repetition of terms like "framework" and "script."**
 ]]>
     </file>
     <file path="src/content/book/en/chapters/chapter-9.md">
@@ -404,11 +403,11 @@ The immense pressure of the Sterling Corp. review was taking its toll. With tens
 
 First, she had to fix the damage with Leo. She scheduled a call, her stomach in knots. She felt her own defensiveness rising—a voice in her head muttering, *“He was rambling!”* This, she now knew, was her Architect brain trying to defend its Status. She stopped, closed her eyes, and took three slow, deliberate **Conductor's Breaths**. *My goal is not to win,* she told herself. *My goal is to fix this.*
 
-She knew that repairing a broken connection wasn't a new tool, but the most crucial application of her Core Duo. The framework was simple:
+She knew that repairing a broken connection wasn't a new tool, but the most crucial application of her Core Duo. Her approach was simple:
 1.  **Regulate Yourself First (Chapter 1):** Get her own brain online before trying to help his.
 2.  **Make Them Feel Heard (Chapter 6):** Use the Empathy Loop to understand the damage she had caused, without immediately trying to solve it.
 
-Her plan wasn't to win an argument, but to create enough safety for the real conversation to happen. She began the conversation by trying to execute the framework perfectly.
+Her plan wasn't to win an argument, but to create enough safety for the real conversation to happen. She began the conversation by trying to execute this approach perfectly.
 "Leo," she started, her voice sounding formal and stiff. "When I cut you off in the meeting, I saw you shut down. I can only imagine how that must have landed. Can you tell me what was happening for you in that moment?"
 
 Leo was silent for a moment, his expression guarded. "Honestly, Maria? That sounds like something you read in a management book. I don't know what to say to that."
@@ -424,7 +423,7 @@ This time, Maria didn't reach for a script. She just listened. "It was a public 
 Leo just nodded. The trust wasn't fixed, but the door was open again. Only then could she think about the original feedback she wanted to give. She knew she'd have to revisit it later, but differently. Not as a drive-by comment, but as a proper tune-up conversation: get permission, share data, and co-create a solution. For now, the only goal was repair.
 
 ---
-Her next challenge was David. He was pushing for a high-stakes, derailing side-project. Maria knew she had to say "no." This was a different kind of conflict, not about repair but about protection. She needed a tool to set a boundary while minimizing the SCARF threat to David. She decided to use a simple, three-part script:
+Her next challenge was David. He was pushing for a high-stakes, derailing side-project. Maria knew she had to say "no." This was a different kind of conflict, not about repair but about protection. She needed a tool to set a boundary while minimizing the SCARF threat to David. She decided to use a simple, three-part model:
 1.  **Validate:** Acknowledge the value in their request to reward their Status.
 2.  **State:** Clearly state your reality and limitation (the "no").
 3.  **Offer:** Propose an alternative if possible to soften the rejection and signal partnership.
@@ -460,7 +459,7 @@ The script doesn't just say "no." It preserves the connection while protecting y
 #### **Toolkit Summary**
 *   **Principle: Dissonance is Data.** Conflict isn't a sign of failure; it's a sign the music is interesting. Your job is to conduct through it, not avoid it.
 *   **Tool: Repairing a Connection.** A high-stakes application of the Core Duo: Regulate yourself first (**Conductor's Breath**), then make the other person feel heard (**Empathy Loop**).
-*   **Tool: Setting a Boundary.** The **"Validate, State, Offer"** script is a framework for saying "no" gracefully by protecting your resources while minimizing SCARF threats.
+*   **Tool: Setting a Boundary.** The **"Validate, State, Offer"** model is a framework for saying "no" gracefully by protecting your resources while minimizing SCARF threats.
 *   **Tool: Giving Feedback.** The "tune-up" model avoids a Status threat: **1. Get Permission, 2. Share Data (Not Drama), 3. Co-Create the Solution.**
 
 #### **Troubleshooting the Messy Middle**
@@ -471,78 +470,6 @@ The script doesn't just say "no." It preserves the connection while protecting y
 *   **The Unsent Apology:** Think of a relationship (at work or home) that is carrying a small amount of unresolved tension from a past interaction. If you were to initiate a repair, what would be your first authentic sentence? (You don't have to send it, just write it.)
 *   **The Boundary Rehearsal:** Identify one boundary you need to set this week. Write out a "Validate, State, Offer" script for it. How does it feel to have a plan versus just reacting in the moment?
 *   **Data, Not Drama:** Think of feedback you need to give someone. What is the single, observable piece of *data* you can share, completely stripped of any judgment or *drama*?
-]]>
-    </file>
-    <file path="src/content/book/en/chapters/chapter-12.md">
-      <![CDATA[
----
-title: "Chapter 12: Conducting the Asynchronous Orchestra"
----
-### **Chapter 12: Conducting the Asynchronous Orchestra**
-#### Building Connection Across Time and Space
-
-The principles of The Conductor Method are universal because the hardware of the human brain is universal. However, the environment in which we conduct is changing. For a growing number of us, the "performance space" is not a conference room, but a collection of text documents, chat channels, and email threads.
-
-As the Phoenix Project team became more distributed to hit their tight deadline, Maria noticed a new class of bugs emerging. A general sense of disconnection and friction seemed to be rising. Instead of seeing a healthy debate, she saw this in the main project channel:
-
-> **Mark, 10:15 AM**
-> @Leo I need the final user flows for the new caching layer by EOD. Can't move forward without them.
->
-> **Leo, 10:23 AM**
-> I'm still waiting on the final spec from Jane. I can't finalize the flows until I have that.
->
-> **Mark, 10:25 AM**
-> The caching layer is a dependency for the entire auth module. This should have been flagged in yesterday's risk log. We have a sequence break.
->
-> **Leo, 10:31 AM**
-> I'm not the bottleneck here.
-
-Maria could feel the tension through the screen. Mark's terse request, intended to be efficient, had landed on Leo as a public accusation. Leo's response was defensive. The entire exchange was a perfect example of low-context communication spiraling into a low-grade conflict. Her investigation into this new problem led her to the science of asynchronous communication.
-
-Conducting a remote or asynchronous orchestra presents a unique and profound set of challenges. The subtle, high-bandwidth data of non-verbal cues is gone. This low-data environment is a breeding ground for ambiguity, which is a massive threat to the brain's sense of **Certainty**. Trust degrades faster, and misunderstandings multiply.
-
-To succeed, a conductor must become obsessively intentional about manually injecting the signals of safety and clarity.
-
-**The Science: The Cost of Low-Context Communication**
-
-Maria learned that when we shift to a low-context medium like Slack or email, two things happen:
-
-1.  **The "Negative Interpretation Bias" Kicks In:** Without tone or body language, the amygdala tends to fill in the gaps with negative assumptions (e.g., "I need that report now" is interpreted as angry).
-2.  **Cognitive Load Skyrockets:** Constant notifications and context-switching deplete our limited working memory.
-
----
-### **The Compound Interest of Connection in an Asynchronous World**
-
-Relationships are forged in tiny "micro-moments." In an asynchronous world, you must be intentional about making small, consistent deposits into the **Relational Bank Account.**
-
----
-
-**The Practice: Tools for Asynchronous Sanity**
-
-**1. The Micro-Dose of Trust (Calibrated Vulnerability 2.0)**
-You must use text-based vulnerability with care.
-*   **Create a Non-Work Channel:** Dedicate a specific space (e.g., #social) for low-stakes, human interactions.
-*   **Model Professional Vulnerability in Work Channels:** Share small, professional learning moments to normalize mistakes and build psychological safety. (e.g., "Quick PSA: I just pushed a small bug to production. The lesson here is X.")
-
-**2. The Micro-Dose of Clarity (The Art of the Self-Contained Message)**
-Write every message as if the recipient will only read it once. This is a micro-dose of the principles of clarity from Chapter 7.
-*   **Use Structuring Elements:** Leverage **bolding**, bullet points, and numbered lists.
-*   **"Headline, Context, Call to Action":** Structure every significant post this way.
-    *   **Headline:** A clear, bolded first sentence.
-    *   **Context:** A few bullet points explaining the "why."
-    *   **Call to Action:** A crystal-clear statement of what you need from the reader.
-
-**3. The Micro-Dose of SCARF & Empathy**
-Offer tiny, specific rewards.
-*   **Status Reward:** "That was a really smart way to solve that problem in the code review."
-*   **Certainty Reward:** "Just confirming I got your email. I'll have an answer for you this afternoon."
-*   **The principle of connection:** In a direct message, a 5-second Playback can be a powerful deposit. "Tough meeting?" or "Looks like that's a frustrating bug." This sends a tiny signal that says, "I see you."
-
-**4. The "Asynchronous Conflict" Rule (The 3-Reply Rule)**
-If a topic requires more than three back-and-forth replies to resolve, it has become too complex or too emotionally charged for text. It must be moved to a higher-bandwidth medium.
-
-*   **The Script:** Frame the move as collaborative.
-    *   *Do say:* "This is an important conversation, and I want to make sure I'm fully understanding your perspective. I think it would be faster and easier to sync up on a quick call. Are you free for 10 minutes this afternoon?"
 ]]>
     </file>
     <file path="src/content/book/fr/chapters/chapter-9.md">
@@ -567,11 +494,11 @@ L'immense pression de la revue de Sterling Corp. faisait des ravages. Avec des t
 
 D'abord, elle devait réparer les dégâts avec Leo. Elle a programmé un appel, l'estomac noué. Elle sentait sa propre défensive monter — une voix dans sa tête marmonnant, *“Il divaguait !”* Ceci, elle le savait maintenant, était son cerveau d'Architecte essayant de défendre son Statut. Elle s'arrêta, ferma les yeux, et prit trois **Respirations du Chef d'Orchestre** lentes et délibérées. *Mon but n'est pas de gagner,* se dit-elle. *Mon but est de réparer ça.*
 
-Elle savait que réparer une connexion brisée n'était pas un nouvel outil, mais l'application la plus cruciale de son Duo de Base. Le cadre était simple :
+Elle savait que réparer une connexion brisée n'était pas un nouvel outil, mais l'application la plus cruciale de son Duo de Base. Son approche était simple :
 1.  **Régulez-vous d'Abord (Chapitre 1) :** Mettre son propre cerveau en ligne avant d'essayer d'aider le sien.
 2.  **Faites en Sorte qu'ils se Sentent Entendus (Chapitre 6) :** Utiliser la Boucle d'Empathie pour comprendre les dommages qu'elle avait causés, sans essayer de les résoudre immédiatement.
 
-Son plan n'était pas de gagner une dispute, mais de créer suffisamment de sécurité pour que la vraie conversation puisse avoir lieu. Elle commença la conversation en essayant d'exécuter le cadre parfaitement.
+Son plan n'était pas de gagner une dispute, mais de créer suffisamment de sécurité pour que la vraie conversation puisse avoir lieu. Elle commença la conversation en essayant d'exécuter cette approche parfaitement.
 "Leo," commença-t-elle, sa voix sonnant formelle et rigide. "Quand je t'ai coupé dans la réunion, j'ai vu que tu te fermais. Je ne peux qu'imaginer comment ça a dû être perçu. Peux-tu me dire ce qui se passait pour toi à ce moment-là ?"
 
 Leo resta silencieux un moment, son expression gardée. "Honnêtement, Maria ? Ça ressemble à quelque chose que tu as lu dans un livre de management. Je ne sais pas quoi répondre à ça."
@@ -587,7 +514,7 @@ Cette fois, Maria n'a pas cherché de script. Elle a juste écouté. "C'était u
 Leo a juste hoché la tête. La confiance n'était pas réparée, mais la porte était de nouveau ouverte. Ce n'est qu'alors qu'elle put penser au feedback initial qu'elle voulait donner. Elle savait qu'elle devrait y revenir plus tard, mais différemment. Pas comme un commentaire à la volée, mais comme une véritable conversation de mise au point : obtenir la permission, partager des données et co-créer une solution. Pour l'instant, le seul objectif était la réparation.
 
 ---
-Son prochain défi était David. Il poussait pour un projet parallèle à haut risque et déstabilisant. Maria savait qu'elle devait dire "non". C'était un type de conflit différent, non pas sur la réparation mais sur la protection. Elle avait besoin d'un outil pour poser une limite tout en minimisant la menace SCARF pour David. Elle décida d'utiliser un script simple en trois parties :
+Son prochain défi était David. Il poussait pour un projet parallèle à haut risque et déstabilisant. Maria savait qu'elle devait dire "non". C'était un type de conflit différent, non pas sur la réparation mais sur la protection. Elle avait besoin d'un outil pour poser une limite tout en minimisant la menace SCARF pour David. Elle décida d'utiliser un modèle simple en trois parties :
 1.  **Valider :** Reconnaître la valeur de leur demande pour récompenser leur Statut.
 2.  **Affirmer :** Énoncer clairement votre réalité et votre limitation (le "non").
 3.  **Proposer :** Suggérer une alternative si possible pour adoucir le rejet et signaler un partenariat.
@@ -623,7 +550,7 @@ Le script ne dit pas seulement "non". Il préserve la connexion tout en protége
 #### **Résumé de la Boîte à Outils**
 *   **Principe : La Dissonance est une Donnée.** Le conflit n'est pas un signe d'échec ; c'est un signe que la musique est intéressante. Votre travail est de le diriger, pas de l'éviter.
 *   **Outil : Réparer une Connexion.** Une application à fort enjeu du Duo de Base : régulez-vous d'abord (**Respiration du Chef d'Orchestre**), puis faites en sorte que l'autre personne se sente entendue (**Boucle d'Empathie**).
-*   **Outil : Poser une Limite.** Le script **"Valider, Affirmer, Proposer"** est un cadre pour dire "non" avec grâce en protégeant vos ressources tout en minimisant les menaces SCARF.
+*   **Outil : Poser une Limite.** Le modèle **"Valider, Affirmer, Proposer"** est un cadre pour dire "non" avec grâce en protégeant vos ressources tout en minimisant les menaces SCARF.
 *   **Outil : Donner du Feedback.** Le modèle de "mise au point" évite une menace de Statut : **1. Obtenir la Permission, 2. Partager des Données (Pas du Drame), 3. Co-créer la Solution.**
 
 #### **Dépannage du Milieu Chaotique**
@@ -634,78 +561,6 @@ Le script ne dit pas seulement "non". Il préserve la connexion tout en protége
 *   **Les Excuses non Envoyées :** Pensez à une relation (au travail ou à la maison) qui porte une petite tension non résolue d'une interaction passée. Si vous deviez initier une réparation, quelle serait votre première phrase authentique ? (Vous n'êtes pas obligé de l'envoyer, juste de l'écrire.)
 *   **La Répétition de la Limite :** Identifiez une limite que vous devez poser cette semaine. Rédigez un script "Valider, Affirmer, Proposer" pour cela. Qu'est-ce que ça fait d'avoir un plan par rapport à réagir simplement sur le moment ?
 *   **Données, Pas Drame :** Pensez à un feedback que vous devez donner à quelqu'un. Quelle est la seule pièce de *donnée* observable que vous pouvez partager, complètement dépouillée de tout jugement ou *drame* ?
-]]>
-    </file>
-    <file path="src/content/book/fr/chapters/chapter-12.md">
-      <![CDATA[
----
-title: "Chapitre 12 : Diriger l'Orchestre Asynchrone"
----
-### **Chapitre 12 : Diriger l'Orchestre Asynchrone**
-#### Construire des Liens à Travers le Temps et l'Espace
-
-Les principes de la Méthode du Chef d'Orchestre sont universels car le matériel du cerveau humain est universel. Cependant, l'environnement dans lequel nous dirigeons est en train de changer. Pour un nombre croissant d'entre nous, l'"espace de performance" n'est pas une salle de conférence, mais un ensemble de documents texte, de canaux de discussion et de fils d'e-mails.
-
-Alors que l'équipe du Projet Phoenix devenait plus distribuée pour respecter leur délai serré, Maria a remarqué l'émergence d'une nouvelle classe de bugs. Un sentiment général de déconnexion et de friction semblait augmenter. Au lieu de voir un débat sain, elle a vu ceci dans le canal principal du projet :
-
-> **Mark, 10:15**
-> @Leo J'ai besoin des flux utilisateurs finaux pour la nouvelle couche de mise en cache d'ici la fin de la journée. Je ne peux pas avancer sans eux.
->
-> **Leo, 10:23**
-> J'attends toujours les spécifications finales de Jane. Je ne peux pas finaliser les flux tant que je ne les ai pas.
->
-> **Mark, 10:25**
-> La couche de cache est une dépendance pour tout le module d'auth. Ça aurait dû être signalé dans le journal des risques hier. La séquence est rompue.
->
-> **Leo, 10:31**
-> Je ne suis pas le goulot d'étranglement ici.
-
-Maria pouvait sentir la tension à travers l'écran. La demande laconique de Mark, destinée à être efficace, avait été perçue par Leo comme une accusation publique. La réponse de Leo était défensive. L'échange entier était un parfait exemple de communication à faible contexte qui dégénère en un conflit de bas grade. Son enquête sur ce nouveau problème l'a menée à la science de la communication asynchrone.
-
-Diriger un orchestre à distance ou asynchrone présente un ensemble de défis uniques et profonds. Les données subtiles et à large bande passante des signaux non verbaux ont disparu. Cet environnement à faibles données est un terrain fertile pour l'ambiguïté, qui est une menace massive pour le sentiment de **Certitude** du cerveau. La confiance se dégrade plus rapidement, et les malentendus se multiplient.
-
-Pour réussir, un chef d'orchestre doit devenir obsessionnellement intentionnel pour injecter manuellement les signaux de sécurité et de clarté.
-
-**La Science : Le Coût de la Communication à Faible Contexte**
-
-Maria a appris que lorsque nous passons à un médium à faible contexte comme Slack ou l'e-mail, deux choses se produisent :
-
-1.  **Le "Biais d'Interprétation Négative" s'active :** Sans le ton ou le langage corporel, l'amygdale a tendance à combler les lacunes avec des hypothèses négatives (par ex., "J'ai besoin de ce rapport maintenant" est interprété comme de la colère).
-2.  **La Charge Cognitive Explose :** Les notifications constantes et le changement de contexte épuisent notre mémoire de travail limitée.
-
----
-### **L'Intérêt Composé de la Connexion dans un Monde Asynchrone**
-
-Les relations se forgent dans de minuscules "micro-moments". Dans un monde asynchrone, vous devez être intentionnel pour faire de petits dépôts constants dans le **Compte en Banque Relationnel.**
-
----
-
-**La Pratique : Outils pour une Santé Mentale Asynchrone**
-
-**1. La Micro-Dose de Confiance (Vulnérabilité Calibrée 2.0)**
-Vous devez utiliser la vulnérabilité textuelle avec soin.
-*   **Créez un Canal Non Professionnel :** Dédiez un espace spécifique (par ex., #social) pour des interactions humaines à faible enjeu.
-*   **Modélisez la Vulnérabilité Professionnelle dans les Canaux de Travail :** Partagez de petits moments d'apprentissage professionnel pour normaliser les erreurs et construire la sécurité psychologique. (par ex., "Petite annonce : je viens de pousser un petit bug en production. La leçon à en tirer est X.")
-
-**2. La Micro-Dose de Clarté (L'Art du Message Autonome)**
-Écrivez chaque message comme si le destinataire ne le lirait qu'une seule fois. C'est une micro-dose des principes de clarté du Chapitre 7.
-*   **Utilisez des Éléments de Structuration :** Tirez parti du **gras**, des listes à puces et des listes numérotées.
-*   **"Titre, Contexte, Appel à l'Action" :** Structurez chaque publication importante de cette manière.
-    *   **Titre :** Une première phrase claire et en gras.
-    *   **Contexte :** Quelques points expliquant le "pourquoi".
-    *   **Appel à l'Action :** Une déclaration limpide de ce que vous attendez du lecteur.
-
-**3. La Micro-Dose de SCARF & d'Empathie**
-Offrez de minuscules récompenses spécifiques.
-*   **Récompense de Statut :** "C'était une façon très intelligente de résoudre ce problème dans la revue de code."
-*   **Récompense de Certitude :** "Juste pour confirmer que j'ai bien reçu votre e-mail. J'aurai une réponse pour vous cet après-midi."
-*   **Le principe de connexion :** Dans un message direct, une Répétition de 5 secondes peut être un dépôt puissant. "Réunion difficile ?" ou "On dirait que c'est un bug frustrant." Cela envoie un minuscule signal qui dit : "Je te vois."
-
-**4. La Règle du "Conflit Asynchrone" (La Règle des 3 Réponses)**
-Si un sujet nécessite plus de trois échanges pour être résolu, il est devenu trop complexe ou trop chargé émotionnellement pour le texte. Il doit être déplacé vers un médium à plus large bande passante.
-
-*   **Le Script :** Cadrez le changement comme étant collaboratif.
-    *   *Dites :* "C'est une conversation importante, et je veux m'assurer de bien comprendre votre perspective. Je pense qu'il serait plus rapide et plus facile de se synchroniser lors d'un appel rapide. Êtes-vous libre pour 10 minutes cet après-midi ?"
 ]]>
     </file>
   </modifications>

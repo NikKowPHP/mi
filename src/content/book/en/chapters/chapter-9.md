@@ -18,11 +18,11 @@ The immense pressure of the Sterling Corp. review was taking its toll. With tens
 
 First, she had to fix the damage with Leo. She scheduled a call, her stomach in knots. She felt her own defensiveness rising—a voice in her head muttering, *“He was rambling!”* This, she now knew, was her Architect brain trying to defend its Status. She stopped, closed her eyes, and took three slow, deliberate **Conductor's Breaths**. *My goal is not to win,* she told herself. *My goal is to fix this.*
 
-She knew that repairing a broken connection wasn't a new tool, but the most crucial application of her Core Duo. The framework was simple:
+She knew that repairing a broken connection wasn't a new tool, but the most crucial application of her Core Duo. Her approach was simple:
 1.  **Regulate Yourself First (Chapter 1):** Get her own brain online before trying to help his.
 2.  **Make Them Feel Heard (Chapter 6):** Use the Empathy Loop to understand the damage she had caused, without immediately trying to solve it.
 
-Her plan wasn't to win an argument, but to create enough safety for the real conversation to happen. She began the conversation by trying to execute the framework perfectly.
+Her plan wasn't to win an argument, but to create enough safety for the real conversation to happen. She began the conversation by trying to execute this approach perfectly.
 "Leo," she started, her voice sounding formal and stiff. "When I cut you off in the meeting, I saw you shut down. I can only imagine how that must have landed. Can you tell me what was happening for you in that moment?"
 
 Leo was silent for a moment, his expression guarded. "Honestly, Maria? That sounds like something you read in a management book. I don't know what to say to that."
@@ -38,7 +38,7 @@ This time, Maria didn't reach for a script. She just listened. "It was a public 
 Leo just nodded. The trust wasn't fixed, but the door was open again. Only then could she think about the original feedback she wanted to give. She knew she'd have to revisit it later, but differently. Not as a drive-by comment, but as a proper tune-up conversation: get permission, share data, and co-create a solution. For now, the only goal was repair.
 
 ---
-Her next challenge was David. He was pushing for a high-stakes, derailing side-project. Maria knew she had to say "no." This was a different kind of conflict, not about repair but about protection. She needed a tool to set a boundary while minimizing the SCARF threat to David. She decided to use a simple, three-part script:
+Her next challenge was David. He was pushing for a high-stakes, derailing side-project. Maria knew she had to say "no." This was a different kind of conflict, not about repair but about protection. She needed a tool to set a boundary while minimizing the SCARF threat to David. She decided to use a simple, three-part model:
 1.  **Validate:** Acknowledge the value in their request to reward their Status.
 2.  **State:** Clearly state your reality and limitation (the "no").
 3.  **Offer:** Propose an alternative if possible to soften the rejection and signal partnership.
@@ -74,7 +74,7 @@ The script doesn't just say "no." It preserves the connection while protecting y
 #### **Toolkit Summary**
 *   **Principle: Dissonance is Data.** Conflict isn't a sign of failure; it's a sign the music is interesting. Your job is to conduct through it, not avoid it.
 *   **Tool: Repairing a Connection.** A high-stakes application of the Core Duo: Regulate yourself first (**Conductor's Breath**), then make the other person feel heard (**Empathy Loop**).
-*   **Tool: Setting a Boundary.** The **"Validate, State, Offer"** script is a framework for saying "no" gracefully by protecting your resources while minimizing SCARF threats.
+*   **Tool: Setting a Boundary.** The **"Validate, State, Offer"** model is a framework for saying "no" gracefully by protecting your resources while minimizing SCARF threats.
 *   **Tool: Giving Feedback.** The "tune-up" model avoids a Status threat: **1. Get Permission, 2. Share Data (Not Drama), 3. Co-Create the Solution.**
 
 #### **Troubleshooting the Messy Middle**
