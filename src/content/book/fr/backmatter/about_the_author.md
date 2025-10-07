@@ -1,11 +1,10 @@
 ---
-title: "About the Author"
+title: "À Propos de l'Auteur"
 ---
-### **About the Author**
+### **À Propos de l'Auteur**
 
-Mikita Kavaliou is a systems thinker and a relentless investigator of the hidden rules that govern human interaction. He spent the first part of his career as a programmer, where he grew fascinated by the contrast between the elegant logic of code and the often-unpredictable "bugs" of human communication.
+Mikita Kavaliou est un penseur systémique et un enquêteur acharné des règles cachées qui régissent l'interaction humaine. Il a passé la première partie de sa carrière en tant que programmeur, où il s'est fasciné pour le contraste entre la logique élégante du code et les "bugs" souvent imprévisibles de la communication humaine.
 
-After a humiliating boardroom experience where a good story easily defeated his perfect data, Mikita embarked on a decade-long investigation to find the "source code" of influence and connection. This journey led him deep into the worlds of social neuroscience and cognitive psychology, where he developed **The Conductor Method**—a powerful, science-backed system for mastering high-stakes communication.
+Après une expérience humiliante en salle de conseil où une bonne histoire a facilement vaincu ses données parfaites, Mikita s'est lancé dans une enquête de dix ans pour trouver le "code source" de l'influence et de la connexion. Ce voyage l'a mené au cœur des mondes des neurosciences sociales et de la psychologie cognitive, où il a développé **La Méthode du Chef d'Orchestre** — un système puissant, soutenu par la science, pour maîtriser la communication à fort enjeu.
 
-Today, Mikita is a sought-after keynote speaker and advisor who teaches The Conductor Method to leaders and teams at the world's most innovative companies. This book is the result of his investigation, a user's manual for the social brain he wishes he'd had twenty years ago.
-      
+Aujourd'hui, Mikita est un conférencier et conseiller recherché qui enseigne La Méthode du Chef d'Orchestre aux leaders et aux équipes des entreprises les plus innovantes du monde. Ce livre est le résultat de son enquête, un manuel d'utilisation pour le cerveau social qu'il aurait aimé avoir il y a vingt ans.

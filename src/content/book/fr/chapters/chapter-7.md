@@ -22,7 +22,7 @@ Lors de la réunion, elle n'a pas commencé avec un tableur. Elle a commencé av
 
 Le conseil fut convaincu. Ils ont financé le projet cet après-midi-là. Mais alors que Maria rangeait son ordinateur portable, David, un dirigeant senior d'une autre division, s'est approché d'elle. Il était grand, se déplaçait avec la confiance tranquille de quelqu'un qui n'a jamais besoin de se presser, et portait un costume parfaitement taillé qui semblait déplacé dans leur culture d'ingénierie décontractée.
 
-"Félicitations, Maria. Belle histoire," dit-il, son sourire lisse et politique, n'atteignant pas tout à fait ses yeux. Il se pencha légèrement, envahissant son espace personnel juste assez pour signaler l'intimité et le contrôle. "Mais une bonne histoire peut aveugler les gens sur les risques fondamentaux." Il a mentionné un problème potentiel de pipeline de données dont elle n'était pas au courant, une petite pique acérée en guise d'avertissement. Il la testait.
+"Félicitations, Maria. Belle histoire," dit-il, son sourire lisse et politique, n'atteignant pas tout à fait ses yeux. Il se pencha légèrement. "Mais une bonne histoire peut aveugler les gens sur les risques fondamentaux." En parlant, il prit nonchalamment le stylo de Maria sur la table, l'examina comme pour en tester le poids, puis le reposa, mais légèrement sur le côté, juste hors de sa portée facile. C'était un geste de contrôle minuscule, presque imperceptible. Il a mentionné un problème potentiel de pipeline de données dont elle n'était pas au courant, une petite pique acérée en guise d'avertissement. Il la testait.
 
 Ce soir-là, un e-mail de sa part est arrivé. C'était une masterclass de manœuvre d'entreprise.
 
@@ -37,7 +37,9 @@ Ce soir-là, un e-mail de sa part est arrivé. C'était une masterclass de manœ
 > Cordialement,
 > David
 
-L'estomac de Maria se noua. Ce n'était pas une suggestion ; c'était une déclaration. Odyssey était le projet personnel défaillant de David, un système notoirement instable. Une intégration serait un cauchemar technique, un chemin certain vers des retards et des échéances manquées. Il avait mis en copie son patron et toute l'équipe de direction. C'était un piège, tendu en public. Son objectif n'était plus seulement de construire un excellent produit. C'était de survivre politiquement et techniquement à une dépendance forcée conçue pour la faire échouer. La vraie performance ne faisait que commencer.
+L'estomac de Maria se noua. Ce n'était pas une suggestion ; c'était une déclaration. Odyssey était le projet personnel défaillant de David, un système notoirement instable. Une intégration serait un cauchemar technique, un chemin certain vers des retards et des échéances manquées. Il avait mis en copie son patron et toute l'équipe de direction. C'était un piège, tendu en public. Son objectif n'était plus seulement de construire un excellent produit. C'était de survivre politiquement et techniquement à une dépendance forcée conçue pour la faire échouer.
+
+La vraie performance ne faisait que commencer. Sa victoire auprès du conseil semblait maintenant creuse, un prélude à un jeu bien plus dangereux. Pour survivre, elle devait déconstruire non seulement son propre succès, mais aussi l'attaque de David. Les deux événements, réalisa-t-elle, étaient construits à partir des deux mêmes éléments : le pouvoir d'une structure claire et l'influence indéniable d'une histoire.
 
 ---
 ### **Débriefing du Chapitre 7 : Clarté et Narration**
@@ -69,4 +71,8 @@ Mais une partition claire ne suffit pas ; elle doit avoir une mélodie mémorabl
 1.  **"Et..." (La Situation Stable) :** Établissez une réalité stable et relatable.
 2.  **"Mais..." (Le Problème/Tension) :** Introduisez un problème qui perturbe cette stabilité.
 3.  **"Donc..." (La Solution/Résolution) :** Présentez votre idée comme la résolution de cette tension.
-      
+
+---
+### **Note de Terrain de l'Auteur**
+
+Cette structure "Et, Mais, Donc" est l'outil qui me manquait dans cette salle de conseil il y a toutes ces années. Mes données impeccables n'étaient qu'une longue liste de "Et" ; le directeur marketing a gagné parce que, instinctivement, il a raconté une histoire avec un "Mais" et un "Donc".

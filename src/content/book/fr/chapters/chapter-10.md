@@ -16,7 +16,11 @@ Une semaine plus tard, les mots de David sont revenus la hanter. Son patron, Fra
 
 Frank se pencha en avant. "Il a commencé par vous faire des éloges. Il a dit que vous aviez eu une 'discussion très productive'. Il a dit qu'il était soulagé que vous commenciez à voir la 'vue d'ensemble'. Puis il a brossé ce tableau du 'Désastre d'Acme' d'il y a des années — un projet qui a échoué de manière catastrophique. Il a dit que la culture de l'équipe était *trop* bonne. Trop d'harmonie, pas assez de questions difficiles. Il s'est positionné comme la seule voix de la raison qui l'avait vu venir."
 
-Frank soupira en se frottant les tempes. "Puis il a livré le coup de grâce. Il m'a dit, avec cet air de grave préoccupation, que vous lui aviez confié que vous voyiez les 'mêmes schémas' dans le Projet Phoenix. Il a dit que vous partagiez ses 'profondes préoccupations' concernant les risques. Il a transformé votre empathie en un aveu de doute, Maria. Il a utilisé votre propre outil contre vous."
+Frank soupira en se frottant les tempes. "Puis il a livré le coup de grâce."
+
+*David s'est penché en avant sur la chaise en face du bureau de Frank, son expression empreinte d'une grave préoccupation. "Elle a enfin baissé la garde avec moi, Frank, et j'en ai été heureux", avait-il dit, sa voix un murmure confidentiel. "Elle a admis qu'elle voyait les 'mêmes schémas' que lors du désastre d'Acme dans sa propre équipe. Ses mots, pas les miens. Elle est inquiète, et franchement, moi aussi."*
+
+Frank observa son visage, sa propre expression sombre. "Il a présenté cela comme un moment de parenté. Il a fait passer votre empathie pour une confession secrète entre alliés. Il l'a transformée en un aveu de doute, Maria. Il a utilisé votre propre outil contre vous."
 
 "Quoi ? Non," dit Maria, stupéfaite. "Ce n'est pas du tout ce que j'ai dit. J'essayais juste de comprendre sa perspective."
 
@@ -68,4 +72,3 @@ Ce soir-là, Maria s'est assise avec son journal de bord, la piqûre des événe
 *   **Les Données :** David est un vrai croyant, pas seulement un rival. Il voit mes tentatives de connexion comme une faiblesse ou une manipulation. Il a utilisé la Boucle d'Empathie contre moi, recadrant ma tentative de comprendre comme un aveu de doute. Le Bouclier du Chef d'Orchestre a ensuite échoué parce qu'il m'a fait paraître rigide et non coopérative devant notre patron.
 *   **Le Personnel :** Il ne m'a pas seulement déjouée ; il a utilisé ma tentative de connexion comme une arme. Je me sens naïve d'avoir même essayé. Comment peut-on faire confiance à qui que ce soit dans ce jeu ?
 *   **La Prochaine Itération :** Ma stratégie doit passer de la connexion ou de la défense au confinement et à la documentation. Fini les discussions en tête-à-tête dans les couloirs. Tout passe par e-mail. Je serai ennuyeuse, factuelle et je créerai une piste d'audit claire. Je n'essaie plus de le convaincre. Je construis un dossier.
-      

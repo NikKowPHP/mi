@@ -19,4 +19,3 @@ Les éléments les plus critiques sont :
 *   **Des Infographies de Haute Qualité :** Les sections de résumé clés, en particulier le "Résumé de la Boîte à Outils & Aide-Mémoire", sont conçues pour être des infographies visuellement attrayantes en pleine page. L'objectif est de créer une référence que vous voudrez garder sur votre bureau, pas seulement un mur de texte.
 
 Cette couche visuelle n'est pas décorative ; elle fait partie intégrante du système d'apprentissage, conçue pour vous aider à intérioriser ces outils plus rapidement et plus efficacement.
-      

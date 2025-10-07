@@ -69,4 +69,3 @@ Pour vous aider à naviguer dans ce livre, nous utiliserons un simple ensemble d
 ### **Prêt à Commencer ? Activez Votre Pratique Guidée.**
 
 Ce système à plusieurs niveaux vous donne le "quoi". Le **Défi du Chef d'Orchestre de 30 Jours dans l'Annexe C** vous donne le "comment". C'est un guide structuré, semaine par semaine, qui reflète ce parcours d'apprentissage. Nous vous recommandons vivement de vous tourner vers l'Annexe C maintenant et de vous engager pour la Semaine 1.
-      

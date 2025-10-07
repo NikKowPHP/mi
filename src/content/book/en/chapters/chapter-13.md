@@ -55,5 +55,11 @@ There is a profound difference between a destructive amygdala hijack and a momen
 *   Sometimes, the most connecting thing you can do is have a clumsy, imperfect, but utterly real argument.
 *   Your intuition, built upon thousands of hours of practice, is what allows you to tell the difference between a wrong note and powerful, unplanned improvisation.
 
+---
+### **Author's Field Note**
+
+This is the lesson I was learning, painfully and in real-time, during that argument with my brother. My attempt to use a tool felt inauthentic because I hadn't yet learned that the goal of the practice is to build a connection strong enough to handle a few wrong, un-coached notes.
+
+---
+
 The ultimate goal of this work is to give you the skills and the wisdom to build relationships of such profound trust and safety that you feel free to be your messy, imperfect, authentic human self. That is the final symphony.
-      

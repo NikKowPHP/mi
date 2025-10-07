@@ -71,4 +71,8 @@ But a clear score is not enough; it must have a memorable melody. This technique
 1.  **"And..." (The Stable Situation):** Establish a stable, relatable reality.
 2.  **"But..." (The Problem/Tension):** Introduce a problem that disrupts that stability.
 3.  **"Therefore..." (The Solution/Resolution):** Present your idea as the resolution to that tension.
-      
+
+---
+### **Author's Field Note**
+
+This "And, But, Therefore" structure is the tool I was missing in that boardroom all those years ago. My flawless data was just a long list of "Ands"; the marketing director won because he, instinctively, told a story with a "But" and a "Therefore".

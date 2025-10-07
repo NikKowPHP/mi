@@ -70,4 +70,3 @@ Une impasse complexe est passée de la paralysie à l'action. Notez la séquence
 2.  **L'Art de la Connexion et de la Confiance (La Boucle d'Empathie & la Vulnérabilité Calibrée) :** Pour que les deux parties se sentent profondément comprises, changeant le climat neurochimique de l'hostilité à la curiosité, et pour créer un pont de sécurité psychologique qui leur permet de s'attaquer à un problème commun.
 
 Dans ce cas, les pratiques n'ont pas suffi à résoudre directement le problème. Elles se sont heurtées à un mur de principes et de traumatismes passés. Le but ultime des outils était de créer suffisamment de sécurité pour qu'une conversation humaine plus profonde, plus vulnérable et non scriptée puisse avoir lieu. La boîte à outils ne résout pas tous les problèmes, mais elle vous donne le droit d'entrer dans l'espace où le vrai problème peut être abordé.
-      

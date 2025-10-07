@@ -4,7 +4,7 @@ title: "Chapitre 1 : Votre Premier Instrument : La Réinitialisation d'Urgence"
 ### **Chapitre 1 : Votre Premier Instrument : La Réinitialisation d'Urgence**
 #### Comment Trouver la Pédale de Frein pour Votre Cerveau
 
-Le silence dans l'appel vidéo était si absolu que Maria pouvait entendre les battements effrénés de son propre cœur. Une bouffée de chaleur monta le long de son cou, une chaleur familière et humiliante. Son esprit, habituellement une forteresse de logique et de plans, était un vide chaotique.
+Le silence dans l'appel vidéo était si absolu que Maria pouvait entendre les battements effrénés de son propre cœur. Une bouffée de chaleur monta le long de son cou, une chaleur familière et humiliante. Elle chercha un argument logique, une ligne de code pour réparer la conversation, mais ses pensées se brisèrent. Des fragments du plan de projet, un e-mail qu'elle avait oublié d'envoyer, le visage figé de Mark — tout était là, un fatras de bruit numérique sans signification.
 
 Son ingénieur principal, Mark, la fixait depuis l'écran, son visage un masque de colère parfait et figé, rendu légèrement monstrueux par l'arrêt sur image pixelisé d'une connexion faible. Quelques instants auparavant, elle avait partagé son écran pour examiner son dernier travail. Une notification Slack frénétique de son propre patron était apparue sur son deuxième moniteur. Distraite et pressée par le temps, elle a jeté un coup d'œil à son écran et, essayant d'être efficace, a prononcé les mots qui ont fait exploser la réunion : *"Cela nécessite beaucoup de travail."*
 
@@ -70,4 +70,3 @@ N'attendez pas une crise pour pratiquer cela. Pratiquez La Respiration du Chef d
 ### **Défi du Chef d'Orchestre : Mission de la Semaine 1**
 
 Vous venez d'acquérir votre premier outil. Pour transformer cette connaissance en compétence, tournez-vous vers le **Défi du Chef d'Orchestre de 30 Jours (Annexe C)**. Votre mission pour la **Semaine 1** est de maîtriser La Respiration du Chef d'Orchestre. L'annexe fournit des exercices quotidiens spécifiques pour construire cette habitude fondamentale. Ne passez pas à l'outil suivant avant d'avoir terminé votre première semaine de pratique.
-      

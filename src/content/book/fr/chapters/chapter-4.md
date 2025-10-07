@@ -64,4 +64,3 @@ Votre objectif devrait être de favoriser l'**Autonomie** et le **Relationnel** 
 *   Votre travail consiste à être le principal créateur de sécurité et de clarté pour votre équipe.
 
 En comprenant les lois de la gravité sociale, vous passez de la simple application d'outils à la pratique de l'art profond et subtil de la sagesse sociale. Vous avez maintenant complété votre boîte à outils de diagnostic. Vous pouvez voir les menaces, les gens et la pièce. Maintenant, il est temps d'apprendre à agir.
-      

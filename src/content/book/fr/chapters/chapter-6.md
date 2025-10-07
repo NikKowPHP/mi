@@ -25,7 +25,9 @@ Maria savait qu'elle avait brisé quelque chose. Son ancienne méthode — la lo
 
 Maria sentit une lueur de succès. *Ok, j'ai le point de données.* Son cerveau d'Architecte passa immédiatement en mode résolution de problèmes. "Ok, invisible. Je comprends. Pour y remédier, à partir de maintenant, je m'assurerai d'avoir ton avis en premier sur toutes les nouvelles maquettes avant la revue d'équipe. Cela résoudra le problème de visibilité."
 
-L'effet fut un désastre. Leo ne répondit pas. Il eut juste un léger sourire sans joie et se retourna vers son écran. Le silence était pire qu'une dispute. *Zut. J'ai encore recommencé,* pensa-t-elle. *J'ai entendu le mot, mais je ne l'ai pas laissé se sentir entendu. J'ai juste essayé de le résoudre.* Son monologue intérieur était une cascade de frustration. *Pourquoi est-ce si difficile ? C'est inefficace. C'est comme essayer de déboguer un système sans documentation et avec des sorties aléatoires.*
+L'effet fut un désastre. Leo ne répondit pas. Il eut juste un léger sourire sans joie et se retourna vers son écran. Le silence était pire qu'une dispute. *Zut. J'ai encore recommencé,* pensa-t-elle. *J'ai entendu le mot, mais je ne l'ai pas laissé se sentir entendu. J'ai juste essayé de le résoudre.*
+
+Elle baissa les yeux sur son clavier, la grille nette et logique des touches lui semblant soudain une langue étrangère. Elle avait la bonne entrée, la bonne commande. Pourquoi la sortie était-elle toujours une erreur ? C'était comme essayer de déboguer un système sans documentation et avec des sorties complètement aléatoires.
 
 Son échec avec Leo était un nouveau type de bug, que la logique ne pouvait pas résoudre. Cela la força à retourner à ses recherches, où elle commença à comprendre la science de ce qui se passait sous la surface de ses conversations maladroites.
 
@@ -76,7 +78,7 @@ S'appuyant sur sa petite ouverture, Maria a décidé d'essayer la "vulnérabilit
 
 C'était une puissante récompense de Statut, formulée non pas comme une demande d'aide, mais comme une consultation avec une experte. Cela honorait l'identité fondamentale de Jane. Maria a ensuite déployé une seconde forme de vulnérabilité, plus directe. "Honnêtement ? Je demande aussi parce que mes tentatives de me connecter avec toi ont été un désastre total," admit-elle. "J'essaie d'apprendre à mieux diriger cette équipe, et il est clair que je ne peux pas le faire sans ta confiance."
 
-La franchise brute, combinée au respect de l'expertise de Jane, l'a surprise. C'était une minuscule fissure dans le mur, construite sur un lent processus de démonstration de compétence et de respect au fil du temps.
+La franchise brute, combinée au respect de l'expertise de Jane, l'a surprise. C'était une minuscule fissure dans le mur, construite non pas sur des sentiments, mais sur une fondation de respect. Son enquête révélait un second élément crucial : la connexion ne suffisait pas. Elle devait aussi comprendre les mécanismes de la confiance.
 
 #### 🧠 **La Science et la Pratique de la Confiance**
 
@@ -127,4 +129,3 @@ Vous ne pouvez pas forcer la confiance, mais vous pouvez pratiquer des comportem
 ### **Défi du Chef d'Orchestre : Mission de la Semaine 2**
 
 Vous avez maintenant la seconde moitié de la Boucle Fondamentale. Référez-vous au **Défi du Chef d'Orchestre de 30 Jours (Annexe C)**. Votre mission pour la **Semaine 2** est de commencer à pratiquer La Boucle d'Empathie dans des conversations à faible enjeu tout en continuant votre pratique quotidienne de la respiration. Cette intégration est la clé de votre développement en tant que Chef d'Orchestre.
-      

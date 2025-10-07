@@ -18,14 +18,14 @@ L'immense pression de la revue de Sterling Corp. faisait des ravages. Avec des t
 
 D'abord, elle devait réparer les dégâts avec Leo. Elle a programmé un appel, l'estomac noué. Elle sentait sa propre défensive monter — une voix dans sa tête marmonnant, *“Il divaguait !”* Elle s'arrêta, ferma les yeux, et prit trois **Respirations du Chef d'Orchestre** lentes et délibérées. *Mon but n'est pas de gagner,* se dit-elle. *Mon but est de réparer ça.*
 
-Elle a commencé la conversation en essayant d'exécuter parfaitement le script de la Conversation Difficile.
+Elle a commencé la conversation en essayant d'exécuter perfectly le script de la Conversation Difficile.
 "Leo," commença-t-elle, sa voix sonnant formelle et rigide. "Je voulais partager une observation neutre. Quand je t'ai coupé dans la réunion, j'ai immédiatement vu que tu te fermais. Je ne peux qu'imaginer comment ça a dû être perçu. Peux-tu me dire ce qui se passait pour toi à ce moment-là ?"
 
 Leo resta silencieux un moment, son expression gardée. "Honnêtement, Maria ? Ça ressemble à quelque chose que tu as lu dans un livre de management. Je ne sais pas quoi répondre à ça."
 
-La réponse a frappé Maria comme un coup physique. Son visage rougit d'embarras, et son cerveau d'Architecte cria que toute cette "affaire d'empathie" était une perte de temps. *Tu vois ? Ça ne marche pas. C'est juste du théâtre d'entreprise maladroit,* pensa-t-elle, une vague de honte et de colère montant en elle. Elle prit une autre respiration, presque imperceptible. Elle devait abandonner le script.
+La réponse a frappé Maria comme un coup physique. Son visage rougit d'embarras. Maria sentit sa mâchoire se serrer. Elle eut une impulsion absurde de vérifier son propre reflet sur l'écran vide, pour voir si elle avait l'air aussi stupide qu'elle se sentait. Son cerveau d'Architecte cria que toute cette "affaire d'empathie" était une perte de temps. *Tu vois ? Ça ne marche pas. C'est juste du théâtre d'entreprise maladroit,* pensa-t-elle, une vague de honte et de colère montant en elle. Elle prit une autre respiration, presque imperceptible. Elle devait abandonner le script.
 
-"Tu as raison," dit-elle, sa voix plus douce, le langage performatif disparu. "C'était maladroit. Laisse-moi réessayer. J'ai été un vrai crétin avec toi dans cette réunion. C'était irrespectueux, et je suis vraiment désolé. Il n'y a aucune excuse pour ça."
+"Tu as raison," dit-elle, sa voix plus douce, le langage performatif disparu. "C'était maladroit. Laisse-moi réessayer. J'ai été une vraie salope avec toi dans cette réunion. C'était irrespectueux, et je suis vraiment désolée. Il n'y a aucune excuse pour ça."
 
 Le changement fut palpable. La posture de Leo se détendit légèrement. "J'ai... j'ai eu l'impression que tu me traitais d'idiot devant tout le monde," dit-il, la voix basse.
 
@@ -111,4 +111,3 @@ Un "non" peut être ressenti comme une menace **Relationnelle** sévère. Ce scr
 *   **(A) Affirmer :** "Mon assiette est pleine en ce moment..." (Icône : Un panneau stop)
 *   **(P) Proposer :** "Bien que je ne puisse pas, je peux suggérer..." (Icône : Un cadeau)
 ---
-      
