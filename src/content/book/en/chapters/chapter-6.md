@@ -101,6 +101,16 @@ You can't force trust, but you can practice behaviors that trigger an oxytocin r
 *   **Use "We" Language.** Replace "you" and "I" with "we." This signals "we are in the same tribe, working on the same problem."
 
 ---
+> ### **Dashboard Update**
+>
+**This is a key moment in your journey.** You have now installed the first half of your Core Duo. You have the single most important instrument for building connection. Our next chapter will give you the second: the tools for making sure your own message is heard.
+
+---
+### **Conductor's Challenge: Week 2 Mission**
+
+You now have the second half of the Foundational Loop. Refer to the **30-Day Conductor's Challenge (Appendix C)**. Your mission for **Week 2** is to begin practicing The Empathy Loop in low-stakes conversations while continuing your daily breath practice. This integration is key to your development as a Conductor.
+
+---
 ### **Conductor's Practice**
 
 #### **Toolkit Summary**
@@ -117,15 +127,4 @@ You can't force trust, but you can practice behaviors that trigger an oxytocin r
     **A:** This is data, not a failure. It signals they don't feel safe enough to be vulnerable. Respect the boundary. Back off gracefully by saying, "No problem. I'm here if you ever do want to talk about it," and focus on building trust over time.
 *   **Q: "I tried sending a 'social sonar ping' of vulnerability, and just got silence back. It was so awkward. What went wrong?"**
     **A:** Nothing. You just collected important data. Silence tells you about the current level of safety in the relationship. Do not double down. Let the silence be. Your job now is to lower the perceived risk by consistently demonstrating trustworthiness over time.
-
----
-
-> ### **Dashboard Update**
->
-**This is a key moment in your journey.** You have now installed the first half of your Core Duo. You have the single most important instrument for building connection. Our next chapter will give you the second: the tools for making sure your own message is heard.
-
----
-### **Conductor's Challenge: Week 2 Mission**
-
-You now have the second half of the Foundational Loop. Refer to the **30-Day Conductor's Challenge (Appendix C)**. Your mission for **Week 2** is to begin practicing The Empathy Loop in low-stakes conversations while continuing your daily breath practice. This integration is key to your development as a Conductor.
       

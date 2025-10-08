@@ -8,13 +8,13 @@ The silence in the video call was so absolute, Maria could hear the frantic drum
 
 Her top engineer, Mark, stared back at her from the screen, his face a perfect, frozen mask of anger, made slightly monstrous by the pixelated freeze-frame of a weak connection. Just moments before, she had shared her screen to review his latest work. A frantic Slack notification from her own boss popped up on her second monitor. Distracted and pressed for time, she glanced back at his screen and, trying to be efficient, said the words that detonated the meeting: *"This needs a lot of work."*
 
-She saw him flinch as if she'd slapped him. Now, he was silent, radiating a cold fury that sucked all the air out of the virtual room. This was the feeling she hated most—the bug in her own system. Her world was supposed to be predictable, controllable, an equation she could solve. But Mark's silent fury was a variable she couldn't account for, and her own mind had been taken offline. She wanted to fix it, to deploy a logical argument to defuse the situation, but she couldn't access the words. All she could feel was the hammering in her chest and a primal, panicked urge to either lash out ("Why are you being so sensitive?") or flee (end the call).
+She saw him flinch as if she'd slapped him. Now, he was silent, radiating a cold fury that sucked all the air out of the virtual room. This was the feeling she hated most—the bug in her own system, the one that whispered she was an impostor who had bluffed her way into leadership. Her world was supposed to be predictable, an equation she could solve. But Mark's silent fury was a variable she couldn't account for, and her own mind had been taken offline. She wanted to fix it, to deploy a logical argument, but she couldn't access the words. All she could feel was the hammering in her chest and a primal, panicked urge to either lash out ("Why are you being so sensitive?") or flee (end the call).
 
 She didn't know the name for it yet, but Maria was experiencing a full-blown **amygdala hijack**. Deep in the oldest part of her brain, its security guard had pulled the fire alarm, flooding her system with cortisol and taking her rational mind—the part she valued most—offline.
 
 I know this feeling intimately. The hot flush of shame, the panicked blankness—it was the same invisibility I felt years ago in that boardroom when my perfect data was swept aside by a simple story. It’s the feeling of your brain being taken offline against your will. Maria’s journey to get back in control, starting with her very next breath, is the heart of the Conductor Method. She just needed her first instrument.
 
-In that moment, a fragment of an old memory surfaced—a yoga teacher once saying, "Your exhale is the brake pedal for your brain." It was a desperate, flimsy anchor, but it was all she had.
+*This is a waste of time*, the Architect in her head scoffed. *Find a logical argument. Fix this.* But there was no logic, only the roaring static of panic. Then, a fragment of an old memory surfaced—a yoga teacher, years ago, saying, "Your exhale is the brake pedal for your brain." It was new-age nonsense. It was a flimsy, desperate anchor. It was all she had.
 
 She muted her microphone. Inhaled. Then, with deliberate slowness, she exhaled through her mouth, longer than she thought possible, focusing on the feeling of the air leaving her lungs. She did it again. The frantic drumming in her chest didn't stop, but it slowed, just a fraction. The heat in her neck subsided. A single, clear thought cut through the static: *Okay. This is a mess. What's the next right move?* She hadn't solved the problem with Mark, but she had regained the ability to think about it. She had found the brake pedal.
 
@@ -46,6 +46,16 @@ Here is the reset command:
 Do this once or twice. This is the reset command. The long exhale activates your vagus nerve and tells your brain's security guard to stand down.
 
 ---
+### **Dashboard Update**
+
+**Congratulations.** You have acquired your first and most fundamental instrument. Your dashboard is online.
+
+---
+### **Conductor's Challenge: Week 1 Mission**
+
+You have just acquired your first tool. To turn this knowledge into a skill, turn to the **30-Day Conductor's Challenge (Appendix C)**. Your mission for **Week 1** is to master The Conductor's Breath. The appendix provides specific, daily exercises to build this foundational habit. Do not proceed to the next tool until you have completed your first week of practice.
+
+---
 ### **Conductor's Practice**
 
 #### **Toolkit Summary**
@@ -59,14 +69,4 @@ Do not wait for a crisis to practice this. Practice The Conductor's Breath three
 *   **Your Hijack 'Tell':** What is the first physical sensation you notice when you start to feel stressed or defensive (e.g., heat in the face, tightness in the chest)? Your mission this week is to notice it in real-time, just once, without judgment.
 *   **Your First Breath Practice:** Describe your first 'imperfect' attempt at using the Conductor's Breath in a real (even mildly stressful) situation. Did it feel clumsy? Did it 'work'? What did you learn from the attempt itself?
 *   **Data, Not a Grade:** What did the 'imperfect' attempt reveal? Treat the outcome as pure data. (e.g., "The data shows I get hijacked when my competence is questioned," or "The data shows that my first sign is heat in my neck.")
-
----
-### **Dashboard Update**
-
-**Congratulations.** You have acquired your first and most fundamental instrument. Your dashboard is online.
-
----
-### **Conductor's Challenge: Week 1 Mission**
-
-You have just acquired your first tool. To turn this knowledge into a skill, turn to the **30-Day Conductor's Challenge (Appendix C)**. Your mission for **Week 1** is to master The Conductor's Breath. The appendix provides specific, daily exercises to build this foundational habit. Do not proceed to the next tool until you have completed your first week of practice.
       

@@ -10,6 +10,22 @@ As her team scrambled to prepare for the Sterling Corp. review, Maria faced poli
 
 To her surprise, David seemed to soften, sharing a story about a past project failure that ended in disaster. "My concern isn't about you," he said. "It's that I'm seeing the exact same pattern, and no one else seems to see the cliff we're running toward." Maria listened, validating his perspective. "It sounds like that was a deeply painful experience," she reflected, "and it's left you with a responsibility to protect the company from that happening again." She left feeling she had made a breakthrough.
 
+David stepped out of Frank's office, his expression a carefully composed mask of concern. He nodded to Frank's assistant and headed towards the elevators. He saw Patricia, a VP from marketing he respected, by the coffee station.
+
+"David," she said with a nod. "You look like you've just come from a war room."
+
+He managed a tired smile. "Something like that, Pat. Just trying to stop history from repeating itself."
+
+She raised an eyebrow. "The Phoenix Project?"
+
+"The very same," David said, lowering his voice. "I was on Acme, you remember. I saw good people, good engineers, get swept up in a feel-good narrative that ignored the foundational cracks until the whole thing came crashing down. I'm seeing the same patterns here. The same 'we're a family' talk, the same resistance to hard questions."
+
+He sighed, shaking his head slightly. "I just had a chat with the team lead, Maria. She's sharp, but she's in over her head. She even admitted she's seeing the same red flags I am. She's worried. But I don't think she has the stomach to do what's necessary. Someone has to be the adult in the room. Someone has to protect the company from its own best intentions."
+
+Patricia looked at him, her expression unreadable. "Be careful, David. That sounds like a heavy burden to carry alone."
+
+"It is," he said, his smile not reaching his eyes. "But someone has to carry it."
+
 A week later, David's words came back to haunt her. Her boss, Frank, pulled her into his office, his expression grim. He gestured for her to shut the heavy oak door, and the sudden, sound-proofed silence of the room felt like a physical weight. Frank wouldn't meet her eyes at first, instead focusing on straightening a stack of papers on his desk.
 
 "Close the door," he said. "We have a problem. David just left my office. He spent twenty minutes telling me a story."

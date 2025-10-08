@@ -43,7 +43,7 @@ You are not saying "no." You are presenting a professional, logical choice and m
 ---
 
 #### **The Practice: Adapting Your Approach**
-A masterful conductor doesn't just play the music; they read the stage. Before an interaction, perform a quick "Situational SCARF Analysis" and adapt your approach based on the direction of gravity.
+A masterful conductor doesn't just play the music; they read the stage. Before an interaction, perform a quick "Situational SCARF Analysis" to adapt your approach based on the direction of gravity.
 
 **1. Conducting Up (Managing Your Boss)**
 Your primary focus should be on rewarding their **Status** and increasing their sense of **Certainty**.

@@ -43,7 +43,7 @@ When she proposed the 48-hour prototype, it wasn't a compromise. It was a perfec
 
 ---
 #### **Maria's Log: The Frustration of Incremental Progress**
-That night, Maria vented to her partner, Alex. "I feel like I'm failing. I used all the tools... and it wasn't enough. The conversation almost blew up twice. I had to throw the book away just to get them to talk."
+That night, Maria vented to her partner, Alex. "I feel like I'm failing. I used all the tools, and it wasn't enough. When Jane shut down my Empathy Loop, I completely blanked. The script was gone, and my old Architect brain was screaming to just make a decision and move on. I almost did. I almost bulldozed the whole conversation. It almost blew up twice. I had to throw the book away just to get them to talk."
 
 Alex listened, modeling the patient presence she was trying to learn. "I hear you," he said. "It sounds incredibly frustrating. Let me ask you something. When you find a bug in a piece of code you wrote, a really tricky one, what do you call yourself?"
 

@@ -85,3 +85,4 @@ The script doesn't just say "no." It preserves the connection while protecting y
 *   **The Unsent Apology:** Think of a relationship (at work or home) that is carrying a small amount of unresolved tension from a past interaction. If you were to initiate a repair, what would be your first authentic sentence? (You don't have to send it, just write it.)
 *   **The Boundary Rehearsal:** Identify one boundary you need to set this week. Write out a "Validate, State, Offer" script for it. How does it feel to have a plan versus just reacting in the moment?
 *   **Data, Not Drama:** Think of feedback you need to give someone. What is the single, observable piece of *data* you can share, completely stripped of any judgment or *drama*?
+      
