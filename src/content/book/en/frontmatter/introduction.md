@@ -11,7 +11,7 @@ I was about to be completely ignored.
 
 I presented the data. They nodded. Then, a senior marketing director stood up and told a simple, emotional story about a single customer. His story had a fraction of my data but a thousand times the impact. I watched in disbelief as the room turned, his narrative completely overriding my logic. My idea was dead.
 
-I didn't just feel misunderstood; I felt invisible. It was a brutal "bug report" on my entire approach to human interaction, a failure that would haunt me for years but also spark a relentless investigation.
+I didn't just feel misunderstood; I felt invisible. It was a brutal "bug report" on my entire approach to human interaction—a failure that haunted me for years and sparked a relentless investigation.
 
 But lest you think this book is a map to becoming a perfect communicator, let me tell you what happened last Christmas. I got into a quiet, painful argument with my brother over the holidays. It was about something small and stupid, the kind of disagreement that is never really about the thing you're arguing about. I tried to use the tools. I took a Conductor's Breath. I tried to deploy the Empathy Loop. I said, "It sounds like the hardest part for you is..." He cut me off. "Don't use your work voice on me," he said, his voice flat. He was right.
 

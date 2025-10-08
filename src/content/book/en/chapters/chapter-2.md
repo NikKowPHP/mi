@@ -15,7 +15,7 @@ Leo, the team's Connector, just went quiet, seeming to shrink in his chair. Mari
 
 Later that day, replaying the conversation in her mind, she felt like a programmer staring at a bug she couldn't reproduce. The team's reactions were visceral, emotional, and—to her logical mind—completely out of proportion to the technical disagreement at hand. The system was broken, but the error logs were invisible. Her investigation had to start with the question that had bothered her since the first disastrous call with Mark: why did it *hurt* so much?
 
-That night, Maria couldn't sleep. The argument looped in her head, a piece of broken code she couldn't fix. Frustrated, she opened her laptop and fell down a rabbit hole of neuroscience articles, searching for an answer. A single, startling discovery stopped her cold. For decades, we've spoken about social pain—the sting of rejection, the shame of exclusion—as if it were a metaphor.
+That night, Maria couldn't sleep. The argument looped in her head, a piece of broken code she couldn't fix. Frustrated, she opened her laptop. Her search for an answer began, pulling her deep into the vaults of modern neuroscience. A single, startling discovery stopped her cold. For decades, we've spoken about social pain—the sting of rejection, the shame of exclusion—as if it were a metaphor.
 
 **It is not.**
 

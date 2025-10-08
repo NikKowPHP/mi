@@ -39,12 +39,19 @@ Maria opened the call, feeling the tension. She used **Status** rewards to give 
 **Step 3: Navigating the Dissonance (The Middle of the Meeting)**
 The conflict ignited immediately. Mark presented an aggressive date; Jane countered, "That's reckless."
 
-Maria felt her own system start to hijack. *Here we go again,* a voice in her head screamed. *David is waiting for this to fall apart. Don't let him be right.* She caught herself, took a silent **Conductor's Breath (Chapter 1)** to quiet her inner Architect, and deployed the core principle of connection: proving she was listening before trying to solve (Chapter 6).
+Maria felt her own system start to hijack. *Here we go again,* a voice in her head screamed. *David is waiting for this to fall apart. Don't let him be right.* She caught herself, took a silent **Conductor's Breath (Chapter 1)** to quiet her inner Architect, and deployed the core principle of connection.
 
-*   She turned to Jane: "That's a critical point, Jane. It sounds like your core concern isn't just about the date, but about protecting our long-term credibility with users. Is that right?" (Jane's tension dropped.)
-*   Maria then employed **Strategic Silence**. Her calm presence co-regulated the room.
+She turned to Jane, trying to run the script. "That's a critical point, Jane. It sounds like your core concern isn't just about the date, but about protecting our credibility."
 
-Jane shifted from a roadblock to a problem-solving partner, suggesting a caching layer idea. Seeing an opening, Jane briefly looked at Leo. "Leo," she said, a rare note of acknowledgement in her voice, "your user feedback on latency was the flag for this. Good catch." Maria hadn't justmanaged the conflict; she had conducted the dissonance into a new, more productive key.
+It backfired instantly. "Don't tell me what my core concern is, Maria," Jane snapped, her voice like ice. "My core concern is that this date is reckless, full stop. The data is clear."
+
+The public rejection hit Maria like a physical blow. Her hijack alarm, which had been a quiet hum, now blared. Her inner Architect screamed at her to shut Jane down, to end the debate and make a decision. *This is a waste of time. Just overrule her.* She felt her jaw tighten, the impulse to revert to her old command-and-control style was immense. This was the work. It was choosing, under fire, not to take the easy way out. She took another, deeper, almost imperceptible breath, forcing her system back online. She had to drop the script and try again, but this time in Jane's language: data and risk.
+
+"You're right," Maria said, her tone shifting from soft to direct. "Let's stick to the data. The risk you're flagging isn't a feeling; it's a number. You're saying the performance simulations have a 15% margin of error, and that's too high for a launch this critical. Is that the core of the problem?"
+
+The change was immediate. Jane blinked, surprised by the direct, data-focused Playback. Her posture softened, just a fraction. "Exactly," she said. "A 15% error margin is a potential extinction event."
+
+By honoring Jane's Sentinel brain, Maria had finally made her feel heard. The tension in the room didn't disappear, but its quality changed—from adversarial to analytical. Jane shifted from a roadblock to a problem-solving partner, suggesting a caching layer idea that could reduce the performance uncertainty. Seeing an opening, she even glanced at Leo. "Leo," she said, a rare note of acknowledgement in her voice, "your user feedback on latency was the flag for this. Good catch." Maria hadn't just managed the conflict; she had conducted the dissonance into a new, more productive key, but only after failing first.
 
 **Step 4: The Echo (After the Meeting)**
 She sent a follow-up email that focused on clarity. It only had two sections:
