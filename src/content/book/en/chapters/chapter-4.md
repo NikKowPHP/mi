@@ -3,7 +3,7 @@ title: "Chapter 4: The Laws of Social Gravity"
 ---
 ### **Chapter 4: The Laws of Social Gravity**
 
-Having taken the first tentative steps with her new diagnostic toolkit, Maria was feeling a fragile new confidence. She had used a moment of calibrated vulnerability to connect with Leo, her junior engineer, and it had worked. Flushed with a small victory, she decided to try the same approach with her boss, a senior VP. In their next one-on-one, held in the VP's sterile, glass-walled office that overlooked the entire floor, she admitted, "I'll be honest, I'm feeling a bit overwhelmed by the political pressure from David's team."
+Having taken the first tentative steps with her new diagnostic toolkit, Maria was feeling a fragile new confidence. She had used a moment of calibrated vulnerability to connect with Leo, her junior engineer, and it had worked. Flushed with her small victory with Leo, she walked into the VP's office with a fragile new confidence. This was the next logical step. The same tool, the same human hardware. This would work. In their next one-on-one, held in the VP's sterile, glass-walled office that overlooked the entire floor, she admitted, "I'll be honest, I'm feeling a bit overwhelmed by the political pressure from David's team."
 
 She expected the admission to build trust. Instead, she watched the VP lean back in his expensive leather chair, creating a subtle but clear physical distance between them. His expression hardened, a slight, almost imperceptible narrowing of his eyes. "Look, Maria," he said, his voice dropping. "I appreciate the candor, but you need to be careful. David is already circling the Phoenix Project's budget. He sees it as a vanity project. Don't give him any ammunition. Just hit the deadline."
 

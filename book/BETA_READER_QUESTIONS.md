@@ -17,6 +17,7 @@ Please read with the following questions in mind. Don't worry about the scientif
 *   What was the single most emotional moment in the book for you? (This could be a moment of tension, frustration, triumph, or connection).
 *   Was there a moment where you felt a sense of victory or relief for Maria and her team?
 *   Was there a moment where you felt her failure or disappointment most keenly?
+*   Was there a moment where you had a visceral, physical reaction (e.g., you tensed up, you felt a sense of relief in your shoulders, you leaned forward)? Where was it?
 *   Did the ending of Maria's story feel satisfying?
 
 **Pacing & Engagement:**

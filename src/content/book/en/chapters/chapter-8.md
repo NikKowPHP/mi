@@ -42,6 +42,11 @@ And that was it. The final piece clicked into place. The problem wasn't Jane's f
 When she proposed the 48-hour prototype, it wasn't a compromise. It was a perfectly engineered test case. It was a gamble, but a logical one. "Okay, Jane," I said. "Let's do it." I don't know what this new version of Maria is, but we're not dead in the water anymore.
 
 ---
+***From the Orchestra: Jane's View***
+
+*They called me a roadblock, but I was the only one remembering the bodies. The Apex project wasn't just a failure; it was a career graveyard. I watched good people get fired over a 'cutting-edge' database that wasn't ready. When Mark started talking, all I could hear was the echo of that same arrogant certainty. Then Maria said the words 'never again.' She wasn't just listening to me; she was honoring the ghosts in the room. In that moment, the problem wasn't the tech anymore. The problem was ensuring history didn't repeat itself.*
+
+---
 #### **Maria's Log: The Frustration of Incremental Progress**
 That night, Maria vented to her partner, Alex. "I feel like I'm failing. I used all the tools, and it wasn't enough. When Jane shut down my Empathy Loop, I completely blanked. The script was gone, and my old Architect brain was screaming to just make a decision and move on. I almost did. I almost bulldozed the whole conversation. It almost blew up twice. I had to throw the book away just to get them to talk."
 

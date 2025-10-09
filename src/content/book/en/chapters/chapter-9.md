@@ -27,7 +27,7 @@ Her plan wasn't to win an argument, but to create enough safety for the real con
 
 Leo was silent for a moment, his expression guarded. "Honestly, Maria? That sounds like something you read in a management book. I don't know what to say to that."
 
-The response hit Maria like a physical blow. Heat flooded her face, and she felt her jaw tighten. Her Architect brain screamed that this whole "empathy thing" was a waste of time. She took another, almost imperceptible breath. She had to drop the script.
+The response hit Maria like a physical blow. For a horrifying second, the room tilted. The old Architect roared back, a savage voice snapping, *See? This is why feelings are a waste of time.* She felt the blood drain from her face as the familiar shame of the impostor washed over her. She took another, almost imperceptible breath. She had to drop the script.
 
 "You're right," she said, her voice softer, the performative language gone. "That was clumsy. Let me try again. I was an absolute jerk to you in that meeting. It was disrespectful, and I am truly sorry. There's no excuse for it."
 
@@ -35,7 +35,7 @@ The shift was palpable. Leo's posture relaxed slightly. "It... it felt like you 
 
 This time, Maria didn't reach for a script. She just listened. "It was a public humiliation," she replied, a simple Playback of his pain. "It sounds like I made you feel completely disrespected."
 
-Leo just nodded. The trust wasn't fixed, but the door was open again. Only then could she think about the original feedback she wanted to give. She knew she'd have to revisit it later, but differently. Not as a drive-by comment, but as a proper tune-up conversation: get permission, share data, and co-create a solution. For now, the only goal was repair.
+Leo just nodded. The trust wasn't fixed, but the door was open again. Only then could she think about the original feedback she wanted to give. She knew she'd to revisit it later, but differently. Not as a drive-by comment, but as a proper tune-up conversation: get permission, share data, and co-create a solution. For now, the only goal was repair.
 
 ---
 Her next challenge was David. He was pushing for a high-stakes, derailing side-project. Maria knew she had to say "no." This was a different kind of conflict, not about repair but about protection. She needed a tool to set a boundary while minimizing the SCARF threat to David. She decided to use a simple, three-part model:

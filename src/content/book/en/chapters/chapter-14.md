@@ -42,7 +42,7 @@ He had used her own tool, the Empathy Loop, to diagnose the room's central SCARF
 
 "So," he continued, "I propose we take one day, as a team, to decide on the cuts together. It might be slower, but we'll own the outcome."
 
-Maria looked at him, a sense of profound pride overriding her stress. The orchestra was learning to conduct itself. "You're right, Leo," she said. "That's a much better plan. Let's do it."
+Maria looked at him, a sense of profound pride overriding her stress. The orchestra was learning to conduct itself. It was her own tool, the same one she had fumbled so badly with him weeks ago, now being used with surgical precision to save the room—and to save her from her own Architect brain. "You're right, Leo," she said. "That's a much better plan. Let's do it."
 
 ---
 ### **Part 2: The Conductor's Legacy (The Capstone Climax)**

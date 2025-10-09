@@ -15,6 +15,8 @@ I didn't just feel misunderstood; I felt invisible. It was a brutal "bug report"
 
 But lest you think this book is a map to becoming a perfect communicator, let me tell you what happened last Christmas. I got into a quiet, painful argument with my brother over the holidays. It was about something small and stupid, the kind of disagreement that is never really about the thing you're arguing about. I tried to use the tools. I took a Conductor's Breath. I tried to deploy the Empathy Loop. I said, "It sounds like the hardest part for you is..." He cut me off. "Don't use your work voice on me," he said, his voice flat. He was right.
 
+*In a silent video call, a brilliant programmer named Maria would soon feel that same humiliating heat creep up her neck. Her mind would go blank, her logic shattered by a simple, miscalculated phrase. She, like me, was about to receive a brutal 'bug report' on her understanding of human connection. Her journey to debug that system is the heart of this book.*
+
 That's the real lesson of this book. It's not about becoming a flawless performer. It's about learning the skills to repair connection when you inevitably, messily, and humanly break it. This is not a rulebook; it is a rehearsal space for imperfect people.
 
 My investigation began with a question that burned in my mind after that boardroom failure: *Why does a good story always beat good data? Why does human connection feel like a chaotic, unpredictable system? What is the source code?*
