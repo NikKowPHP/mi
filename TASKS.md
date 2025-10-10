@@ -1,2 +1,4 @@
-- [x] Apply atomic fixes for maximum reader engagement.
-      
+- [x] Refactor Chapter 10 to remove redundant narrative consequence of a 20% budget cut.
+- [x] Move instructional content from Chapter 5 to Introduction to improve narrative flow.
+- [x] Refactor Chapter 13 to feature the personal anecdote about the "work voice" more prominently.
+- [x] Refactor the Introduction for a cleaner, more focused narrative hook.

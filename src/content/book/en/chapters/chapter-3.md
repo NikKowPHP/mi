@@ -23,7 +23,20 @@ This diagnostic is not a test. There are no right or wrong answers. It is a mirr
    b) Feeling their emotional state along with them. You are imagining what it must be like to be in their shoes, connecting with their feelings of frustration or sadness.
    c) Anticipating the "danger." You are scanning their story for risks and potential negative outcomes, feeling a sense of urgency to warn them.
 
-**(The rest of the quiz questions from the original Chapter 2 would follow here.)**
+**2. When a project you are leading starts to go off the rails, your first instinct is to:**
+   a) Double down on the data. Create a new, more logical plan to get it back on track and present it to the team.
+   b) Call a team meeting to check in on everyone's morale and ensure the team still feels connected and supported.
+   c) Immediately halt progress to conduct a full risk assessment and identify all potential points of failure before moving forward.
+
+**3. You have just received blunt, critical feedback in a team meeting. Your gut reaction is a feeling of:**
+   a) Annoyance that your competence is being publicly questioned.
+   b) Worry that this disagreement might damage your relationship with your colleague.
+   c) Alarm that there is a flaw in the plan that you had not foreseen.
+
+**4. Your ideal work environment is one where:**
+   a) Excellence is the primary metric, and the best ideas win through rigorous debate.
+   b) The team feels like a close-knit community with a high degree of mutual trust and support.
+   c) Every step is clearly defined, and there are robust contingency plans for every possibility.
 
 ---
 #### **Interpreting Your Results: The Music of Your Mind**

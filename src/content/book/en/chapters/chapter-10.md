@@ -48,7 +48,7 @@ Stung by the betrayal, Maria researched defensive communication strategies for d
 
 In their next group meeting, in front of Frank, David put on a show of good-faith collaboration. "Maria, I'm trying to find a path forward here," he said, his tone one of deep concern. "But I have to be honest, it feels like I'm talking to a wall. I'm just getting these very procedural, robotic answers." He turned to Frank. "We need a partner who can engage with the real issues, not just manage the conversation."
 
-Maria was stunned. David had used her own framework against her, painting her as the uncooperative one. The fallout was swift. Frank later told her, "David has successfully framed you as being difficult to work with. He's sown enough doubt that leadership has decided to preemptively cut the Phoenix Project's phase 2 budget by 20%. We might be able to win it back, but you're on the defensive now."
+Maria was stunned. David had used her own framework against her, painting her as the uncooperative one. The fallout was swift. Frank later told her, "David has successfully framed you as being difficult to work with. He's sown enough doubt that I'm getting pressure from leadership. There's no budget cut yet, but you're on the defensive now. The final go/no-go meeting for Phase 2 is your one shot to kill this narrative. Don't miss."
 
 The Shield framework hadn't justfailed to contain the threat; it had armed him. Walking back to her desk, the cold hollowness in her chest was no longer just a feeling—it was the weight of a tangible political and financial defeat. A framework is not a substitute for wisdom, and her clumsy application of the tool had just put her entire project in jeopardy.
 
@@ -88,4 +88,3 @@ When facing a bad-faith actor, you cannot invite them into a duet. Your goal is 
 *   **Cultural Observation:** Think of a group you've recently joined (a new team, a club, a class). What are the unwritten rules for how Status is demonstrated or how feedback is given? What's your hypothesis?
 *   **Good Faith vs. Bad Faith:** Reflect on a recent conflict. Was it a good-faith disagreement (different goals, shared respect) or a bad-faith interaction (manipulation, personal attacks)? What specific behaviors led you to that conclusion?
 *   **Your Containment Strategy:** If you identified a bad-faith interaction, what is one thing you could do differently next time, based on the 'Conductor's Shield' principles (e.g., move to email, state only facts)?
-      

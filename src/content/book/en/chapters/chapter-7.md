@@ -26,7 +26,7 @@ As the board members filed out, offering congratulations, Maria noticed one pers
 
 As Maria was packing up her laptop, David approached her. He was tall, moved with the unhurried confidence of someone who never had to rush, and wore a perfectly tailored suit that seemed out of place in their casual engineering culture.
 
-"Congratulations, Maria. Great story," he said, his smile smooth and political, not quite reaching his eyes. He leaned in slightly. "It reminded me a little of the energy we had on the Acme project. A good story can blind people to foundational risks if you're not careful." As he spoke, he casually picked up Maria's pen from the table, examined it as if testing its weight, and then placed it back down, but slightly to the side, just out of her easy reach. It was a tiny, almost unnoticeable gesture of control. He mentioned a potential data pipeline issue she hadn't known about, a small, sharp barb of a warning. He was testing her.
+"Congratulations, Maria. Great story," he said, his smile smooth and political, not quite reaching his eyes. He leaned in slightly. "It reminded me a little of the energy we had on the Acme project. Just remember, the Acme team also thought they were a family. That kind of 'connection' makes you blind to the numbers and deaf to the hard questions. Be careful the story doesn't run away with you." As he spoke, he casually picked up Maria's pen from the table, examined it as if testing its weight, and then placed it back down, but slightly to the side, just out of her easy reach. It was a tiny, almost unnoticeable gesture of control. He mentioned a potential data pipeline issue she hadn't known about, a small, sharp barb of a warning. He was testing her.
 
 That evening, an email from him arrived. It was a masterclass in corporate maneuvering.
 
@@ -80,3 +80,4 @@ But a clear score is not enough; it must have a memorable melody. This technique
 ### **Author's Field Note**
 
 This "And, But, Therefore" structure is the tool I was missing in that boardroom all those years ago. My flawless data was just a long list of "Ands"; the marketing director won because he, instinctively, told a story with a "But" and a "Therefore".
+      

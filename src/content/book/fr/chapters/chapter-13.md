@@ -2,15 +2,11 @@
 title: "Chapitre 13 : Le Chef d'Orchestre Intégré"
 ---
 ### **Chapitre 13 : Le Chef d'Orchestre Intégré**
-#### Savoir Quand Poser la Baguette
+### Savoir Quand Poser la Baguette
 
-### L'Échafaudage est Censé Être Moche
+Pour que vous ne pensiez pas que ce livre est une carte pour devenir un communicant parfait, laissez-moi vous raconter ce qui s'est passé à Noël dernier. J'ai eu une dispute silencieuse et douloureuse avec mon frère pendant les fêtes. J'étais fatigué, il était stressé, et j'ai décidé de "gérer" la situation. J'ai pris une respiration, j'ai essayé de déployer la Boucle d'Empathie. J'ai dit : 'On dirait que la partie la plus difficile pour toi, c'est...' Il m'a coupé. 'N'utilise pas ta voix de travail avec moi,' a-t-il dit, d'un ton neutre. Il avait raison.
 
-Lorsque vous apprenez ces outils pour la première fois, il y a une période inévitable de prise de conscience intense et maladroite. Chaque conversation peut ressembler à une performance à fort enjeu. Vous vous entendez utiliser 'le script', et cela semble inauthentique. Ce n'est pas un signe que vous échouez ; c'est un signe que vous apprenez.
-
-Pensez-y comme à la construction d'une maison. Les outils de ce livre sont l'échafaudage. L'échafaudage n'est pas élégant. C'est un squelette métallique encombrant autour duquel vous devez naviguer. Mais c'est la structure essentielle qui vous permet de construire quelque chose de nouveau et de durable. Le 'Plateau de la Maladresse' est la phase où vous êtes encore sur l'échafaudage. Vous pensez consciemment à chaque outil, à chaque étape. Cela semble artificiel parce que ça *est* artificiel. Vous êtes en train de remplacer activement des décennies de vieille programmation et de construire de nouvelles voies neuronales.
-
-Maria se souvenait de ses premières tentatives maladroites de se connecter avec Jane. Elle s'était sentie comme une imposture. Mais avec le recul, elle réalisa que cet échafaudage maladroit était le seul moyen de construire le pont de confiance qui se dressait maintenant entre elles. Le but est de pratiquer sur l'échafaudage pendant si longtemps que vous pouvez finalement le démonter et simplement vivre dans la maison que vous avez construite. Cette dernière section porte sur l'apprentissage de cette démarche.
+Ma tentative d'utiliser un outil a semblé inauthentique parce que je n'avais pas encore appris la leçon finale : le but de la pratique est de construire une connexion assez forte pour supporter quelques fausses notes, non coachées. Ce chapitre porte sur l'apprentissage du moment où il faut diriger, et du moment où il faut simplement être un frère.
 
 ---
 
@@ -54,11 +50,6 @@ Vous devez vous donner la permission explicite de ne pas être le Chef d'Orchest
 Il y a une profonde différence entre un détournement destructeur de l'amygdale et un moment d'expression émotionnelle authentique et spontanée.
 *   Parfois, la chose la plus connectante que vous puissiez faire est d'avoir une dispute maladroite, imparfaite, mais totalement réelle.
 *   Votre intuition, construite sur des milliers d'heures de pratique, est ce qui vous permet de faire la différence entre une fausse note et une improvisation puissante et non planifiée.
-
----
-### **Note de Terrain de l'Auteur**
-
-C'est la leçon que j'apprenais, douloureusement et en temps réel, lors de cette dispute avec mon frère. Ma tentative d'utiliser un outil a semblé inauthentique parce que je n'avais pas encore appris que le but de la pratique est de construire une connexion assez forte pour supporter quelques fausses notes, non coachées.
 
 ---
 
