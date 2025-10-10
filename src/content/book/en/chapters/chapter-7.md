@@ -28,22 +28,7 @@ As Maria was packing up her laptop, David approached her. He was tall, moved wit
 
 "Congratulations, Maria. Great story," he said, his smile smooth and political, not quite reaching his eyes. He leaned in slightly. "It reminded me a little of the energy we had on the Acme project. Just remember, the Acme team also thought they were a family. That kind of 'connection' makes you blind to the numbers and deaf to the hard questions. Be careful the story doesn't run away with you." As he spoke, he casually picked up Maria's pen from the table, examined it as if testing its weight, and then placed it back down, but slightly to the side, just out of her easy reach. It was a tiny, almost unnoticeable gesture of control. He mentioned a potential data pipeline issue she hadn't known about, a small, sharp barb of a warning. He was testing her.
 
-That evening, an email from him arrived. It was a masterclass in corporate maneuvering.
-
-**Subject: Aligning Our Synergies**
-
-> Maria,
->
-> Great presentation today. To ensure we capitalize on the momentum and maintain strategic alignment across the organization, leadership has decided to formally link my 'Odyssey' initiative with the Phoenix Project, creating a shared dependency for success.
->
-> This will ensure your team's excellent work has the enterprise-level impact it deserves. My team will be in touch with the integration specs.
->
-> Best,
-> David
-
-Maria's stomach dropped. It wasn't a suggestion; it was a declaration. Odyssey was David's failing pet project, a notoriously unstable system. An integration would be a technical nightmare, a certain path to delays and missed deadlines. He had copied her boss and the entire executive team. It was a trap, sprung in public. Her goal was no longer just to build a great product. It was to politically and technically survive a forced dependency designed to make her fail.
-
-The real performance was just beginning. Her victory with the board felt hollow now, a prelude to a much more dangerous game. To survive, she had to deconstruct not only her own success but David's attack. The two events, she realized, were built from the same two elements: the power of a clear structure and the undeniable influence of a story.
+As the board members were filing out, David approached, not her, but her boss, Frank, with the CEO still in earshot. 'Frank, a brilliant presentation,' David said, loud enough for Maria to hear. 'It's so strategically aligned with my Odyssey initiative that it's clear they should be formally linked. I'll have my team send over the integration specs to ensure we capitalize on these synergies immediately.' He smiled, not at Maria, but at the CEO. It wasn't a suggestion; it was a public declaration. A checkmate. Maria felt the blood drain from her face. He hadn't just sprung a trap; he had turned her victory into the cage.
 
 ---
 ### **Chapter 7 Debrief: Clarity and Storytelling**

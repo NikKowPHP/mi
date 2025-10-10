@@ -20,7 +20,7 @@ Stay consistent. Every time you hold a respectful boundary, you are sending a cl
 
 **Question: "I keep trying, but in the heat of the moment, I get hijacked and revert to my old, bad habits. I feel like a failure. How do you make this change stick?"**
 
-This is not a side effect of the work; this is the work itself. You are not a failure; you are a human retraining your brain's ancient hardware. This is not a software update; it's a physical rewiring process (neuroplasticity), and it is slow.
+This experience of reverting to old habits isn't a sign of failure; it is the central challenge of the entire method. You are not a failure; you are a human retraining your brain's ancient hardware. This is not a software update; it's a physical rewiring process (neuroplasticity), and it is slow.
 
 The system's backlash isn't just external; it's internal. Your own brain has a homeostatic comfort zone. The old, familiar argument—while painful—is a well-worn neural pathway. It's the path of least resistance.
 
@@ -35,4 +35,3 @@ After you've cooled down, run a personal "debrief." Ask yourself:
 3.  **Where was the point of no return?** (e.g., "The data shows I lost regulation after they said 'you always do this'.")
 
 By analyzing the "bug" this way, you make the old pattern conscious, which is the only way to change it. Your goal is not immediate perfection, but **consistent, compassionate data collection.** This mindset shifts the goal from "winning the conversation" to "learning from the conversation," which is a game you can never lose.
-      

@@ -20,7 +20,7 @@ Restez cohérent. Chaque fois que vous maintenez une limite respectueuse, vous e
 
 **Question : "Je continue d'essayer, mais dans le feu de l'action, je suis détourné et je reviens à mes vieilles, mauvaises habitudes. Je me sens comme un échec. Comment faire pour que ce changement tienne ?"**
 
-Ce n'est pas un effet secondaire du travail ; c'est le travail lui-même. Vous n'êtes pas un échec ; vous êtes un humain qui réentraîne le matériel ancien de son cerveau. Ce n'est pas une mise à jour logicielle ; c'est un processus de recâblage physique (neuroplasticité), et il est lent.
+Cette expérience de retour aux vieilles habitudes n'est pas un signe d'échec ; c'est le défi central de toute la méthode. Vous n'êtes pas un échec ; vous êtes un humain qui réentraîne le matériel ancien de son cerveau. Ce n'est pas une mise à jour logicielle ; c'est un processus de recâblage physique (neuroplasticité), et il est lent.
 
 La réaction du système n'est pas seulement externe ; elle est interne. Votre propre cerveau a une zone de confort homéostatique. L'ancienne dispute familière — bien que douloureuse — est un chemin neuronal bien usé. C'est le chemin de moindre résistance.
 

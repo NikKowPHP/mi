@@ -1,5 +1,5 @@
 ---
-title: "Chapitre 14 : L'Héritage du Chef d'Orchestre : La Performance Finale"
+title: "Chapitre 14 : L'Héritage du Chef d'Orchestre : Naviguer dans la Déception et Construire un Orchestre Auto-Réglable"
 ---
 ### **Chapitre 14 : L'Héritage du Chef d'Orchestre : La Performance Finale**
 #### Naviguer dans la Déception et Construire un Orchestre Auto-Réglable

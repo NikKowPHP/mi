@@ -1,5 +1,5 @@
 ---
-title: "Chapter 14: The Conductor's Legacy: The Final Performance"
+title: "Chapter 14: The Conductor's Legacy: Navigating Disappointment and Building a Self-Tuning Orchestra"
 ---
 ### **Chapter 14: The Conductor's Legacy: The Final Performance**
 #### Navigating Disappointment and Building a Self-Tuning Orchestra
@@ -102,4 +102,3 @@ A conductor must design a system where safety is the natural output.
 4.  **Distribute Competence with a Shared Language:** Give your team a shared, non-judgmental language ("SCARF," "amygdala hijack"). This creates a powerful shortcut to empathy and leads to a self-tuning orchestra.
 
 By implementing these routines, you nurture their brains. You create a culture where everyone feels responsible for the music. This is the conductor's true legacy.
-      
